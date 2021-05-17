@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/slick.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/page2.css">
+    <style>
+        /* 字体配置 */
+        @font-face {
+            font-family: 'myfont1';
+            src: url('./font/FZShenYMXSJW.TTF');
+        }
+
+        @font-face {
+            font-family: 'myfont2';
+            src: url('./font/FZQinKeBYSJT.TTF');
+        }
+    </style>
+</head>
+
+<body style="height: 100%;">
+    <div class="page2">
+        <div style="display: flex; flex-direction: column; width: 1000px; height: 100%; margin: 0 auto;">
+            <div class="nav-btn btn-group" role="group" aria-label="Basic example"">
+                <button class="btn btn-outline-info" onclick="javascrtpt:window.location.href='index.html'">
+                    <!-- <img src="./img/btn.png"> -->
+                    主页
+                </button>
+                <button class="btn btn-outline-info" onclick="javascrtpt:window.location.href='1.html'">
+                    1
+                </button>
+                <button class="btn btn-outline-info" disabled onclick="javascrtpt:window.location.href='2.html'">
+                    2
+                </button>
+                <button class="btn btn-outline-info"  onclick="javascrtpt:window.location.href='3.html'">
+                    3
+                </button>
+            </div>
+            
+            <div class="main" style="display: flex; flex-direction: row;">
+                <div id="sun-map" style="display: flex; flex-direction: column; margin-top: -20px;"> 
+                    <div id="sun" style="width:600px; height: 600px;">
+                    </div>
+                    <div class="map-title" style="height: 20px; text-align: center; margin-top: -10px; font-family: 'myfont2'; font-size: 20px;">
+                        《全唐诗》中出现频次最高的前20科植物
+                    </div>
+                </div>
+                <div id="txt-div" style="width: 400px; height: 600px; text-align: center;">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    此处放置《全唐诗》整体数据
+                    <br>
+                    报春花科数据有问题!!!
+                </div>
+
+            </div>
+            
+            <div class="info" style="display: none;width:1000px; height: 500px;">
+                <div style="display: flex; flex-direction: column;">
+                    <div style="height:30px; width: 30px; margin-left: 960px;">
+                        <button type="button" class="close btn btn-light" aria-label="关闭" style="margin-top: 10px;" onclick="hide()">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div style="display: flex; flex-direction: row;">
+                        <div id="info-div" style="width: 500px; height: 500px; margin-right: 40px;">
+
+                        </div>
+                        <div id="map" style="width: 500px; height: 500px; margin-left: 50px;">
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+
+<script src = "./js/dataset.js"></script>
+<script src="./js/data2.js"></script>
+<script src="./js/vue.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/slick.js"></script>
+<script src="./js/echarts.js"></script>
+<script src="./js/echarts-wordcloud.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        drawSun();
+        // sun_card("蔷薇科");
+    });
+</script>
+<script src="./js/bootstrap.min.js"></script>
+
+</html>

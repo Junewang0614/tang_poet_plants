@@ -1,0 +1,103 @@
+body {
+  position: relative;
+}
+.main2 {
+  min-width: 100%;
+  max-width: 100%;
+  height: 1200px;
+  /* border:solid; */
+  margin:0 auto;
+  /* position: absolute; */
+}
+
+.nav-btn{
+  position: relative;
+  margin-left: 580px;
+  width: 400px;
+  height: 40px;
+}
+
+/* .main2 .nav {
+  width: 400px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  right: 0px;
+} */
+.main2 .title2 {
+  width: 800px;
+  height: 80px;
+  /* background-color: yellow; */
+  position: absolute;
+  margin: 20px 350px;
+  margin-bottom: 0px;
+  text-align: center;
+  /* 调整文字位置 */
+}
+.main2 .title2 p {
+  text-align: center;
+  position: absolute;
+  top: 10px;
+  width: 800px;
+  font-size: xx-large;
+  font-family: myfont2;
+}
+.main2 .page2 {
+  width: 1200px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 120px;
+  left: 50px;
+}
+.main2 .page2 #sun {
+  height: 600px;
+  width: 600px;
+}
+.main2 .page2 #info-div {
+  height: 600px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+#txt-div {
+  height: 250px;
+  width: 500px;
+  /* border:solid; */
+  text-align: center;
+}
+#txt-div h2 {
+  text-align: left;
+  font-family: myfont2;
+}
+#txt-div p {
+  font-family: fangsong;
+  margin-top: 20px;
+  font-size: large;
+  line-height: 40px;
+}
+
+#info-div {
+  height: 250px;
+  width: 500px;
+  /* border:solid; */
+  text-align: center;
+}
+#info-div h2 {
+  text-align: left;
+  font-family: myfont2;
+}
+#info-div p {
+  font-family: fangsong;
+  margin-top: 20px;
+  font-size: large;
+  line-height: 40px;
+}
+
+.main2 .page2 #map {
+  height: 300px;
+  width: 400px;
+  /* border: solid;*/
+}

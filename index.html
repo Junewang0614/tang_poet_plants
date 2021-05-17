@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html style="height:100%;">
+    <head>
+        <meta charset="UTF-8">
+        <title>唐诗植物意象分析</title>
+        <link rel="stylesheet" type="text/css" href="./css/slick.css">
+        <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
+        <style>
+            /* 字体配置 */
+            @font-face {
+                font-family:'myfont1';
+                src: url('./font/FZShenYMXSJW.TTF');
+            }
+            @font-face {
+                font-family:'myfont2';
+                src: url('./font/FZQinKeBYSJT.TTF');
+            }
+        </style>
+    </head>
+    <body style="height:100%;">
+        <div id="page" style="width: 100%; height: 100%; display:flex; flex-direction:row; font-family:'myfont1'; font-size: 50px; background-position: center 0;">
+            <!-- 封面 -->
+            <div id="main-title" style="height: 100%; display: flex; flex-direction: row; margin: 0 auto; padding-top: 60px;">
+                <div style="margin: 0 auto;">
+                    <br>
+                    草
+                    <br>
+                    木
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                <div style="">
+                    <br>
+                    <br>
+                    有
+                    <br>
+                    本
+                    <br>
+                    心
+                </div>
+                <div style="width: 40px; font-size: 12px; font-family: 'fangsong'; margin-left: 10px;">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    基
+                    <br>
+                    于&nbsp;意
+                    <br>
+                    ︽&nbsp;象
+                    <br>
+                    全&nbsp;数
+                    <br>
+                    唐&nbsp;据
+                    <br>
+                    诗&nbsp;可
+                    <br>
+                    ︾&nbsp;视
+                    <br>
+                    植&nbsp;化
+                    <br>
+                    物&nbsp;分
+                    <br>
+                    &nbsp;&nbsp;&nbsp;析
+                    <br>
+                </div>
+                <div style="width: 430px">
+                    <div style="display: flex; flex-direction: column; padding-top:140px; margin-left: 50px;">
+                        <div class="btn-div">
+                            <img src="./img/btn.png" style="width: 40px; height: 40px;">
+                            <button class="btn" onclick="javascrtpt:window.location.href='1.html'">
+                            页面1
+                            </button>
+                        </div>
+                        <div class="btn-div">
+                            <img src="./img/btn.png" style="width: 40px; height: 40px;">
+                            <button class="btn" onclick="javascrtpt:window.location.href='2.html'">
+                            页面2
+                            </button>
+                        </div>
+                        <div class="btn-div">
+                            <img src="./img/btn.png" style="width: 40px; height: 40px;">
+                            <button class="btn" onclick="javascrtpt:window.location.href='3.html'">
+                            页面3
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./js/main.js"></script>
+    <script src="./js/vue.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/echarts.js"></script>
+    <script src="./js/echarts-wordcloud.js"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+
+            $(".flip1").click(function(){
+                // alert(1);
+                $(".page1").slideUp(500);
+                // alert(2);
+                $(".page2").fadeIn(1000);
+                setTimeout("DrawMap()", 500);
+            });
+            $(".flip2").click(function(){
+                $(".page2").animate({width:'toggle'},350);
+                $(".page3").fadeIn(2000);
+            });
+            $(".flip3").click(function(){
+                $(".page2").animate({width:'toggle'},350);
+                $(".page4").fadeIn(2000);
+            });
+            $(".flip4").click(function(){
+                $(".page2").animate({width:'toggle'},350);
+                $(".page5").fadeIn(2000);
+            });
+        });
+    </script>
+    <script src="./js/bootstrap.min.js"></script>
+</html>
