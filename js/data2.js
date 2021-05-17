@@ -117,13 +117,13 @@ function drawSun() {
     var chartDom = document.getElementById('sun');
     var myChart = echarts.init(chartDom);
     var option;
-    
+
     var data = [{
         name: '',
         itemStyle: {
             color: '#da0d68'
         },
-        nodeClick:"false",
+        nodeClick: "false",
         children: [{
             name: '禾本科',
             itemStyle: {
@@ -133,31 +133,31 @@ function drawSun() {
                 rotate: 'radial',
                 fontSize: 14,
             },
-            nodeClick:"false",
+            nodeClick: "false",
             children: [{
                 name: '标题频率:382',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(158,104,78,1)'
                 },
             }, {
                 name: '诗句中频率:7825',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(158,104,78,1)'
                 }
             }]
-        }   
-    ]
+        }
+        ]
     },
     {
         name: '',
         itemStyle: {
             color: '#da0d68'
         },
-        nodeClick:"false",
+        nodeClick: "false",
         children: [{
             name: '蔷薇科',
             itemStyle: {
@@ -167,18 +167,18 @@ function drawSun() {
                 rotate: 'radial',
                 fontSize: 14,
             },
-            nodeClick:"false",
+            nodeClick: "false",
             children: [{
                 name: '标题频率:404',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(203,119,85,1)'
                 }
             }, {
                 name: '诗句中频率:1881',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(203,119,85,1)'
                 }
@@ -190,7 +190,7 @@ function drawSun() {
         itemStyle: {
             color: '#da0d68'
         },
-        nodeClick:"false",
+        nodeClick: "false",
         children: [{
             name: '菊科',
             itemStyle: {
@@ -200,18 +200,18 @@ function drawSun() {
                 rotate: 'radial',
                 fontSize: 14,
             },
-            nodeClick:"false",
+            nodeClick: "false",
             children: [{
                 name: '标题频率:117',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(203,119,85,0.9)'
                 }
             }, {
                 name: '诗句中频率:1364',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(203,119,85,0.9)'
                 }
@@ -223,7 +223,7 @@ function drawSun() {
         itemStyle: {
             color: '#da0d68'
         },
-        nodeClick:"false",
+        nodeClick: "false",
         children: [{
             name: '杨柳科',
             itemStyle: {
@@ -233,18 +233,18 @@ function drawSun() {
                 rotate: 'radial',
                 fontSize: 14,
             },
-            nodeClick:"false",
+            nodeClick: "false",
             children: [{
                 name: '标题频率:384',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(203,119,85,0.8)'
                 }
             }, {
                 name: '诗句中频率:1225',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(203,119,85,0.8)'
                 }
@@ -256,7 +256,7 @@ function drawSun() {
         itemStyle: {
             color: '#da0d68'
         },
-        nodeClick:"false",
+        nodeClick: "false",
         children: [{
             name: '莲科',
             itemStyle: {
@@ -266,18 +266,18 @@ function drawSun() {
                 rotate: 'radial',
                 fontSize: 14,
             },
-            nodeClick:"false",
+            nodeClick: "false",
             children: [{
                 name: '标题频率:154',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(203,119,85,0.7)'
                 }
             }, {
                 name: '诗句中频率:1018',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(203,119,85,0.7)'
                 }
@@ -289,7 +289,7 @@ function drawSun() {
         itemStyle: {
             color: '#da0d68'
         },
-        nodeClick:"false",
+        nodeClick: "false",
         children: [{
             name: '蝶形花科',
             itemStyle: {
@@ -299,18 +299,18 @@ function drawSun() {
                 rotate: 'radial',
                 fontSize: 14,
             },
-            nodeClick:"false",
+            nodeClick: "false",
             children: [{
                 name: '标题频率:43',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(194,161,130,1)'
                 }
             }, {
                 name: '诗句中频率:928',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(194,161,130,1)'
                 }
@@ -322,7 +322,7 @@ function drawSun() {
         itemStyle: {
             color: '#da0d68'
         },
-        nodeClick:"false",
+        nodeClick: "false",
         children: [{
             name: '木樨科',
             itemStyle: {
@@ -332,18 +332,18 @@ function drawSun() {
                 rotate: 'radial',
                 fontSize: 14,
             },
-            nodeClick:"false",
+            nodeClick: "false",
             children: [{
                 name: '标题频率:47',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(194,161,130,1)'
                 }
             }, {
                 name: '诗句中频率:889',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(194,161,130,1)'
                 }
@@ -355,7 +355,7 @@ function drawSun() {
         itemStyle: {
             color: '#da0d68'
         },
-        nodeClick:"false",
+        nodeClick: "false",
         children: [{
             name: '桑科',
             itemStyle: {
@@ -365,18 +365,18 @@ function drawSun() {
                 rotate: 'radial',
                 fontSize: 14,
             },
-            nodeClick:"false",
+            nodeClick: "false",
             children: [{
                 name: '标题频率:31',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(194,161,130,0.9)'
                 }
             }, {
                 name: '诗句中频率:487',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(194,161,130,0.9)'
                 }
@@ -388,7 +388,7 @@ function drawSun() {
         itemStyle: {
             color: '#da0d68'
         },
-        nodeClick:"false",
+        nodeClick: "false",
         children: [{
             name: '芸香科',
             itemStyle: {
@@ -398,18 +398,18 @@ function drawSun() {
                 rotate: 'radial',
                 fontSize: 14,
             },
-            nodeClick:"false",
+            nodeClick: "false",
             children: [{
                 name: '标题频率:29',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(194,161,130,0.8)'
                 }
             }, {
                 name: '诗句中频率:482',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(194,161,130,0.8)'
                 }
@@ -421,8 +421,8 @@ function drawSun() {
         itemStyle: {
             color: '#da0d68'
         },
-        nodeClick:"false",
-        children: [    {
+        nodeClick: "false",
+        children: [{
             name: '山茶科',
             itemStyle: {
                 color: 'rgba(194,161,130,0.7)'
@@ -431,18 +431,18 @@ function drawSun() {
                 rotate: 'radial',
                 fontSize: 14,
             },
-            nodeClick:"false",
+            nodeClick: "false",
             children: [{
                 name: '标题频率:15',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(194,161,130,0.7)'
                 }
             }, {
                 name: '诗句中频率:475',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(194,161,130,0.7)'
                 }
@@ -454,7 +454,7 @@ function drawSun() {
         itemStyle: {
             color: '#da0d68'
         },
-        nodeClick:"false",
+        nodeClick: "false",
         children: [{
             name: '柏科',
             itemStyle: {
@@ -464,31 +464,31 @@ function drawSun() {
                 rotate: 'radial',
                 fontSize: 14,
             },
-            nodeClick:"false",
+            nodeClick: "false",
             children: [{
                 name: '标题频率:10',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(194,161,130,0.6)'
                 }
             }, {
                 name: '诗句中频率:441',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(194,161,130,0.6)'
                 }
             }]
         }]
-    }, 
+    },
     {
         name: '',
         itemStyle: {
             color: '#da0d68'
         },
-        nodeClick:"false",
-        children: [        {
+        nodeClick: "false",
+        children: [{
             name: '松科',
             itemStyle: {
                 color: 'rgba(194,161,130,0.5)'
@@ -497,31 +497,31 @@ function drawSun() {
                 rotate: 'radial',
                 fontSize: 14,
             },
-            nodeClick:"false",
+            nodeClick: "false",
             children: [{
                 name: '标题频率:174',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(194,161,130,0.5)'
                 }
             }, {
                 name: '诗句中频率:426',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(194,161,130,0.5)'
                 }
             }]
         }]
-    }, 
+    },
     {
         name: '',
         itemStyle: {
             color: '#da0d68'
         },
-        nodeClick:"false",
-        children: [        {
+        nodeClick: "false",
+        children: [{
             name: '锦葵科',
             itemStyle: {
                 color: 'rgba(196,200,183,1)'
@@ -530,18 +530,18 @@ function drawSun() {
                 rotate: 'radial',
                 fontSize: 14,
             },
-            nodeClick:"false",
+            nodeClick: "false",
             children: [{
                 name: '标题频率:31',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(196,200,183,1)'
                 }
             }, {
                 name: '诗句中频率:318',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(196,200,183,1)'
                 }
@@ -553,7 +553,7 @@ function drawSun() {
         itemStyle: {
             color: '#da0d68'
         },
-        nodeClick:"false",
+        nodeClick: "false",
         children: [{
             name: '锦葵科',
             itemStyle: {
@@ -563,30 +563,30 @@ function drawSun() {
                 rotate: 'radial',
                 fontSize: 14,
             },
-            nodeClick:"false",
+            nodeClick: "false",
             children: [{
                 name: '标题频率:31',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(196,200,183,0.9)'
                 }
             }, {
                 name: '诗句中频率:318',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(196,200,183,0.9)'
                 }
             }]
         }]
-    }, 
+    },
     {
         name: '',
         itemStyle: {
             color: '#da0d68'
         },
-        nodeClick:"false",
+        nodeClick: "false",
         children: [{
             name: '浮萍科',
             itemStyle: {
@@ -596,18 +596,18 @@ function drawSun() {
                 rotate: 'radial',
                 fontSize: 14,
             },
-            nodeClick:"false",
+            nodeClick: "false",
             children: [{
                 name: '标题频率:7',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(196,200,183,0.8)'
                 }
             }, {
                 name: '诗句中频率:308',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(196,200,183,0.8)'
                 }
@@ -619,7 +619,7 @@ function drawSun() {
         itemStyle: {
             color: '#da0d68'
         },
-        nodeClick:"false",
+        nodeClick: "false",
         children: [{
             name: '地钱科',
             itemStyle: {
@@ -629,30 +629,30 @@ function drawSun() {
                 rotate: 'radial',
                 fontSize: 14,
             },
-            nodeClick:"false",
+            nodeClick: "false",
             children: [{
                 name: '标题频率:16',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(196,200,183,0.7)'
                 }
             }, {
                 name: '诗句中频率:306',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(196,200,183,0.7)'
                 }
             }]
         }]
-    }, 
+    },
     {
         name: '',
         itemStyle: {
             color: '#da0d68'
         },
-        nodeClick:"false",
+        nodeClick: "false",
         children: [{
             name: '芍药科',
             itemStyle: {
@@ -662,18 +662,18 @@ function drawSun() {
                 rotate: 'radial',
                 fontSize: 14,
             },
-            nodeClick:"false",
+            nodeClick: "false",
             children: [{
                 name: '标题频率:129',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(196,200,183,0.6)'
                 }
             }, {
                 name: '诗句中频率:305',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(196,200,183,0.6)'
                 }
@@ -685,7 +685,7 @@ function drawSun() {
         itemStyle: {
             color: '#da0d68'
         },
-        nodeClick:"false",
+        nodeClick: "false",
         children: [{
             name: '梧桐科',
             itemStyle: {
@@ -695,18 +695,18 @@ function drawSun() {
                 rotate: 'radial',
                 fontSize: 14,
             },
-            nodeClick:"false",
+            nodeClick: "false",
             children: [{
                 name: '标题频率:129',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(196,200,183,0.55)'
                 }
             }, {
                 name: '诗句中频率:305',
                 value: 2,
-                nodeClick:"false",
+                nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(196,200,183,0.55)'
                 }
@@ -718,7 +718,7 @@ function drawSun() {
         itemStyle: {
             color: '#da0d68'
         },
-        nodeClick:"false",
+        nodeClick: "false",
         children: [
             {
                 name: '土马鬓科',
@@ -729,18 +729,18 @@ function drawSun() {
                     rotate: 'radial',
                     fontSize: 14,
                 },
-                nodeClick:"false",
+                nodeClick: "false",
                 children: [{
                     name: '标题频率:3',
                     value: 2,
-                    nodeClick:"false",
+                    nodeClick: "false",
                     itemStyle: {
                         color: 'rgba(196,200,183,0.5)'
                     }
                 }, {
                     name: '诗句中频率:300',
                     value: 2,
-                    nodeClick:"false",
+                    nodeClick: "false",
                     itemStyle: {
                         color: 'rgba(196,200,183,0.5)'
                     }
@@ -752,7 +752,7 @@ function drawSun() {
         itemStyle: {
             color: '#da0d68'
         },
-        nodeClick:"false",
+        nodeClick: "false",
         children: [
             {
                 name: '蘋科',
@@ -763,18 +763,18 @@ function drawSun() {
                     rotate: 'radial',
                     fontSize: 14,
                 },
-                nodeClick:"false",
+                nodeClick: "false",
                 children: [{
                     name: '标题频率:2',
                     value: 2,
-                    nodeClick:"false",
+                    nodeClick: "false",
                     itemStyle: {
                         color: 'rgba(182,182,184,1)'
                     }
                 }, {
                     name: '诗句中频率:263',
                     value: 2,
-                    nodeClick:"false",
+                    nodeClick: "false",
                     itemStyle: {
                         color: 'rgba(182,182,184,1)'
                     }
@@ -786,7 +786,7 @@ function drawSun() {
         itemStyle: {
             color: '#da0d68'
         },
-        nodeClick:"false",
+        nodeClick: "false",
         children: [
             {
                 name: '报春花科',
@@ -797,32 +797,32 @@ function drawSun() {
                     rotate: 'radial',
                     fontSize: 14,
                 },
-                nodeClick:"false",
+                nodeClick: "false",
                 children: [{
                     name: '标题频率:2',
                     value: 2,
-                    nodeClick:"false",
+                    nodeClick: "false",
                     itemStyle: {
                         color: 'rgba(182,182,184,0.5)'
                     }
                 }, {
                     name: '诗句中频率:225',
                     value: 2,
-                    nodeClick:"false",
+                    nodeClick: "false",
                     itemStyle: {
                         color: 'rgba(182,182,184,0.5)'
                     }
                 }]
             }]
     }
-];
-    
+    ];
+
     option = {
         visualMap: {
             type: 'continuous',
             min: 227,
             max: 8207,
-            right:0,
+            right: 0,
             // hoverLink:'true',
             inRange: {
                 color: ['#B6B6B8', '#C4C8B7', '#C2A182', '#CB7755', '#9E684E']
@@ -872,124 +872,166 @@ function drawSun() {
     };
 
     option && myChart.setOption(option);
-    myChart.on('click', params =>{
+    myChart.on('click', params => {
         // console.log('params::', params.name);
         sun_card(params.name);
         // $('.main').fadeOut(350);
         // $('.info').css({"display":"flex", "flex-direction": "row"});
         // $('.info').fadeIn(350);
-      })
+    })
 };
 
-function sun_card(p_name){
-    var plists = ['禾本科','蔷薇科','菊科','杨柳科','莲科','蝶形花科','木樨科','桑科','芸香科','山茶科',
-    '柏科','松科','锦葵科','浮萍科','芍药科','梧桐科','蘋科','十字花科','棕榈科','百合科']
+function sun_card(p_name) {
+    var plists = ['禾本科', '蔷薇科', '菊科', '杨柳科', '莲科', '蝶形花科', '木樨科', '桑科', '芸香科', '山茶科',
+        '柏科', '松科', '锦葵科', '浮萍科', '芍药科', '梧桐科', '蘋科', '十字花科', '棕榈科', '百合科']
     var tag = false;
 
     var i;
-    for(i = 0;i < plists.length;i++){
-        if(p_name == plists[i]){
+    for (i = 0; i < plists.length; i++) {
+        if (p_name == plists[i]) {
             tag = true;
             break;
         }
     }
-    if(tag){   
-    var echartdom = document.getElementById("map");
-    //雷达图
-    piant_lbars(echartdom,p_name);
-    $("#info-div").html(lbar_txts(p_name));
-    $('.main').fadeOut(350);
-    // $('.info').css({"display":"flex", "flex-direction": "row"});
-    $('.info').fadeIn(350);
+    if (tag) {
+        var echartdom = document.getElementById("map");
+        piant_lbars(echartdom, p_name);
+        $("#info-div").html(lbar_txts(p_name));
+        $('.main').fadeOut(350);
+        // $('.info').css({"display":"flex", "flex-direction": "row"});
+        $('.info').fadeIn(350);
     }
-}; 
+};
 
-function lbar_txts(p_name){
-    title = "<h2>"+p_name+":</h2>";
-    str1 = "<p>全唐诗中共提到该科"+lplants_txt[p_name][0]+"种植物<br/>";
-    str2 = "其中出现次数最多的是"+lplants_txt[p_name][1]+"<br/>";
-    str3 = "具体出现的次数为"+lplants_txt[p_name][2]+"次<br/>";
-    return title+str1+str2+str3
+function lbar_txts(p_name) {
+    title = "<h2>" + p_name + ":</h2>";
+    str1 = "<p class = 'info'>全唐诗中共提到该科" + lplants_txt[p_name][0] + "种植物。";
+    str2 = "其中出现次数最多的是" + lplants_txt[p_name][1] + "，";
+    str3 = "具体出现的次数为" + lplants_txt[p_name][2] + "次。<br/>";
+    str4 = p_name+"中包含的植物有："+import_text(p_name);
+    return title + str1 + str2 + str3 + str4
 }
 var plants_pchart;
 
+function import_lbardata(p_name) {
+    data = [];
+    lists = plants_lbar_data[p_name];
+    for (i = 0; i < lists.length; i++) {
+        dic = {};
+        dic['value'] = lists[i];
+        if (lists[i] > 300) {
+            dic['itemStyle'] = {
+                'color': 'rgb(202,122,85)'
+            }
+        }
+        else if (lists[i] > 100) {
+            dic['itemStyle'] = {
+                'color': 'rgb(191,161,127)'
+            }
+        }
+        else{
+            dic['itemStyle'] = {
+                'color': 'rgb(199,201,187)'
+            }
+        }
+        data.push(dic)
+    }
+    return data;
+}
+
 function piant_lbars(dom, p_name) {
     plants_pchart = echarts.init(dom);
-    lbars_option = {
-        tooltip: {
-            trigger: 'axis',
-            axisPointer: {
-                type: 'shadow',
-                label: {
-                    show: true
-                }
-            }
-        },
-        calculable: true,
-        /* legend: {
-            data: ['1', '2', '3'],
-        }, */
-        grid: {
-            top: '12%',
-            left: '1%',
-            right: '10%',
-            containLabel: true
-        },
-        xAxis: [
-            {
-                type: 'category',
-                data: plants_lbar_text[p_name]
-            }
-        ],
-        yAxis: [
-            {
-                type: 'value',
-                //name: 'Budget (million USD)',
-                /*axisLabel: {
-                    formatter: function (a) {
-                        a = +a;
-                        return isFinite(a)
-                            ? echarts.format.addCommas(+a / 1000)
-                            : '';
+    data = import_lbardata(p_name);
+        lbars_option = {
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'shadow',
+                    label: {
+                        show: true
                     }
-                }*/
-            }
-        ],
-        dataZoom: [
-            {
-                show: true,
-                start: 20,
-                end: 100
+                }
             },
-            {
-                type: 'inside',
-                start: "0%",
-                end: "100%"
+            calculable: true,
+            /* legend: {
+                data: ['1', '2', '3'],
+            }, */
+            grid: {
+                top: '12%',
+                left: '1%',
+                right: '10%',
+                containLabel: true
             },
-            {
-                show: true,
-                yAxisIndex: 0,
-                filterMode: 'empty',
-                width: 30,
-                height: '80%',
-                showDataShadow: false,
-                left: '93%'
-            }
-        ], 
-        series: [
-            {
-                name: '1',
-                type: 'bar',
-                data: plants_lbar_data[p_name],
-                barMaxWidth : 60
-            }
-        ]
-    };
+            xAxis: [
+                {
+                    type: 'category',
+                    data: plants_lbar_text[p_name]
+                }
+            ],
+            yAxis: [
+                {
+                    type: 'value',
+                    //name: 'Budget (million USD)',
+                    /*axisLabel: {
+                        formatter: function (a) {
+                            a = +a;
+                            return isFinite(a)
+                                ? echarts.format.addCommas(+a / 1000)
+                                : '';
+                        }
+                    }*/
+                }
+            ],
+            /* dataZoom: [
+                {
+                    show: true,
+                    start: 20,
+                    end: 100
+                },
+                {
+                    type: 'inside',
+                    start: "0%",
+                    end: "100%"
+                },
+                {
+                    show: true,
+                    yAxisIndex: 0,
+                    filterMode: 'empty',
+                    width: 30,
+                    height: '80%',
+                    showDataShadow: false,
+                    left: '93%'
+                }
+            ], */
+            series: [
+                {
+                    name: '1',
+                    type: 'bar',
+                    data: data,
+                    barMaxWidth: 60
+                }
+            ]
+        };
     plants_pchart.setOption(lbars_option);
 };
 
 
-function hide(){
+function hide() {
     $('.info').fadeOut(1000);
     $('.main').fadeIn(1000);
+}
+
+function import_text(p_name){
+    lists = plants_lbar_text[p_name];
+    text = ""
+    len = lists.length < 10?lists.length:10;
+    for(i = 0;i < len;i++){
+        if(i != 0)
+        {
+            text +="、";
+        }
+        text += lists[i];
+    }
+    console.log("text:"+text);
+    return text;
 }
