@@ -102,12 +102,12 @@
 
 .page1{
     /* background-size: 100% 100%; */
-    /* background-repeat: no-repeat; */
-    /* background-image: url('../img/cardbg2.jpg'); */
-    background-size: 10% 10%;
-    background-repeat: repeat;
-    background-color: rgba(243, 248, 251, 1);
-    background: url('../img/bgcolor3.png');
+    background-repeat: no-repeat;
+    background-image: url('../img/bgcolor2.jpg');
+    background-size: 100%;
+    /*background-repeat: repeat;*/
+    /*background-color: rgba(243, 248, 251, 1);*/
+    /*background: url('../img/bgcolor3.png');*/
     /* background-image: linear-gradient(to right, rgba(215, 204, 182), rgba(194,161,130,0.5)); */
 }
 

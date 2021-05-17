@@ -921,7 +921,7 @@ function import_lbardata(p_name) {
         dic['value'] = lists[i];
         if (lists[i] > 300) {
             dic['itemStyle'] = {
-                'color': 'rgb(202,122,85)'
+                'color': '#B6B6B8'
             }
         }
         else if (lists[i] > 100) {
