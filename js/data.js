@@ -1,59 +1,59 @@
 author_ju = {
- "白居易": 45,
- "杜甫": 33,
- "司空图": 29,
- "李端": 15,
- "陆龟蒙": 14,
- "太宗皇帝": 13,
- "刘禹锡": 13,
- "徐铉": 13,
- "钱起": 12,
- "许浑": 12,
+    "白居易": 45,
+    "杜甫": 33,
+    "司空图": 29,
+    "李端": 15,
+    "陆龟蒙": 14,
+    "太宗皇帝": 13,
+    "刘禹锡": 13,
+    "徐铉": 13,
+    "钱起": 12,
+    "许浑": 12,
 
- "卢纶": 11,
- "姚合": 10,
- "赵嘏": 10,
- "郑谷": 10,
- "韦应物": 9,
- "皮日休": 9,
- "齐己": 9, 
- "权德舆": 8,
- "元稹": 8,
- "李群玉": 8,
- "徐夤": 8,
- "皇甫冉": 7,
- "杜牧": 7,
- "李商隐": 7,
- "贾岛": 7,
- "罗隐": 7,
- "韩偓": 7,
- "李峤": 6,
- "骆宾王": 6,
- "刘长卿": 6,
- "萧颖士": 6,
- "孟浩然": 6,
- "李白": 6,
- "韩愈": 6,
- "朱庆馀": 6,
- "李郢": 6,
- "李咸用": 6,
- "方干": 6,
- "韦庄": 6,
- "德宗皇帝": 5,
- "王绩": 5,
- "宋之问": 5,
- "王维": 5,
- "李嘉祐": 5,
- "司空曙": 5,
- "张籍": 5,
- "李绅": 5,
- "黄滔": 5,
- "薛逢": 4,
- "张说": 4
+    "卢纶": 11,
+    "姚合": 10,
+    "赵嘏": 10,
+    "郑谷": 10,
+    "韦应物": 9,
+    "皮日休": 9,
+    "齐己": 9,
+    "权德舆": 8,
+    "元稹": 8,
+    "李群玉": 8,
+    "徐夤": 8,
+    "皇甫冉": 7,
+    "杜牧": 7,
+    "李商隐": 7,
+    "贾岛": 7,
+    "罗隐": 7,
+    "韩偓": 7,
+    "李峤": 6,
+    "骆宾王": 6,
+    "刘长卿": 6,
+    "萧颖士": 6,
+    "孟浩然": 6,
+    "李白": 6,
+    "韩愈": 6,
+    "朱庆馀": 6,
+    "李郢": 6,
+    "李咸用": 6,
+    "方干": 6,
+    "韦庄": 6,
+    "德宗皇帝": 5,
+    "王绩": 5,
+    "宋之问": 5,
+    "王维": 5,
+    "李嘉祐": 5,
+    "司空曙": 5,
+    "张籍": 5,
+    "李绅": 5,
+    "黄滔": 5,
+    "薛逢": 4,
+    "张说": 4
 }
 
 poet_ju = {
-    "白居易":"《重阳席上赋白菊》<br>白居易<br><br>&nbsp;&nbsp;&nbsp;&nbsp;满园花菊郁金黄，<br>&nbsp;&nbsp;&nbsp;&nbsp;中有孤丛色似霜。<br>&nbsp;&nbsp;&nbsp;&nbsp;还似今朝歌酒席，<br>&nbsp;&nbsp;&nbsp;&nbsp;白头翁入少年场。",
+    "白居易": "《重阳席上赋白菊》<br>白居易<br><br>&nbsp;&nbsp;&nbsp;&nbsp;满园花菊郁金黄，<br>&nbsp;&nbsp;&nbsp;&nbsp;中有孤丛色似霜。<br>&nbsp;&nbsp;&nbsp;&nbsp;还似今朝歌酒席，<br>&nbsp;&nbsp;&nbsp;&nbsp;白头翁入少年场。",
     "杜甫": "《叹庭前甘菊花》<br>杜甫<br><br>&nbsp;&nbsp;&nbsp;&nbsp;檐前甘菊移时晚，青蕊重阳不堪摘。<br>&nbsp;&nbsp;&nbsp;&nbsp;明日萧条醉尽醒，残花烂熳开何益。<br>&nbsp;&nbsp;&nbsp;&nbsp;篱边野外多众芳，采撷细琐升中堂。<br>&nbsp;&nbsp;&nbsp;&nbsp;念兹空长大枝叶，结根失所缠风霜。",
     "司空图": "《白菊三首·一》<br>司空图<br><br>&nbsp;&nbsp;&nbsp;&nbsp;人间万恨已难平，<br>&nbsp;&nbsp;&nbsp;&nbsp;栽得垂杨更系情。<br>&nbsp;&nbsp;&nbsp;&nbsp;犹喜闰前霜未下，<br>&nbsp;&nbsp;&nbsp;&nbsp;菊边依旧舞身轻。",
     "李端": "《和张尹忆东篱菊》<br>李端<br><br>&nbsp;&nbsp;&nbsp;&nbsp;传书报刘尹，<br>&nbsp;&nbsp;&nbsp;&nbsp;何事忆陶家。<br>&nbsp;&nbsp;&nbsp;&nbsp;若为篱边菊，<br>&nbsp;&nbsp;&nbsp;&nbsp;山中有此花。",
@@ -66,57 +66,57 @@ poet_ju = {
 }
 
 author_lan = {
- "白居易": 65,
- "李白": 46,
- "刘禹锡": 43,
- "李贺": 34,
- "温庭筠": 34,
- "权德舆": 34,
- "钱起": 33,
- "许浑": 33,
- "元稹": 32,
- "李商隐": 30,
+    "白居易": 65,
+    "李白": 46,
+    "刘禹锡": 43,
+    "李贺": 34,
+    "温庭筠": 34,
+    "权德舆": 34,
+    "钱起": 33,
+    "许浑": 33,
+    "元稹": 32,
+    "李商隐": 30,
 
- "陆龟蒙": 25,
- "罗隐": 25,
- "韦应物": 23,
- "李峤": 20,
- "李德裕": 20,
- "杜牧": 20,
- "贯休": 20,
- "孟郊": 19,
- "郑谷": 19,
- "太宗皇帝": 18,
- "骆宾王": 18,
- "杜甫": 17,
- "武元衡": 17,
- "李群玉": 17,
- "韦庄": 17,
- "齐己": 17,
- "岑参": 16,
- "张九龄": 16,
- "沈佺期": 15,
- "韩愈": 15,
- "孟浩然": 15,
- "张说": 14,
- "杨巨源": 13,
- "吴融": 13,
- "张籍": 12,
- "刘长卿": 12,
- "徐铉": 12,
- "皎然": 12,
- "王勃": 11,
- "王建": 11,
- "王维": 11,
- "皮日休": 11,
- "陈陶": 11,
- "陈子昂": 10,
- "马戴": 10,
- "宋之问": 10,
- "高适": 10,
- "戴叔伦": 10,
- "李益": 10,
- "李中": 10
+    "陆龟蒙": 25,
+    "罗隐": 25,
+    "韦应物": 23,
+    "李峤": 20,
+    "李德裕": 20,
+    "杜牧": 20,
+    "贯休": 20,
+    "孟郊": 19,
+    "郑谷": 19,
+    "太宗皇帝": 18,
+    "骆宾王": 18,
+    "杜甫": 17,
+    "武元衡": 17,
+    "李群玉": 17,
+    "韦庄": 17,
+    "齐己": 17,
+    "岑参": 16,
+    "张九龄": 16,
+    "沈佺期": 15,
+    "韩愈": 15,
+    "孟浩然": 15,
+    "张说": 14,
+    "杨巨源": 13,
+    "吴融": 13,
+    "张籍": 12,
+    "刘长卿": 12,
+    "徐铉": 12,
+    "皎然": 12,
+    "王勃": 11,
+    "王建": 11,
+    "王维": 11,
+    "皮日休": 11,
+    "陈陶": 11,
+    "陈子昂": 10,
+    "马戴": 10,
+    "宋之问": 10,
+    "高适": 10,
+    "戴叔伦": 10,
+    "李益": 10,
+    "李中": 10
 }
 
 poet_lan = {
@@ -133,57 +133,57 @@ poet_lan = {
 }
 
 author_lian = {
- "白居易": 143,
- "李白": 64,
- "温庭筠": 61,
- "齐己": 60,
- "李商隐": 56,
- "杜甫": 54,
- "皮日休": 48,
- "陆龟蒙": 44,
- "贯休": 43,
- "元稹": 39,
- 
- "许浑": 38,
- "钱起": 36,
- "李贺": 31,
- "孟郊": 31,
- "刘禹锡": 27,
- "罗隐": 26,
- "韦应物": 25,
- "李绅": 25,
- "李群玉": 25,
- "皎然": 23,
- "储光羲": 22,
- "王维": 22,
- "鲍溶": 21,
- "王建": 21,
- "权德舆": 21,
- "杜牧": 21,
- "韩愈": 20,
- "方干": 20,
- "陈陶": 20,
- "杨巨源": 19,
- "顾敻": 18,
- "卢纶": 17,
- "司空图": 17,
- "韩偓": 17,
- "张籍": 16,
- "赵嘏": 16,
- "岑参": 16,
- "徐夤": 16,
- "张祜": 15,
- "顾况": 15,
- "刘长卿": 15,
- "孟浩然": 15,
- "吴融": 15,
- "韦庄": 15,
- "刘兼": 15,
- "王昌龄": 14,
- "郑谷": 14,
- "李洞": 14,
- "太宗皇帝": 13,
- "施肩吾": 13
+    "白居易": 143,
+    "李白": 64,
+    "温庭筠": 61,
+    "齐己": 60,
+    "李商隐": 56,
+    "杜甫": 54,
+    "皮日休": 48,
+    "陆龟蒙": 44,
+    "贯休": 43,
+    "元稹": 39,
+
+    "许浑": 38,
+    "钱起": 36,
+    "李贺": 31,
+    "孟郊": 31,
+    "刘禹锡": 27,
+    "罗隐": 26,
+    "韦应物": 25,
+    "李绅": 25,
+    "李群玉": 25,
+    "皎然": 23,
+    "储光羲": 22,
+    "王维": 22,
+    "鲍溶": 21,
+    "王建": 21,
+    "权德舆": 21,
+    "杜牧": 21,
+    "韩愈": 20,
+    "方干": 20,
+    "陈陶": 20,
+    "杨巨源": 19,
+    "顾敻": 18,
+    "卢纶": 17,
+    "司空图": 17,
+    "韩偓": 17,
+    "张籍": 16,
+    "赵嘏": 16,
+    "岑参": 16,
+    "徐夤": 16,
+    "张祜": 15,
+    "顾况": 15,
+    "刘长卿": 15,
+    "孟浩然": 15,
+    "吴融": 15,
+    "韦庄": 15,
+    "刘兼": 15,
+    "王昌龄": 14,
+    "郑谷": 14,
+    "李洞": 14,
+    "太宗皇帝": 13,
+    "施肩吾": 13
 }
 
 poet_lian = {
@@ -200,57 +200,57 @@ poet_lian = {
 }
 
 author_liu = {
- "白居易": 195,
- "温庭筠": 106,
- "刘禹锡": 85,
- "杜甫": 70,
- "李商隐": 66,
- "李白": 63,
- "薛能": 59,
- "许浑": 58,
- "元稹": 56,
- "王维": 49,
+    "白居易": 195,
+    "温庭筠": 106,
+    "刘禹锡": 85,
+    "杜甫": 70,
+    "李商隐": 66,
+    "李白": 63,
+    "薛能": 59,
+    "许浑": 58,
+    "元稹": 56,
+    "王维": 49,
 
- "刘长卿": 47,
- "杜牧": 46,
- "徐铉": 44,
- "皎然": 44,
- "韦庄": 43,
- "李贺": 40,
- "岑参": 38,
- "司空图": 36,
- "罗隐": 34,
- "齐己": 34,
- "孟郊": 32,
- "李端": 32,
- "韦应物": 30,
- "钱起": 30,
- "赵嘏": 28,
- "张祜": 27,
- "韩愈": 27,
- "卢纶": 26,
- "戴叔伦": 26,
- "吴融": 26,
- "韩偓": 25,
- "李咸用": 24,
- "韩翃": 23,
- "孙鲂": 23,
- "宋之问": 23,
- "刘沧": 23,
- "冯延巳": 23,
- "方干": 22,
- "骆宾王": 21,
- "杨巨源": 21,
- "李益": 21,
- "孟浩然": 21,
- "司空曙": 21,
- "张籍": 21,
- "孙光宪": 20,
- "唐彦谦": 20,
- "郑谷": 20,
- "高适": 19,
- "牛峤": 19,
- "顾况": 19
+    "刘长卿": 47,
+    "杜牧": 46,
+    "徐铉": 44,
+    "皎然": 44,
+    "韦庄": 43,
+    "李贺": 40,
+    "岑参": 38,
+    "司空图": 36,
+    "罗隐": 34,
+    "齐己": 34,
+    "孟郊": 32,
+    "李端": 32,
+    "韦应物": 30,
+    "钱起": 30,
+    "赵嘏": 28,
+    "张祜": 27,
+    "韩愈": 27,
+    "卢纶": 26,
+    "戴叔伦": 26,
+    "吴融": 26,
+    "韩偓": 25,
+    "李咸用": 24,
+    "韩翃": 23,
+    "孙鲂": 23,
+    "宋之问": 23,
+    "刘沧": 23,
+    "冯延巳": 23,
+    "方干": 22,
+    "骆宾王": 21,
+    "杨巨源": 21,
+    "李益": 21,
+    "孟浩然": 21,
+    "司空曙": 21,
+    "张籍": 21,
+    "孙光宪": 20,
+    "唐彦谦": 20,
+    "郑谷": 20,
+    "高适": 19,
+    "牛峤": 19,
+    "顾况": 19
 }
 
 poet_liu = {
@@ -279,7 +279,7 @@ author_mei = {
     "孟浩然": 19,
 
     "韩偓": 18,
-    "李绅": 14, 
+    "李绅": 14,
     "李商隐": 14,
     "李群玉": 14,
     "徐铉": 13,
@@ -333,7 +333,7 @@ poet_mei = {
     "孟浩然": "《早梅》<br>孟浩然<br><br>&nbsp;&nbsp;&nbsp;&nbsp;园中有早梅，年例犯寒开。<br>&nbsp;&nbsp;&nbsp;&nbsp;少妇曾攀折，将归插镜台。<br>&nbsp;&nbsp;&nbsp;&nbsp;犹言看不足，更欲剪刀裁。",
 }
 
-author_song ={
+author_song = {
     "白居易": 198,
     "李白": 137,
     "齐己": 109,
@@ -540,7 +540,7 @@ poet_zhu = {
 
 //绘制词云
 var chart;
-function drawWC(x, y){
+function drawWC(x, y) {
     // $("#wc" + x).parent().html("<div id='wc1'" + x + "style='width: 450px;'>");
     // if (chart != null && chart != "" && chart != undefined) {
     //     console.log(chart);
@@ -550,8 +550,8 @@ function drawWC(x, y){
     chart = echarts.init(document.getElementById(y));
     // alert(chart);
     var data = [];
-    switch(x){
-        case 1:            
+    switch (x) {
+        case 1:
             for (var name in author_ju) {
                 data.push({
                     name: name,
@@ -621,16 +621,16 @@ function drawWC(x, y){
 
     // var maskImage = new Image();
     // maskImage.src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAEXUlEQVR4XuWbV8gVRxTHfx9KYgNDAiq+CHZJgoL6YMEolgSxBIIJiWJBURAriiWComCJFVERsQWiKAkJGguI2FDUhxAUVERFXywPKgYiolGj/D92r3vXvXe23bJzz9v37cyZc353dmfmnDN11LjUVdj/hsBr4E2l7CgHgA5AL6Ab0BloA7QEPgIaOI4/BR4Bd4HbwDXgb+ACoGclk1IB6AN8AwwDBCCJnAGOAL87cJLoeq9v2gAmAVOAHqla+U6ZQGwHDqalPy0A44CFQKe0DDPouQj8BBxIOl5SAJ8Da4AvkxoSs/8fwHzgVsz+JAEwDdgUd+AU+70ApjuvRmS1cQFsAyZHHq20HbYCU6MOERVAM+A34KuoA5Wp/VFgFPAs7HhRAHwMHHbW9LD6K9HuvLP8PgkzeFgAjYDjQN8wSqugzTlgMPDcZEtYAH8Cw03Kquz5IWCEyaYwADYAs0yKqvS5VqkZxWwzARgD/FKlzoU1ayKwq1DjYgBaAVcBffyyLFoRPgPuBDlRDMBuYHyWPffYrqX72ygA+gOnLHHedWMkoI95nhSaATp1DbUMgGILvcMA0Fle66iN8rX/KB00A/TFnGCj905gRUGanPgBNAb+AT6wFIDcautdEfwAfgD2Wuy8XJsLrHN99APYA4y2HMBJYGAhAPeA1pYDUAheh7v/5Kd3Bih6e8Ny5133+gFn/QAUSPi1RgAohLbZD2AxsLRGAOROid5XwKa9v+l3VF5Bm6K8b8AxYIippyXPc9ti7wz4C+huiYMmN3TM1xE5bwZcL2Nmx2RgqZ/fBDr6ASgj26XUI1eJ/kAACicrjV0LctlJ1+e9AvoyGqOoltA5DQzwvwJb4qSWMgpkP/C9H8BsYH1GHYpq9krgRz8A7QG0F6gFGeuG+737gE+cOp1aAKC6hiv+GaC/LwFdLSfwEGjh+ugPiKwF5lgOYB+gyFe9+AHYmA/w/55yXhACAeifqrdpZ+ksUM2hUn0viwGwOS6gIIiCITkJygsoKfrA0hmQ+/oXmwF6luWagEK/3c9BCZ9CuUHV8qpmt4lFM0HHX50C86RYelzLoZZFG2QJsCzIEVOFiJII9aemDIuO+Ur4BooJwKeAQmVKJGRRXgE9nR1uLADqpFSZUmZZlNyhJ+4McPvp6Lg8YwQWAStMNpteAW9/lafPMymskueydUEYW6IAkL5VTnl6GN2VaiMbdXchlEQFIKWqz9cg1Siaobq/EFriAJDy74CdQNPQI5W2oapadF1H94oiSVwAGkQ3wJRkHBRpxPQbqyZ4ZqFCSNNwSQC4uhVM1S5LdwnKKfcB7fB2JBk0DQAaXyEmfXUFo9Si+4UbgdVulUeSAdMC4NqgQ5Su0mgD0j6JYQF9Vbuowm394v+npTttAF67vnCqTVWQFCfr/BjQPv4EoKsw753k0oBQSgBe+/R9ULTZe3W2OfChc3f4XyckryIt9+ps7KtwUcCUC0AUm8ratuYBvAWJs5xBWjBZzAAAAABJRU5ErkJggg==';
-    
+
     var option = ({
-        tooltip : {
-            formatter:"频数:{c}",	          	
-            backgroundColor:'rgba(244,164,96,0.8)',
-            textStyle:{
-                fontFamily:"myfont2",
-                fontSize:25,
+        tooltip: {
+            formatter: "频数:{c}",
+            backgroundColor: 'rgba(244,164,96,0.8)',
+            textStyle: {
+                fontFamily: "myfont2",
+                fontSize: 25,
                 // color:'rgb(255,99,71)',
-                color:'black',
+                color: 'black',
             }
         },
         series: [{
@@ -642,43 +642,43 @@ function drawWC(x, y){
             height: '100%',
             right: null,
             bottom: null,
-            sizeRange:[25, 50],
+            sizeRange: [25, 50],
             rotationRange: [0, 0],
             rotationStep: 25,
             gridSize: 4,
             drawOutOfBound: true,
             // maskImage: maskImage,
             data: data.sort(function (a, b) {
-                return b.value  - a.value;
+                return b.value - a.value;
             }),
             textStyle: {
                 normal: {
                     fontFamily: 'myfont2',
                     fontWeight: 'normal',
-                    color:function(param){
-                        if(x==1){
-                            return 'rgb(205,92,92,' + (param.value/12) + ')';
+                    color: function (param) {
+                        if (x == 1) {
+                            return 'rgb(205,92,92,' + (param.value / 12) + ')';
                         }
-                        else if(x==2){
-                            return 'rgb(205,92,92,' + (param.value/30) + ')';
+                        else if (x == 2) {
+                            return 'rgb(205,92,92,' + (param.value / 30) + ')';
                         }
-                        else if(x==3){
-                            return 'rgb(205,92,92,' + (param.value/39) + ')';
+                        else if (x == 3) {
+                            return 'rgb(205,92,92,' + (param.value / 39) + ')';
                         }
-                        else if(x==4){
-                            return 'rgb(205,92,92,' + (param.value/49) + ')';
+                        else if (x == 4) {
+                            return 'rgb(205,92,92,' + (param.value / 49) + ')';
                         }
-                        else if(x==5){
-                            return 'rgb(205,92,92,' + (param.value/19) + ')';
+                        else if (x == 5) {
+                            return 'rgb(205,92,92,' + (param.value / 19) + ')';
                         }
-                        else if(x==6){
-                            return 'rgb(205,92,92,' + (param.value/49) + ')';
+                        else if (x == 6) {
+                            return 'rgb(205,92,92,' + (param.value / 49) + ')';
                         }
-                        else if(x==7){
-                            return 'rgb(205,92,92,' + (param.value/24) + ')';
+                        else if (x == 7) {
+                            return 'rgb(205,92,92,' + (param.value / 24) + ')';
                         }
-                        else if(x==8){
-                            return 'rgb(205,92,92,' + (param.value/67) + ')';
+                        else if (x == 8) {
+                            return 'rgb(205,92,92,' + (param.value / 67) + ')';
                         }
                     }
                 },
@@ -689,78 +689,78 @@ function drawWC(x, y){
             }
         }]
     });
-    
+
     chart.setOption(option, true);
 
     window.onresize = chart.resize();
 
-    if(x==1){
+    if (x == 1) {
         chart.on('click', function (param) {
-            if(param['value'] >= 12){
-                    $('.poet-div').html(poet_ju[param.name]);
+            if (param['value'] >= 12) {
+                $('.poet-div').html(poet_ju[param.name]);
             }
         });
     }
-    else if(x==2){
+    else if (x == 2) {
         chart.on('click', function (param) {
-            if(param['value'] >= 30){
+            if (param['value'] >= 30) {
                 $('.poet-div').html(poet_lan[param.name]);
             }
         });
     }
-    else if(x==3){
+    else if (x == 3) {
         chart.on('click', function (param) {
-            if(param['value'] >= 39){
+            if (param['value'] >= 39) {
                 $('.poet-div').html(poet_lian[param.name]);
             }
         });
     }
-    else if(x==4){
+    else if (x == 4) {
         chart.on('click', function (param) {
-            if(param['value'] >= 49){
+            if (param['value'] >= 49) {
                 $('.poet-div').html(poet_liu[param.name]);
             }
         });
     }
-    else if(x==5){
+    else if (x == 5) {
         chart.on('click', function (param) {
-            if(param['value'] >= 19){
+            if (param['value'] >= 19) {
                 $('.poet-div').html(poet_mei[param.name]);
             }
         });
     }
-    else if(x==6){
+    else if (x == 6) {
         chart.on('click', function (param) {
-            if(param['value'] >= 49){
+            if (param['value'] >= 49) {
                 $('.poet-div').html(poet_song[param.name]);
             }
         });
     }
-    else if(x==7){
+    else if (x == 7) {
         chart.on('click', function (param) {
-            if(param['value'] >= 24){
+            if (param['value'] >= 24) {
                 $('.poet-div').html(poet_tao[param.name]);
             }
         });
     }
-    else if(x==8){
+    else if (x == 8) {
         chart.on('click', function (param) {
-            if(param['value'] >= 67){
+            if (param['value'] >= 67) {
                 $('.poet-div').html(poet_zhu[param.name]);
             }
         });
-    }    
+    }
 }
 
-function init(n){
-        $('#player' + n).not('.slick-initialized').slick({
-            // autoplay: true,
-            // autoplaySpeed:3000,
-            pauseOnHover: true,  //鼠标悬停暂停自动播放
-            dots: true,
-            arrows:false,
-            // slickPlay:true
-        }); 
+function init(n) {
+    $('#player' + n).not('.slick-initialized').slick({
+        // autoplay: true,
+        // autoplaySpeed:3000,
+        pauseOnHover: true,  //鼠标悬停暂停自动播放
+        dots: true,
+        arrows: false,
+        // slickPlay:true
+    });
 }
 
 var erachart;
@@ -776,13 +776,17 @@ function piant_eras(dom, index) {
                 }
             }
         },
-        grid:{
-            bottom:"10%",
-            left:"15%",
-            right:"15%"
+        grid: {
+            bottom: "10%",
+            left: "15%",
+            right: "15%"
         },
         legend: {
-            data: ['出现数目（柱）', '出现数目（折线）']
+            itemWidth:20,
+            data: ['出现数目','所占比例'],
+            itemStyle:{
+                color:"rgb(202,122,85)"
+            }
         },
         xAxis: [
             {
@@ -796,7 +800,7 @@ function piant_eras(dom, index) {
         yAxis: [
             {
                 type: 'value',
-                name: '出现的数目（首）',
+                name: '出现数目(首)',
                 /* min: 0,
                  max: 250,
                  interval: 50,
@@ -806,7 +810,7 @@ function piant_eras(dom, index) {
             },
             {
                 type: 'value',
-                name: '',
+                name: '所占比例(%)',
                 /*min: 0,
                 max: 25,
                 interval: 5,
@@ -817,15 +821,47 @@ function piant_eras(dom, index) {
         ],
         series: [
             {
-                name: '出现数目（柱）',
+                name: '出现数目',
                 type: 'bar',
-                data: eras_data[index]
+                //color:['rgb(191,161,127)','rgb(202,122,85)','rgb(153,119,109)','rgb(199,201,187)'],
+                data: [
+                    {
+                        name: "初唐",
+                        value: eras_data[0][index][0],
+                        itemStyle: {
+                            color: "rgb(191,161,127)"
+                        }
+                    },
+                    {
+                        name: "盛唐",
+                        value: eras_data[0][index][1],
+                        itemStyle: {
+                            color: "rgb(153,119,109,0.8)"
+                        }
+                    },
+                    {
+                        name: "中唐",
+                        value: eras_data[0][index][2],
+                        itemStyle: {
+                            color: "rgb(199,201,187)"
+                        }
+                    },
+                    {
+                        name: "晚唐",
+                        value: eras_data[0][index][3],
+                        itemStyle: {
+                            color: "rgb(182,182,182)"
+                        }
+                    }
+                ],
+                barMaxWidth: 40
             },
             {
-                name: '出现数目（折线）',
+                color: "rgb(202,122,85)",
+                name: '所占比例',
                 type: 'line',
                 yAxisIndex: 1,
-                data: eras_data[index]
+                data: eras_data[1][index]
             }
         ]
     };
@@ -833,7 +869,7 @@ function piant_eras(dom, index) {
 };
 
 
-function change(n){
+function change(n) {
     // init(n);
     // switch(n){
     //     case 1:$("#content" + n).html("<div id=\"player1\"><div class=\"card-page1\" style=\"display: flex; flex-direction: row;\"><div class=\"img-div\"><img class=\"img\" src = \"./img/菊.png\"></div><div class=\"info-div\">植物相关介绍</div></div><div class=\"card-page2\"><div class=\"wc-div\" id=\"wc1\">  </div><div class=\"poet-div\">诗人对应的诗</div></div></div>")
@@ -845,30 +881,30 @@ function change(n){
     // }
     // init(n);
     $('.poet-div').html("");
-    for(var i=1;i<=8;i++){
-        if($('#content' + i).hasClass("show")){
+    for (var i = 1; i <= 8; i++) {
+        if ($('#content' + i).hasClass("show")) {
             // alert(1);
-            if (i != n){
+            if (i != n) {
                 $('#player' + i).slick('unslick');
                 $('#content' + i).removeClass("show");
                 $('#content' + i).collapse("hide");
                 $("#content" + i).css("display", "none");
 
                 $("#content" + n).addClass("show");
-                $("#content" + n).css({display:""});
+                $("#content" + n).css({ display: "" });
                 $('#content' + n).collapse("show");
                 init(n);
-                $('#player' + n).slick('slickGoTo','0');
+                $('#player' + n).slick('slickGoTo', '0');
                 $(".card-page1").css("display", "flex");
-                $(".card-page2").css("display", "flex");   
+                $(".card-page2").css("display", "flex");
             }
 
         }
     }
     //写文字
-    $('#content'+n).find(".info-div").html("<h2>"+main_data[n-1][0]+"</h2><p>在《全唐诗》中，出现"+main_data[n-1][0]+"的诗共有"+main_data[n-1][1]+"首<br/>共"+main_data[n-1][2]+"位诗人的诗中提到"+main_data[n-1][0]+"<br/>诗中出现"+main_data[n-1][0]+"最多的时期是："+main_data[n-1][3]+"<br/></p>"
-    +"<div class = \"era_chart\"></div>")
+    $('#content' + n).find(".info-div").html("<h2>" + main_data[n - 1][0] + "</h2><p>在《全唐诗》中，出现" + main_data[n - 1][0] + "的诗共有" + main_data[n - 1][1] + "首<br/>共" + main_data[n - 1][2] + "位诗人的诗中提到" + main_data[n - 1][0] + "<br/>诗中出现" + main_data[n - 1][0] + "最多的时期是：" + main_data[n - 1][3] + "<br/></p>"
+        + "<div class = \"era_chart\"></div>")
     //画图
-    var era_dom = $('#content'+n).find(".era_chart")[0]
-    piant_eras(era_dom,n-1)
+    var era_dom = $('#content' + n).find(".era_chart")[0]
+    piant_eras(era_dom, n - 1)
 }
