@@ -107,9 +107,9 @@
 
 .page1{
     height:100%;
-    background-repeat: repeat;
-    background-image: url('../img/微信图片_20210517101822.jpg');
-    background-size: 27%;
+    background-repeat: no-repeat;
+    background-image: url('../img/bgcolor1.jpg');
+    background-size: 100%;
     /*background-repeat: repeat;*/
     /*background-color: rgba(243, 248, 251, 1);*/
     /*background: url('../img/bgcolor2.png');*/
