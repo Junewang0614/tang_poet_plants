@@ -23,16 +23,21 @@
     height:200px;
     margin: 0 auto;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 85px;
     margin-bottom: 10px;
 }
 
 .nav-btn{
-    margin-top: 14px;
-    position: relative;
-    margin-left: 682px;
-    width: 400px;
-    height: 40px;
+    position: fixed;
+    width: 60px;
+    height: 300px;
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto 0;
+    white-space: nowrap;
 }
 
 .img-div{
@@ -101,14 +106,14 @@
 }
 
 .page1{
-    /* background-size: 100% 100%; */
-    background-repeat: no-repeat;
-    background-image: url('../img/bgcolor2.jpg');
-    background-size: 100%;
+    height:100%;
+    background-repeat: repeat;
+    background-image: url('../img/微信图片_20210517101822.jpg');
+    background-size: 27%;
     /*background-repeat: repeat;*/
     /*background-color: rgba(243, 248, 251, 1);*/
-    /*background: url('../img/bgcolor3.png');*/
-    /* background-image: linear-gradient(to right, rgba(215, 204, 182), rgba(194,161,130,0.5)); */
+    /*background: url('../img/bgcolor2.png');*/
+    /* background-size: 100% 100%; */
 }
 
 .slick-dots{

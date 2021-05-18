@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="./css/slick.css">
@@ -16,26 +15,114 @@
                 src: url('./font/FZQinKeBYSJT.TTF');
             }
         </style>
+        <script src="./js/echarts.js"></script>
+        <script src="./js/echarts-wordcloud.js"></script>
+        <script src = "./js/dataset.js"></script>
+        <!-- <script src = "./js/eras_bar.js>"></script> -->
+        <script src="./js/data.js"></script>
+        <script src="./js/vue.js"></script>
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/slick.js"></script>
+        <script type="text/javascript"> 
+            $(document).ready(function(){
+                $('#player1').slick({
+                    // autoplay: true,
+                    // autoplaySpeed:3000,
+                    pauseOnHover: true,  //鼠标悬停暂停自动播放
+                    dots: true,
+                    arrows:false,
+                    // slickPlay:true
+                }); 
+                $('#player2').slick({
+                    // autoplay: true,
+                    // autoplaySpeed:3000,
+                    pauseOnHover: true,  //鼠标悬停暂停自动播放
+                    dots: true,
+                    arrows:false,
+                    // slickPlay:true
+                }); 
+                $('#player3').slick({
+                    // autoplay: true,
+                    // autoplaySpeed:3000,
+                    pauseOnHover: true,  //鼠标悬停暂停自动播放
+                    dots: true,
+                    arrows:false,
+                    // slickPlay:true
+                }); 
+                $('#player4').slick({
+                    // autoplay: true,
+                    // autoplaySpeed:3000,
+                    pauseOnHover: true,  //鼠标悬停暂停自动播放
+                    dots: true,
+                    arrows:false,
+                    // slickPlay:true
+                }); 
+                $('#player5').slick({
+                    // autoplay: true,
+                    // autoplaySpeed:3000,
+                    pauseOnHover: true,  //鼠标悬停暂停自动播放
+                    dots: true,
+                    arrows:false,
+                    // slickPlay:true
+                }); 
+                $('#player6').slick({
+                    // autoplay: true,
+                    // autoplaySpeed:3000,
+                    pauseOnHover: true,  //鼠标悬停暂停自动播放
+                    dots: true,
+                    arrows:false,
+                    // slickPlay:true
+                }); 
+                $('#player7').slick({
+                    // autoplay: true,
+                    // autoplaySpeed:3000,
+                    pauseOnHover: true,  //鼠标悬停暂停自动播放
+                    dots: true,
+                    arrows:false,
+                    // slickPlay:true
+                }); 
+                $('#player8').slick({
+                    // autoplay: true,
+                    // autoplaySpeed:3000,
+                    pauseOnHover: true,  //鼠标悬停暂停自动播放
+                    dots: true,
+                    arrows:false,
+                    // slickPlay:true
+                }); 
+                change(1);
+                // $(".card-page1").css("display", "flex");
+                // $(".card-page2").css("display", "flex");
+                $("#slick-slide-control01").click(drawWC(1, 'wc1'));
+                $("#slick-slide-control11").click(drawWC(2, 'wc2'));
+                $("#slick-slide-control21").click(drawWC(3, 'wc3'));
+                $("#slick-slide-control31").click(drawWC(4, 'wc4'));
+                $("#slick-slide-control41").click(drawWC(5, 'wc5'));
+                $("#slick-slide-control51").click(drawWC(6, 'wc6'));
+                $("#slick-slide-control61").click(drawWC(7, 'wc7'));
+                $("#slick-slide-control71").click(drawWC(8, 'wc8'));
+            });
+        </script>
+        <script src="./js/bootstrap.min.js"></script>
     </head>
-    <!-- style="background-color: rgba(238,232,170,0.4); -->
     <body>
-        <div class="page1" style="height: 650px; background-size: 100%;">
+        <div class="page1" style="">
+            <div class="nav-btn btn-group" role="group" aria-label="Basic example">
+                <button class="btn btn-outline-info" onclick="javascrtpt:window.location.href='index.html'">
+                    <!-- <img src="./img/btn.png"> -->
+                    主页
+                </button>
+                <button class="btn btn-outline-info" disabled onclick="javascrtpt:window.location.href='1.html'">
+                    1
+                </button>
+                <button class="btn btn-outline-info"  onclick="javascrtpt:window.location.href='2.html'">
+                    2
+                </button>
+                <button class="btn btn-outline-info"  onclick="javascrtpt:window.location.href='3.html'">
+                    3
+                </button>
+            </div>
             <div style="display: flex; flex-direction: column; margin: 0 auto; height:570px; min-width: 1000px; max-width: 1000px; ">
-                <div class="nav-btn btn-group" role="group" aria-label="Basic example">
-                    <button class="btn btn-outline-info" onclick="javascrtpt:window.location.href='index.html'">
-                        <!-- <img src="./img/btn.png"> -->
-                        主页
-                    </button>
-                    <button class="btn btn-outline-info" disabled onclick="javascrtpt:window.location.href='1.html'">
-                        1
-                    </button>
-                    <button class="btn btn-outline-info"  onclick="javascrtpt:window.location.href='2.html'">
-                        2
-                    </button>
-                    <button class="btn btn-outline-info"  onclick="javascrtpt:window.location.href='3.html'">
-                        3
-                    </button>
-                </div>
+                
 
                 <div id="main" >
                     <div style="margin: 0 auto; height: 50px;">
@@ -288,92 +375,4 @@
             </div>
         </div>
     </body>
-    <script src="./js/echarts.js"></script>
-    <script src="./js/echarts-wordcloud.js"></script>
-    <script src = "./js/dataset.js"></script>
-    <!-- <script src = "./js/eras_bar.js>"></script> -->
-    <script src="./js/data.js"></script>
-    <script src="./js/vue.js"></script>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/slick.js"></script>
-    <script type="text/javascript"> 
-        $(document).ready(function(){
-            $('#player1').slick({
-                // autoplay: true,
-                // autoplaySpeed:3000,
-                pauseOnHover: true,  //鼠标悬停暂停自动播放
-                dots: true,
-                arrows:false,
-                // slickPlay:true
-            }); 
-            $('#player2').slick({
-                // autoplay: true,
-                // autoplaySpeed:3000,
-                pauseOnHover: true,  //鼠标悬停暂停自动播放
-                dots: true,
-                arrows:false,
-                // slickPlay:true
-            }); 
-            $('#player3').slick({
-                // autoplay: true,
-                // autoplaySpeed:3000,
-                pauseOnHover: true,  //鼠标悬停暂停自动播放
-                dots: true,
-                arrows:false,
-                // slickPlay:true
-            }); 
-            $('#player4').slick({
-                // autoplay: true,
-                // autoplaySpeed:3000,
-                pauseOnHover: true,  //鼠标悬停暂停自动播放
-                dots: true,
-                arrows:false,
-                // slickPlay:true
-            }); 
-            $('#player5').slick({
-                // autoplay: true,
-                // autoplaySpeed:3000,
-                pauseOnHover: true,  //鼠标悬停暂停自动播放
-                dots: true,
-                arrows:false,
-                // slickPlay:true
-            }); 
-            $('#player6').slick({
-                // autoplay: true,
-                // autoplaySpeed:3000,
-                pauseOnHover: true,  //鼠标悬停暂停自动播放
-                dots: true,
-                arrows:false,
-                // slickPlay:true
-            }); 
-            $('#player7').slick({
-                // autoplay: true,
-                // autoplaySpeed:3000,
-                pauseOnHover: true,  //鼠标悬停暂停自动播放
-                dots: true,
-                arrows:false,
-                // slickPlay:true
-            }); 
-            $('#player8').slick({
-                // autoplay: true,
-                // autoplaySpeed:3000,
-                pauseOnHover: true,  //鼠标悬停暂停自动播放
-                dots: true,
-                arrows:false,
-                // slickPlay:true
-            }); 
-            change(1);
-            // $(".card-page1").css("display", "flex");
-            // $(".card-page2").css("display", "flex");
-            $("#slick-slide-control01").click(drawWC(1, 'wc1'));
-            $("#slick-slide-control11").click(drawWC(2, 'wc2'));
-            $("#slick-slide-control21").click(drawWC(3, 'wc3'));
-            $("#slick-slide-control31").click(drawWC(4, 'wc4'));
-            $("#slick-slide-control41").click(drawWC(5, 'wc5'));
-            $("#slick-slide-control51").click(drawWC(6, 'wc6'));
-            $("#slick-slide-control61").click(drawWC(7, 'wc7'));
-            $("#slick-slide-control71").click(drawWC(8, 'wc8'));
-        });
-    </script>
-    <script src="./js/bootstrap.min.js"></script>
 </html>
