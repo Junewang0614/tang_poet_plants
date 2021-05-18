@@ -40,6 +40,14 @@
     white-space: nowrap;
 }
 
+.btn{
+    border-radius:0 !important;
+}
+
+.btn > img{
+    width: 35px;
+}
+
 .img-div{
     width:600px; 
     margin-left:-20px; 
@@ -107,9 +115,9 @@
 
 .page1{
     height:100%;
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;
     background-image: url('../img/bgcolor2.jpg');
-    background-size: 100%;
+    background-size: 100%;*/
     /*background-repeat: repeat;*/
     /*background-color: rgba(243, 248, 251, 1);*/
     /*background: url('../img/bgcolor2.png');*/

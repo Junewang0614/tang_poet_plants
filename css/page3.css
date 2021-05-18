@@ -48,3 +48,24 @@ body {
   top: 140px;
   left: 100px;
 }
+
+.nav-btn{
+  position: fixed;
+  width: 60px;
+  height: 300px;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto 0;
+  white-space: nowrap;
+}
+
+.btn{
+  border-radius:0 !important;
+}
+
+.btn > img{
+  width: 35px;
+}
