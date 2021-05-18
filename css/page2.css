@@ -54,12 +54,12 @@ body {
   flex-direction: column;
   margin-left: 50px;
 }
-.main2 .page2 #info-div h2 {
+#info-div h2 {
   text-align: left;
   font-family: myfont2;
   margin-top: 60px;
 }
-.main2 .page2 #info-div .info {
+#info-div > .info {
   font-family: fangsong;
   margin-top: 10px;
   font-size: medium;
