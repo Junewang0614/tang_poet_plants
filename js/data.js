@@ -836,7 +836,7 @@ function piant_eras(dom, index) {
                         name: "盛唐",
                         value: eras_data[0][index][1],
                         itemStyle: {
-                            color: "rgb(153,119,109,0.8)"
+                            color: "rgb(153,119,109)"
                         }
                     },
                     {

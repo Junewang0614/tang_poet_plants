@@ -1,112 +1,32 @@
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="./css/slick.css">
-        <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
-        <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="./css/1.css">
-        <style>
-            /* 字体配置 */
-            @font-face {
-                font-family:'myfont1';
-                src: url('./font/FZShenYMXSJW.TTF');
-            }
-            @font-face {
-                font-family:'myfont2';
-                src: url('./font/FZQinKeBYSJT.TTF');
-            }
-        </style>
-        <script src="./js/echarts.js"></script>
-        <script src="./js/echarts-wordcloud.js"></script>
-        <script src = "./js/dataset.js"></script>
-        <!-- <script src = "./js/eras_bar.js>"></script> -->
-        <script src="./js/data.js"></script>
-        <script src="./js/vue.js"></script>
-        <script src="./js/jquery.min.js"></script>
-        <script src="./js/slick.js"></script>
-        <script type="text/javascript"> 
-            $(document).ready(function(){
-                $('#player1').slick({
-                    // autoplay: true,
-                    // autoplaySpeed:3000,
-                    pauseOnHover: true,  //鼠标悬停暂停自动播放
-                    dots: true,
-                    arrows:false,
-                    // slickPlay:true
-                }); 
-                $('#player2').slick({
-                    // autoplay: true,
-                    // autoplaySpeed:3000,
-                    pauseOnHover: true,  //鼠标悬停暂停自动播放
-                    dots: true,
-                    arrows:false,
-                    // slickPlay:true
-                }); 
-                $('#player3').slick({
-                    // autoplay: true,
-                    // autoplaySpeed:3000,
-                    pauseOnHover: true,  //鼠标悬停暂停自动播放
-                    dots: true,
-                    arrows:false,
-                    // slickPlay:true
-                }); 
-                $('#player4').slick({
-                    // autoplay: true,
-                    // autoplaySpeed:3000,
-                    pauseOnHover: true,  //鼠标悬停暂停自动播放
-                    dots: true,
-                    arrows:false,
-                    // slickPlay:true
-                }); 
-                $('#player5').slick({
-                    // autoplay: true,
-                    // autoplaySpeed:3000,
-                    pauseOnHover: true,  //鼠标悬停暂停自动播放
-                    dots: true,
-                    arrows:false,
-                    // slickPlay:true
-                }); 
-                $('#player6').slick({
-                    // autoplay: true,
-                    // autoplaySpeed:3000,
-                    pauseOnHover: true,  //鼠标悬停暂停自动播放
-                    dots: true,
-                    arrows:false,
-                    // slickPlay:true
-                }); 
-                $('#player7').slick({
-                    // autoplay: true,
-                    // autoplaySpeed:3000,
-                    pauseOnHover: true,  //鼠标悬停暂停自动播放
-                    dots: true,
-                    arrows:false,
-                    // slickPlay:true
-                }); 
-                $('#player8').slick({
-                    // autoplay: true,
-                    // autoplaySpeed:3000,
-                    pauseOnHover: true,  //鼠标悬停暂停自动播放
-                    dots: true,
-                    arrows:false,
-                    // slickPlay:true
-                }); 
-                change(1);
-                // $(".card-page1").css("display", "flex");
-                // $(".card-page2").css("display", "flex");
-                $("#slick-slide-control01").click(drawWC(1, 'wc1'));
-                $("#slick-slide-control11").click(drawWC(2, 'wc2'));
-                $("#slick-slide-control21").click(drawWC(3, 'wc3'));
-                $("#slick-slide-control31").click(drawWC(4, 'wc4'));
-                $("#slick-slide-control41").click(drawWC(5, 'wc5'));
-                $("#slick-slide-control51").click(drawWC(6, 'wc6'));
-                $("#slick-slide-control61").click(drawWC(7, 'wc7'));
-                $("#slick-slide-control71").click(drawWC(8, 'wc8'));
-            });
-        </script>
-        <script src="./js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <div class="page1" style="">
-            <div class="nav-btn btn-group" role="group" aria-label="Basic example">
+<!DOCTYPE html>
+<html style="height: 100%;">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/slick.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/page2.css">
+    <style>
+        /* 字体配置 */
+        @font-face {
+            font-family: 'myfont1';
+            src: url('./font/FZShenYMXSJW.TTF');
+        }
+
+        @font-face {
+            font-family: 'myfont2';
+            src: url('./font/FZQinKeBYSJT.TTF');
+        }
+    </style>
+</head>
+
+<body style="height: 100%; background: url('./img/bgcolor2.jpg'); background-repeat: no-repeat; background-size: 100%;">
+    <div class="page2">
+        <div style="display: flex; flex-direction: column; width: 1000px; height: 100%; margin: 0 auto;">
+            <div class="nav-btn btn-group" role="group" aria-label="Basic example" style="
+    margin-left: 800px;
+    width: 35%;
+">
                 <button class="btn btn-outline-info" onclick="javascrtpt:window.location.href='index.html'">
                     <!-- <img src="./img/btn.png"> -->
                     主页
@@ -121,258 +41,69 @@
                     3
                 </button>
             </div>
-            <div style="display: flex; flex-direction: column; margin: 0 auto; height:570px; min-width: 1000px; max-width: 1000px; ">
-                
-
-                <div id="main" >
-                    <div style="margin: 0 auto; height: 50px;">
-                        <!-- 菊、兰、莲、柳、梅、松、桃、竹-->
-
-                        <!-- (215, 204, 182), rgba(194,161,130,0.5)-->
-                        <!-- <button class="btn btn-secondary" type="button" onclick="new_hide()">测试</button> -->
-                        <button id="btn1" class="btn plant-btn" type="button" onclick="change(1)">
-                            <!-- <img class="btn-img" src="../img2/松.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
-                            菊
-                        </button>
-                        <button id="btn2" class="btn plant-btn" type="button" onclick="change(2)">
-                            <!-- <img class="btn-img" src="../img2/竹.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
-                            兰
-                        </button>
-                        <button id="btn3" class="btn plant-btn" type="button" onclick="change(3)">
-                            <!-- <img class="btn-img" src="../img2/梅.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
-                            莲
-                        </button>
-                        <button id="btn4" class="btn plant-btn" type="button"  onclick="change(4)">
-                            <!-- <img class="btn-img" src="../img2/柳.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
-                            柳
-                        </button>
-                        <button id="btn5" class="btn plant-btn" type="button"  onclick="change(5)">
-                            <!-- <img class="btn-img" src="../img2/荷花.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
-                            梅
-                        </button>
-                        <button id="btn6" class="btn plant-btn" type="button"  onclick="change(6)">
-                            <!-- <img class="btn-img" src="../img2/桃.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
-                            松
-                        </button>
-                        <button id="btn7" class="btn plant-btn" type="button"  onclick="change(7)">
-                            <!-- <img class="btn-img" src="../img2/兰.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
-                            桃
-                        </button>
-                        <button id="btn8" class="btn plant-btn" type="button"  onclick="change(8)">
-                            <!-- <img class="btn-img" src="../img2/菊.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
-                            竹
-                        </button>
+            
+            <div class="main" style="display: flex; flex-direction: row;padding-top:50px;">
+                <div id="sun-map" style="display: flex; flex-direction: column; margin-top: -20px;"> 
+                    <div id="sun" style="width:600px; height: 600px;">
+                    </div>
+                    <div class="map-title" style="height: 20px; text-align: center; margin-top: -10px; font-family: 'myfont2'; font-size: 20px;">
+                        《全唐诗》中出现频次最高的前20科植物
                     </div>
                 </div>
+                <div id="txt-div" style="width: 400px; height: 600px; text-align: center;font-family: fangsong;">
+                    <span id = 'all_num'>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    作品分析《全唐诗》文本数据<br/>共计近<strong>5万</strong>余首古诗，<br/>
+                    诗中涉及植物科目共<strong>110</strong>科<br/>包含植物约<strong>283</strong>种。<br/>
+                    其中出现次数最多植物科为<strong>禾本科</strong><br/>出现最多植物是<strong>草类植物</strong><br/>
+                    出现次数排名前10的其他植物有：<br/>垂柳、木樨、油松、茶、菊、梅、荷、柏木、柑橘<br/>
+                    </span>
+                </div>
 
-                <div class="card-div">
-                    <div id="content1" class="need-hide1 show">
-                        <div id="player1">
-                            <div class="card-page1" style="display: flex; flex-direction: row;">
-                                <div class="img-div">
-                                    <img class="img" src = "./img/菊.png">
-                                </div>
-                                <div class="info-div" id = 'info1'>
-                                    
-                                </div>
-                                
-                            </div>
-                            <div class="card-page2">
-                                <div style="display: flex; flex-direction: column;">                           
-                                    <div class="wc-div" id="wc1">  
-                                    </div>
-                                    <div class="map-title" style="height: 20px; text-align: center; margin-top: -40px; font-family: 'myfont2'; font-size: 20px;">
-                                        偏爱菊的诗人
-                                    </div>
-                                </div>
-                                
-                                <!-- <div class="wc-div" id="wc1">  
-                                </div> -->
-                                <div class="poet-div">
-                                    诗人对应的诗
-                                </div>
-                            </div>
-                        </div>
+            </div>
+            
+            <div class="info" style="display: none;width:1000px; height: 700px;">
+                <div style="display: flex; flex-direction: column;">
+                    <div style="height:30px; width: 30px; margin-left: 960px;">
+                        <button type="button" class="close btn btn-light" aria-label="关闭" style="margin-top: 10px;" onclick="hide()">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-
-                    <div id="content2" class="need-hide1 show" style="display: none;">
-                        <div id="player2">
-                            <div class="card-page1" style="display: flex; flex-direction: row;">
-                                <div class="img-div">
-                                    <img class="img" src = "./img/兰.png">
-                                </div>
-                                <div class="info-div" id = 'infor2'>
-                                    <h2>植物简介</h2>
-                                </div>
-                            </div>
-                            <div class="card-page2">
-                                <div style="display: flex; flex-direction: column;">
-                                    <div class="wc-div" id="wc2">  
-                                    </div>
-                                    <div class="map-title" style="height: 20px; text-align: center; margin-top: -40px; font-family: 'myfont2'; font-size: 20px;">
-                                        偏爱兰的诗人
-                                    </div>
-                                </div>
-
-                                <div class="poet-div">
-                                    诗人对应的诗
-                                </div>
-                            </div>
+                    <!-- flex-direction: row; -->
+                    <div style="display: flex;flex-direction: column;">
+                        <div id="info-div" style="width: 1000px; height: 150px; margin-right: 40px;">
+                        
                         </div>
-                    </div>
-
-                    <div id="content3" class="need-hide1 show" style="display: none;">
-                        <div id="player3">
-                            <div class="card-page1" style="display: flex; flex-direction: row;">
-                                <div class="img-div">
-                                    <img class="img" src = "./img/莲.png">
-                                </div>
-                                <div class="info-div" id = 'infor3'>
-                                    <h2>植物简介</h2>
-                                </div>
-                            </div>
-                            <div class="card-page2">
-                                <div style="display: flex; flex-direction: column;">
-                                    <div class="wc-div" id="wc3">  
-                                    </div>
-                                    <div class="map-title" style="height: 20px; text-align: center; margin-top: -40px; font-family: 'myfont2'; font-size: 20px;">
-                                        偏爱莲的诗人
-                                    </div>
-                                </div>
-
-                                <div class="poet-div">
-                                    诗人对应的诗
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="content4" class="need-hide1 show" style="display: none;">
-                        <div id="player4">
-                            <div class="card-page1" style="display: flex; flex-direction: row;">
-                                <div class="img-div">
-                                    <img class="img" src = "./img/柳.png">
-                                </div>
-                                <div class="info-div" id = 'infor4'>
-                                    <h2>植物简介</h2>
-                                </div>
-                            </div>
-                            <div class="card-page2">
-                                <div style="display: flex; flex-direction: column;">
-                                    <div class="wc-div" id="wc4">  
-                                    </div>
-                                    <div class="map-title" style="height: 20px; text-align: center; margin-top: -40px; font-family: 'myfont2'; font-size: 20px;">
-                                        偏爱柳的诗人
-                                    </div>
-                                </div>
-                                <div class="poet-div">
-                                    诗人对应的诗
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="content5" class="need-hide1 show" style="display: none;">
-                        <div id="player5">
-                            <div class="card-page1" style="display: flex; flex-direction: row;">
-                                <div class="img-div">
-                                    <img class="img" src = "./img/梅.png">
-                                </div>
-                                <div class="info-div" id = 'infor5'>
-                                    <h2>植物简介</h2>
-                                </div>
-                            </div>
-                            <div class="card-page2">
-                                <div style="display: flex; flex-direction: column;">
-                                    <div class="wc-div" id="wc5">  
-                                    </div>
-                                    <div class="map-title" style="height: 20px; text-align: center; margin-top: -40px; font-family: 'myfont2'; font-size: 20px;">
-                                        偏爱梅的诗人
-                                    </div>
-                                </div>
-                                <div class="poet-div">
-                                    诗人对应的诗
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="content6" class="need-hide1 show" style="display: none;">
-                        <div id="player6">
-                            <div class="card-page1" style="display: flex; flex-direction: row;">
-                                <div class="img-div">
-                                    <img class="img" src = "./img/松.png">
-                                </div>
-                                <div class="info-div" id = 'infor6'>
-                                    <h2>植物简介</h2>
-                                </div>
-                            </div>
-                            <div class="card-page2">
-                                <div style="display: flex; flex-direction: column;">
-                                    <div class="wc-div" id="wc6">  
-                                    </div>
-                                    <div class="map-title" style="height: 20px; text-align: center; margin-top: -40px; font-family: 'myfont2'; font-size: 20px;">
-                                        偏爱松的诗人
-                                    </div>
-                                </div>
-                                <div class="poet-div">
-                                    诗人对应的诗
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="content7" class="need-hide1 show" style="display: none;">
-                        <div id="player7">
-                            <div class="card-page1" style="display: flex; flex-direction: row;">
-                                <div class="img-div">
-                                    <img class="img" src = "./img/桃.png">
-                                </div>
-                                <div class="info-div" id = 'infor7'>
-                                    <h2>植物简介</h2>
-                                </div>
-                            </div>
-                            <div class="card-page2">
-                                <div style="display: flex; flex-direction: column;">
-                                    <div class="wc-div" id="wc7">  
-                                    </div>
-                                    <div class="map-title" style="height: 20px; text-align: center; margin-top: -40px; font-family: 'myfont2'; font-size: 20px;">
-                                        偏爱桃的诗人
-                                    </div>
-                                </div>
-                                <div class="poet-div">
-                                    诗人对应的诗
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div id="content8" class="need-hide1 show" style="display: none;">
-                        <div id="player8">
-                            <div class="card-page1" style="display: flex; flex-direction: row;">
-                                <div class="img-div">
-                                    <img class="img" src = "./img/竹.png">
-                                </div>
-                                <div class="info-div" id = 'infor8'>
-                                    <h2>植物简介</h2>
-                                </div>
-                            </div>
-                            <div class="card-page2">
-                                <div style="display: flex; flex-direction: column;">
-                                    <div class="wc-div" id="wc8">  
-                                    </div>
-                                    <div class="map-title" style="height: 20px; text-align: center; margin-top: -40px; font-family: 'myfont2'; font-size: 20px;">
-                                        偏爱竹的诗人
-                                    </div>
-                                </div>
-                                <div class="poet-div">
-                                    诗人对应的诗
-                                </div>
-                            </div>
+                        <div id="map" style="width: 1000px; height: 500px; margin-left: 50px;">
+        
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
-    </body>
+    </div>
+</body>
+
+
+<script src = "./js/dataset.js"></script>
+<script src="./js/data2.js"></script>
+<script src="./js/vue.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/slick.js"></script>
+<script src="./js/echarts.js"></script>
+<script src="./js/echarts-wordcloud.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        drawSun();
+        // sun_card("蔷薇科");
+    });
+</script>
+<script src="./js/bootstrap.min.js"></script>
+
 </html>
