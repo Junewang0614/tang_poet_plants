@@ -18,3 +18,7 @@
     background-size: cover;
     background-image: url('../img/bgcolor1.jpg');
 }
+
+.btn{
+    width: 140px;
+}
