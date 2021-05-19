@@ -621,14 +621,14 @@ function drawWC(x, y) {
 
     // var maskImage = new Image();
     // maskImage.src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAEXUlEQVR4XuWbV8gVRxTHfx9KYgNDAiq+CHZJgoL6YMEolgSxBIIJiWJBURAriiWComCJFVERsQWiKAkJGguI2FDUhxAUVERFXywPKgYiolGj/D92r3vXvXe23bJzz9v37cyZc353dmfmnDN11LjUVdj/hsBr4E2l7CgHgA5AL6Ab0BloA7QEPgIaOI4/BR4Bd4HbwDXgb+ACoGclk1IB6AN8AwwDBCCJnAGOAL87cJLoeq9v2gAmAVOAHqla+U6ZQGwHDqalPy0A44CFQKe0DDPouQj8BBxIOl5SAJ8Da4AvkxoSs/8fwHzgVsz+JAEwDdgUd+AU+70ApjuvRmS1cQFsAyZHHq20HbYCU6MOERVAM+A34KuoA5Wp/VFgFPAs7HhRAHwMHHbW9LD6K9HuvLP8PgkzeFgAjYDjQN8wSqugzTlgMPDcZEtYAH8Cw03Kquz5IWCEyaYwADYAs0yKqvS5VqkZxWwzARgD/FKlzoU1ayKwq1DjYgBaAVcBffyyLFoRPgPuBDlRDMBuYHyWPffYrqX72ygA+gOnLHHedWMkoI95nhSaATp1DbUMgGILvcMA0Fle66iN8rX/KB00A/TFnGCj905gRUGanPgBNAb+AT6wFIDcautdEfwAfgD2Wuy8XJsLrHN99APYA4y2HMBJYGAhAPeA1pYDUAheh7v/5Kd3Bih6e8Ny5133+gFn/QAUSPi1RgAohLbZD2AxsLRGAOROid5XwKa9v+l3VF5Bm6K8b8AxYIippyXPc9ti7wz4C+huiYMmN3TM1xE5bwZcL2Nmx2RgqZ/fBDr6ASgj26XUI1eJ/kAACicrjV0LctlJ1+e9AvoyGqOoltA5DQzwvwJb4qSWMgpkP/C9H8BsYH1GHYpq9krgRz8A7QG0F6gFGeuG+737gE+cOp1aAKC6hiv+GaC/LwFdLSfwEGjh+ugPiKwF5lgOYB+gyFe9+AHYmA/w/55yXhACAeifqrdpZ+ksUM2hUn0viwGwOS6gIIiCITkJygsoKfrA0hmQ+/oXmwF6luWagEK/3c9BCZ9CuUHV8qpmt4lFM0HHX50C86RYelzLoZZFG2QJsCzIEVOFiJII9aemDIuO+Ur4BooJwKeAQmVKJGRRXgE9nR1uLADqpFSZUmZZlNyhJ+4McPvp6Lg8YwQWAStMNpteAW9/lafPMymskueydUEYW6IAkL5VTnl6GN2VaiMbdXchlEQFIKWqz9cg1Siaobq/EFriAJDy74CdQNPQI5W2oapadF1H94oiSVwAGkQ3wJRkHBRpxPQbqyZ4ZqFCSNNwSQC4uhVM1S5LdwnKKfcB7fB2JBk0DQAaXyEmfXUFo9Si+4UbgdVulUeSAdMC4NqgQ5Su0mgD0j6JYQF9Vbuowm394v+npTttAF67vnCqTVWQFCfr/BjQPv4EoKsw753k0oBQSgBe+/R9ULTZe3W2OfChc3f4XyckryIt9+ps7KtwUcCUC0AUm8ratuYBvAWJs5xBWjBZzAAAAABJRU5ErkJggg==';
-
+    // (203,119,85), (194,161,130), (182,182,184), (196,200,183), (158,104,78)
     var option = ({
         tooltip: {
             formatter: "频数:{c}",
-            backgroundColor: 'rgba(244,164,96,0.8)',
+            backgroundColor: 'rgba(203,119,85,0.8)',
             textStyle: {
                 fontFamily: "myfont2",
-                fontSize: 25,
+                fontSize: 15,
                 // color:'rgb(255,99,71)',
                 color: 'black',
             }
@@ -642,7 +642,7 @@ function drawWC(x, y) {
             height: '100%',
             right: null,
             bottom: null,
-            sizeRange: [25, 50],
+            sizeRange: [15, 40],
             rotationRange: [0, 0],
             rotationStep: 25,
             gridSize: 4,
@@ -657,28 +657,123 @@ function drawWC(x, y) {
                     fontWeight: 'normal',
                     color: function (param) {
                         if (x == 1) {
-                            return 'rgb(205,92,92,' + (param.value / 12) + ')';
+                            if(param.value>=12){
+                                return 'rgb(205,92,92,1)';
+                                // return 'rgba(194,161,130,1)';
+                                // return 'rgba(203,119,85,1)';
+                                // return 'rgba(182,182,184,1)';
+                                // return 'rgba(196,200,183)';
+                                // return 'rgba(158,104,78, 1)';
+                            }
+                            else if(param.value >= 8) {
+                                return 'rgb(205,92,92,0.8)';
+                                // return 'rgba(203,119,85,0.6)';
+                                // return 'rgba(158,104,78, 0.8)';
+                                // return 'rgba(194,161,130,1)';
+                                // return 'rgba(182,182,184,1)';
+                                // return 'rgba(196,200,183,1)';
+                            }
+                            else{
+                                return 'rgb(205,92,92,0.6)';
+                                // return 'rgba(203,119,85,0.3)';
+                                // return 'rgba(194,161,130,0.8)';
+                                // return 'rgba(182,182,184,1)';
+                                // return 'rgba(196,200,183,1)';
+                                // return 'rgba(194,161,130,1)';
+                            }
+                            // return 'rgb(205,92,92,' + (param.value / 12) + ')';
+
                         }
                         else if (x == 2) {
-                            return 'rgb(205,92,92,' + (param.value / 30) + ')';
+                            if(param.value>=30){
+                                return 'rgb(205,92,92,1)';
+                                // return 'rgba(203,119,85,1)';
+                            }
+                            else if(param.value>=17){
+                                return 'rgb(205,92,92,0.8)';
+                                // return 'rgba(158,104,78, 0.8)';
+                            }
+                            else{
+                                return 'rgb(205,92,92,0.6)';
+                                // return 'rgba(194,161,130,0.8)';
+                            }
+
+                            // return 'rgb(205,92,92,' + (param.value / 30) + ')';
                         }
                         else if (x == 3) {
-                            return 'rgb(205,92,92,' + (param.value / 39) + ')';
+                            if(param.value>=39){
+                                return 'rgb(205,92,92,1)';
+                                // return 'rgba(203,119,85,1)';
+                            }
+                            else if(param.value>=20){
+                                return 'rgb(205,92,92,0.8)';
+                                // return 'rgba(158,104,78, 0.8)';
+                            }
+                            else{
+                                return 'rgb(205,92,92,0.6)';
+                                // return 'rgba(194,161,130,0.8)';
+                            }
+                            // return 'rgb(205,92,92,' + (param.value / 39) + ')';
                         }
                         else if (x == 4) {
-                            return 'rgb(205,92,92,' + (param.value / 49) + ')';
+                            if(param.value>=49){
+                                return 'rgb(205,92,92,1)';
+                            }
+                            else if(param.value>=30){
+                                return 'rgb(205,92,92,0.8)';
+                            }
+                            else{
+                                return 'rgb(205,92,92,0.6)';
+                            }
+                            // return 'rgb(205,92,92,' + (param.value / 49) + ')';
                         }
                         else if (x == 5) {
-                            return 'rgb(205,92,92,' + (param.value / 19) + ')';
+                            if(param.value>=19){
+                                return 'rgb(205,92,92,1)';
+                            }
+                            else if(param.value>=10){
+                                return 'rgb(205,92,92,0.8)';
+                            }
+                            else{
+                                return 'rgb(205,92,92,0.6)';
+                            }
+                            // return 'rgb(205,92,92,' + (param.value / 19) + ')';
                         }
                         else if (x == 6) {
-                            return 'rgb(205,92,92,' + (param.value / 49) + ')';
+                            if(param.value>=49){
+                                return 'rgb(205,92,92,1)';
+                            }
+                            else if(param.value>=26){
+                                return 'rgb(205,92,92,0.8)';
+                            }
+                            else{
+                                return 'rgb(205,92,92,0.6)';
+                            }
+                            // return 'rgb(205,92,92,' + (param.value / 49) + ')';
                         }
                         else if (x == 7) {
-                            return 'rgb(205,92,92,' + (param.value / 24) + ')';
+                            if(param.value>=24){
+                                return 'rgb(205,92,92,1)';
+                            }
+                            else if(param.value>=13){
+                                return 'rgb(205,92,92,0.8)';
+                            }
+                            else{
+                                return 'rgb(205,92,92,0.6)';
+                            }
+                            // return 'rgb(205,92,92,' + (param.value / 24) + ')';
                         }
                         else if (x == 8) {
-                            return 'rgb(205,92,92,' + (param.value / 67) + ')';
+                            if(param.value>=67){
+                                return 'rgb(205,92,92,1)';
+                            }
+                            else if(param.value>=36){
+                                return 'rgb(205,92,92,0.8)';
+                            }
+                            else{
+                                return 'rgb(205,92,92,0.6)';
+                            }
+                            // return 'rgb(205,92,92,' + (param.value / 67) + ')';
                         }
                     }
                 },
@@ -697,60 +792,104 @@ function drawWC(x, y) {
     if (x == 1) {
         chart.on('click', function (param) {
             if (param['value'] >= 12) {
-                $('.poet-div').html(poet_ju[param.name]);
+                // $('.poet-div').fadeOut(350);
+                if($('.poet-div').html!=poet_ju[param.name]){
+                    $('.poet-div').css("display", "none");
+                    $('.poet-div').fadeOut(350);
+                    $('.poet-div').html(poet_ju[param.name]);
+                    $('.poet-div').fadeIn(350);
+                }
+                // $('.poet-div').html(poet_ju[param.name]);
+                // $('.poet-div').fadeIn(350);
             }
         });
     }
     else if (x == 2) {
         chart.on('click', function (param) {
             if (param['value'] >= 30) {
-                $('.poet-div').html(poet_lan[param.name]);
+                if($('.poet-div').html!=poet_ju[param.name]){
+                    $('.poet-div').css("display", "none");
+                    $('.poet-div').fadeOut(350);
+                    $('.poet-div').html(poet_lan[param.name]);
+                    $('.poet-div').fadeIn(350);
+                }
             }
         });
     }
     else if (x == 3) {
         chart.on('click', function (param) {
             if (param['value'] >= 39) {
-                $('.poet-div').html(poet_lian[param.name]);
+                if($('.poet-div').html!=poet_ju[param.name]){
+                    $('.poet-div').css("display", "none");
+                    $('.poet-div').fadeOut(350);
+                    $('.poet-div').html(poet_lian[param.name]);
+                    $('.poet-div').fadeIn(350);
+                }
             }
         });
     }
     else if (x == 4) {
         chart.on('click', function (param) {
             if (param['value'] >= 49) {
-                $('.poet-div').html(poet_liu[param.name]);
+                if($('.poet-div').html!=poet_ju[param.name]){
+                    $('.poet-div').css("display", "none");
+                    $('.poet-div').fadeOut(350);
+                    $('.poet-div').html(poet_liu[param.name]);
+                    $('.poet-div').fadeIn(350);
+                }
             }
         });
     }
     else if (x == 5) {
         chart.on('click', function (param) {
             if (param['value'] >= 19) {
-                $('.poet-div').html(poet_mei[param.name]);
+                if($('.poet-div').html!=poet_ju[param.name]){
+                    $('.poet-div').css("display", "none");
+                    $('.poet-div').fadeOut(350);
+                    $('.poet-div').html(poet_mei[param.name]);
+                    $('.poet-div').fadeIn(350);
+                }
             }
         });
     }
     else if (x == 6) {
         chart.on('click', function (param) {
             if (param['value'] >= 49) {
-                $('.poet-div').html(poet_song[param.name]);
+                if($('.poet-div').html!=poet_ju[param.name]){
+                    $('.poet-div').css("display", "none");
+                    $('.poet-div').fadeOut(350);
+                    $('.poet-div').html(poet_song[param.name]);
+                    $('.poet-div').fadeIn(350);
+                }
             }
         });
     }
     else if (x == 7) {
         chart.on('click', function (param) {
             if (param['value'] >= 24) {
-                $('.poet-div').html(poet_tao[param.name]);
+                if($('.poet-div').html!=poet_ju[param.name]){
+                    $('.poet-div').css("display", "none");
+                    $('.poet-div').fadeOut(350);
+                    $('.poet-div').html(poet_tao[param.name]);
+                    $('.poet-div').fadeIn(350);
+                }
             }
         });
     }
     else if (x == 8) {
         chart.on('click', function (param) {
             if (param['value'] >= 67) {
-                $('.poet-div').html(poet_zhu[param.name]);
+                if($('.poet-div').html!=poet_ju[param.name]){
+                    $('.poet-div').css("display", "none");
+                    $('.poet-div').fadeOut(350);
+                    $('.poet-div').html(poet_zhu[param.name]);
+                    $('.poet-div').fadeIn(350);
+                }
             }
         });
     }
 }
+
 
 function init(n) {
     $('#player' + n).not('.slick-initialized').slick({
