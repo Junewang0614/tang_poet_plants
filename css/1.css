@@ -83,9 +83,13 @@
 
 .info-div h2{
     margin-top:20px;
+    font-family: myfont2;
 }
 .info-div p{
     line-height: 40px;
+}
+.info-div p span{
+    color:rgb(202,122,85);
 }
 .era_chart{
     width:500px;

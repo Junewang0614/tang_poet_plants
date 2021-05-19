@@ -769,12 +769,7 @@ function piant_eras(dom, index) {
     era_option = {
         tooltip: {
             trigger: 'axis',
-            axisPointer: {
-                type: 'cross',
-                crossStyle: {
-                    color: "red"
-                }
-            }
+
         },
         grid: {
             bottom: "10%",
@@ -902,7 +897,7 @@ function change(n) {
         }
     }
     //写文字
-    $('#content' + n).find(".info-div").html("<h2>" + main_data[n - 1][0] + "</h2><p>在《全唐诗》中，出现" + main_data[n - 1][0] + "的诗共有" + main_data[n - 1][1] + "首<br/>共" + main_data[n - 1][2] + "位诗人的诗中提到" + main_data[n - 1][0] + "<br/>诗中出现" + main_data[n - 1][0] + "最多的时期是：" + main_data[n - 1][3] + "<br/></p>"
+    $('#content' + n).find(".info-div").html("<h2>" + main_data[n - 1][0] + "</h2><p>在《全唐诗》中，出现" + main_data[n - 1][0] + "的诗共有<span>" + main_data[n - 1][1] + "</span>首<br/>共<span>" + main_data[n - 1][2] + "</span>位诗人的诗中提到" + main_data[n - 1][0] + "<br/>诗中出现" + main_data[n - 1][0] + "最多的时期是：<span>" + main_data[n - 1][3] + "</span><br/></p>"
         + "<div class = \"era_chart\"></div>")
     //画图
     var era_dom = $('#content' + n).find(".era_chart")[0]

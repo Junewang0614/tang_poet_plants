@@ -52,11 +52,12 @@ option = {
         },
         axisTick: {
             show: false
-        }
+        },
     },
     /*一个情感对应一个{}*/
     series: [
         {
+            
             name: '爱情',
             type: 'bar',
             stack: 'total',
@@ -234,7 +235,9 @@ option = {
             emphasis: {
                 focus: 'series'
             },
-            data: [2, 1, 2, 0, 0, 2, 2, 1, 1, 0, 2, 2, 0, 2, 8, 1, 1, 3, 0, 6, 7, 6, 5, 5, 7]
+            data: [2, 1, 2, 0, 0, 2, 2, 1, 1, 0, 2, 2, 0, 2, 8, 1, 1, 3, 0, 6, 7, 6, 5, 5, 7],
+            barMaxWidth:20,
+            barCateGoryGap:10
         }
     ]
 };

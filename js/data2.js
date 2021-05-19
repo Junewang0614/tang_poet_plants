@@ -921,7 +921,7 @@ function import_lbardata(p_name) {
         dic['value'] = lists[i];
         if (lists[i] > 300) {
             dic['itemStyle'] = {
-                'color': '#B6B6B8'
+                'color': 'rgb(213,146,119)'
             }
         }
         else if (lists[i] > 100) {
@@ -1005,7 +1005,7 @@ function piant_lbars(dom, p_name) {
             ], */
             series: [
                 {
-                    name: '1',
+                    name: '出现数目',
                     type: 'bar',
                     data: data,
                     barMaxWidth: 60
