@@ -541,12 +541,7 @@ poet_zhu = {
 //绘制词云
 var chart;
 function drawWC(x, y) {
-    // $("#wc" + x).parent().html("<div id='wc1'" + x + "style='width: 450px;'>");
-    // if (chart != null && chart != "" && chart != undefined) {
-    //     console.log(chart);
-    //     chart.dispose();//销毁
-    // }
-    // alert(1);
+    // $("#main").fadeOut(350);
     chart = echarts.init(document.getElementById(y));
     // alert(chart);
     var data = [];
@@ -658,7 +653,7 @@ function drawWC(x, y) {
                     color: function (param) {
                         if (x == 1) {
                             if(param.value>=12){
-                                return 'rgb(205,92,92,1)';
+                                return 'rgba(203,119,85,1)';
                                 // return 'rgba(194,161,130,1)';
                                 // return 'rgba(203,119,85,1)';
                                 // return 'rgba(182,182,184,1)';
@@ -666,7 +661,7 @@ function drawWC(x, y) {
                                 // return 'rgba(158,104,78, 1)';
                             }
                             else if(param.value >= 8) {
-                                return 'rgb(205,92,92,0.8)';
+                                return 'rgba(158,104,78, 0.8)';
                                 // return 'rgba(203,119,85,0.6)';
                                 // return 'rgba(158,104,78, 0.8)';
                                 // return 'rgba(194,161,130,1)';
@@ -674,7 +669,7 @@ function drawWC(x, y) {
                                 // return 'rgba(196,200,183,1)';
                             }
                             else{
-                                return 'rgb(205,92,92,0.6)';
+                                return 'rgba(194,161,130,0.8)';
                                 // return 'rgba(203,119,85,0.3)';
                                 // return 'rgba(194,161,130,0.8)';
                                 // return 'rgba(182,182,184,1)';
@@ -686,92 +681,95 @@ function drawWC(x, y) {
                         }
                         else if (x == 2) {
                             if(param.value>=30){
-                                return 'rgb(205,92,92,1)';
-                                // return 'rgba(203,119,85,1)';
+                                // return 'rgb(205,92,92,1)';
+                                return 'rgba(203,119,85,1)';
                             }
                             else if(param.value>=17){
-                                return 'rgb(205,92,92,0.8)';
-                                // return 'rgba(158,104,78, 0.8)';
+                                // return 'rgb(205,92,92,0.8)';
+                                return 'rgba(158,104,78, 0.8)';
                             }
                             else{
-                                return 'rgb(205,92,92,0.6)';
-                                // return 'rgba(194,161,130,0.8)';
+                                // return 'rgb(205,92,92,0.6)';
+                                return 'rgba(194,161,130,0.8)';
                             }
 
                             // return 'rgb(205,92,92,' + (param.value / 30) + ')';
                         }
                         else if (x == 3) {
                             if(param.value>=39){
-                                return 'rgb(205,92,92,1)';
+                                return 'rgba(203,119,85,1)';
                                 // return 'rgba(203,119,85,1)';
                             }
                             else if(param.value>=20){
-                                return 'rgb(205,92,92,0.8)';
+                                return 'rgba(158,104,78, 0.8)';
                                 // return 'rgba(158,104,78, 0.8)';
                             }
                             else{
-                                return 'rgb(205,92,92,0.6)';
+                                return 'rgba(194,161,130,0.8)';
                                 // return 'rgba(194,161,130,0.8)';
                             }
                             // return 'rgb(205,92,92,' + (param.value / 39) + ')';
                         }
                         else if (x == 4) {
                             if(param.value>=49){
-                                return 'rgb(205,92,92,1)';
+                                return 'rgba(203,119,85,1)';
                             }
                             else if(param.value>=30){
-                                return 'rgb(205,92,92,0.8)';
+                                return 'rgba(158,104,78, 0.8)';
                             }
                             else{
-                                return 'rgb(205,92,92,0.6)';
+                                return 'rgba(194,161,130,0.8)';
                             }
                             // return 'rgb(205,92,92,' + (param.value / 49) + ')';
                         }
                         else if (x == 5) {
                             if(param.value>=19){
-                                return 'rgb(205,92,92,1)';
+                                return 'rgba(203,119,85,1)';
                             }
                             else if(param.value>=10){
-                                return 'rgb(205,92,92,0.8)';
+                                return 'rgba(158,104,78, 0.8)';
                             }
                             else{
-                                return 'rgb(205,92,92,0.6)';
+                                return 'rgba(194,161,130,0.8)';
                             }
                             // return 'rgb(205,92,92,' + (param.value / 19) + ')';
                         }
                         else if (x == 6) {
                             if(param.value>=49){
-                                return 'rgb(205,92,92,1)';
+                                return 'rgba(203,119,85,1)';
                             }
                             else if(param.value>=26){
-                                return 'rgb(205,92,92,0.8)';
+                                return 'rgba(158,104,78, 0.8)';
                             }
                             else{
-                                return 'rgb(205,92,92,0.6)';
+                                return 'rgba(194,161,130,0.8)';
                             }
                             // return 'rgb(205,92,92,' + (param.value / 49) + ')';
                         }
                         else if (x == 7) {
                             if(param.value>=24){
-                                return 'rgb(205,92,92,1)';
+                                return 'rgba(203,119,85,1)';
                             }
                             else if(param.value>=13){
-                                return 'rgb(205,92,92,0.8)';
+                                return 'rgba(158,104,78, 0.8)';
                             }
                             else{
-                                return 'rgb(205,92,92,0.6)';
+                                return 'rgba(194,161,130,0.8)';
                             }
                             // return 'rgb(205,92,92,' + (param.value / 24) + ')';
                         }
                         else if (x == 8) {
                             if(param.value>=67){
-                                return 'rgb(205,92,92,1)';
+                                // return 'rgb(205,92,92,1)';
+                                return 'rgba(203,119,85,1)';
                             }
                             else if(param.value>=36){
-                                return 'rgb(205,92,92,0.8)';
+                                // return 'rgb(205,92,92,0.8)';
+                                return 'rgba(158,104,78, 0.8)';
                             }
                             else{
-                                return 'rgb(205,92,92,0.6)';
+                                // return 'rgb(205,92,92,0.6)';
+                                return 'rgba(194,161,130,0.8)';
                             }
                             // return 'rgb(205,92,92,' + (param.value / 67) + ')';
                         }
@@ -1016,6 +1014,9 @@ function change(n) {
     // init(n);
     $('.poet-div').html("<br/><br/>[点击词云中深色诗人名]");
     for (var i = 1; i <= 8; i++) {
+        $('.card-page1').css({"margin-left":"240px", "margin-top": "59px"})
+        $('.wc-div').css({"margin-left":"240px"})
+        $('.map-title').css({"margin-left":"240px", "margin-top": "0px"})
         if ($('#content' + i).hasClass("show")) {
             // alert(1);
             if (i != n) {
