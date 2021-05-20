@@ -7,14 +7,7 @@ body {
   position: relative;
 }
 #main {
-  position: absolute;
-  margin: 0px 80px;
-  width: 1500px;
-  height: 800px;
-  /* border:solid; */
-  /*     margin-top:-400px;*/
-  margin-left: -750px;
-  left: 50%;
+  
 }
 #main .nav {
   width: 400px;
@@ -27,9 +20,7 @@ body {
   width: 800px;
   height: 80px;
   /* background-color: yellow; */
-  position: absolute;
-  margin: 20px 350px;
-  margin-bottom: 0px;
+  margin: 0 auto;
   text-align: center;
   /* 调整文字位置 */
 }
@@ -45,9 +36,7 @@ body {
   width: 975px;
   /* border: solid; */
   height: 700px;
-  position: absolute;
-  top: 140px;
-  left: 100px;
+  margin: 0 auto;
 }
 .new_btn {
   background: none;
