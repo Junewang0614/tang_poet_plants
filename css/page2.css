@@ -1,6 +1,18 @@
 body {
   position: relative;
 }
+.new_btn {
+  background: none;
+  border: none;
+  outline: none;
+  width: 120px;
+  padding-left: 80px;
+  padding-right: 60px;
+}
+.new_btn > img {
+  width: 150px;
+  margin-left: -50px;
+}
 .main2 {
   min-width: 80%;
   max-width: 80%;
@@ -48,18 +60,25 @@ body {
   width: 600px;
 }
 .main2 .page2 #info-div {
-  height: 600px;
-  width: 400px;
+  /* height: 600px;
+            width: 400px;
+            padding-top: 65px;
+            display: flex;
+            flex-direction:column;
+            margin-left:50px; */
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
+  width: 1000px;
+  height: 150px;
+  /* margin-right: 40px; 
+            margin-left: 89px; */
 }
-#info-div h2 {
+.main2 .page2 #info-div h2 {
   text-align: left;
   font-family: myfont2;
   margin-top: 60px;
 }
-#info-div > .info {
+.main2 .page2 #info-div .info {
   font-family: fangsong;
   margin-top: 10px;
   font-size: medium;
@@ -75,25 +94,4 @@ body {
   height: 300px;
   width: 400px;
   /* border: solid;*/
-}
-
-.nav-btn{
-  position: fixed;
-  width: 60px;
-  height: 300px;
-  flex-direction: column;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto 0;
-  white-space: nowrap;
-}
-
-.btn{
-  border-radius:0 !important;
-}
-
-.btn > img{
-  width: 35px;
 }

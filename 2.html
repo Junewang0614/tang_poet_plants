@@ -90,7 +90,7 @@
                     arrows:false,
                     // slickPlay:true
                 }); 
-                change(1);
+                change(8);
                 // $(".card-page1").css("display", "flex");
                 // $(".card-page2").css("display", "flex");
                 $("#slick-slide-control01").click(drawWC(1, 'wc1'));
@@ -106,71 +106,71 @@
         <script src="./js/bootstrap.min.js"></script>
     </head>
     
-    <img src="./img/bgcolor2.jpg" alt="" style="position: fixed; width: 100%; height: 100%; z-index: -5;">
+    <img src="./img/bg2.jpg" alt="" style="position: fixed; width: 100%; height: 100%; z-index: -5;">
     <body>
         
         <div class="page1" style="">
-            <div class="nav-btn btn-group" role="group" aria-label="Basic example">
-                <button class="btn btn-outline-info" style="font-size: 18px;" onclick="javascrtpt:window.location.href='index.html'">
-                    <!-- <img src="./img/btn.png"> -->
-                    主页
+            
+            <div class="btn-group" role="group" aria-label="Basic example" style = "display:flex;margin-left:865px;margin-bottom:-150px;margin-top:0px;">
+                <button class="new_btn" onclick="javascrtpt:window.location.href='index.html'">
+                    <img src="./img/1-1.png">
                 </button>
-                <button class="btn btn-outline-info"  onclick="javascrtpt:window.location.href='1.html'">
-                    <img src="./img/菊花.png" />
+                <button class="new_btn" onclick="javascrtpt:window.location.href='1.html'">
+                    <img src="./img/2-1.png" />
                 </button>
-                <button class="btn btn-outline-info" disabled  onclick="javascrtpt:window.location.href='2.html'">
-                    <img src="./img/植物1.png" />
+                <button class="new_btn" onclick="javascrtpt:window.location.href='2.html'">
+                    <img src="./img/3-1.png" />
                 </button>
-                <button class="btn btn-outline-info"  onclick="javascrtpt:window.location.href='3.html'">
-                    <img src="./img/树1.png" />
+                <button class="new_btn"  onclick="javascrtpt:window.location.href='3.html'">
+                    <img src="./img/4-1.png" />
                 </button>
             </div>
-            <div style="display: flex; flex-direction: column; margin: 0 auto; height:570px; min-width: 1000px; max-width: 1000px; ">
+            <div style="display: flex; flex-direction: column; margin: 0 auto; height:570px; min-width: 1000px; max-width: 1000px; padding-top: 150px;">
                 
 
-                <div id="main" >
+                <!-- <div id="main" >
                     <div style="margin: 0 auto; height: 50px;">
-                        <!-- 菊、兰、莲、柳、梅、松、桃、竹-->
+                        菊、兰、莲、柳、梅、松、桃、竹
 
-                        <!-- (215, 204, 182), rgba(194,161,130,0.5)-->
-                        <!-- <button class="btn btn-secondary" type="button" onclick="new_hide()">测试</button> -->
-                        <button id="btn1" class="btn plant-btn" type="button" onclick="change(1)">
-                            <!-- <img class="btn-img" src="../img2/松.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
-                            菊
-                        </button>
-                        <button id="btn2" class="btn plant-btn" type="button" onclick="change(2)">
-                            <!-- <img class="btn-img" src="../img2/竹.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
-                            兰
-                        </button>
-                        <button id="btn3" class="btn plant-btn" type="button" onclick="change(3)">
-                            <!-- <img class="btn-img" src="../img2/梅.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
-                            莲
-                        </button>
-                        <button id="btn4" class="btn plant-btn" type="button"  onclick="change(4)">
-                            <!-- <img class="btn-img" src="../img2/柳.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
-                            柳
-                        </button>
-                        <button id="btn5" class="btn plant-btn" type="button"  onclick="change(5)">
-                            <!-- <img class="btn-img" src="../img2/荷花.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
-                            梅
+                        <!-- (215, 204, 182), rgba(194,161,130,0.5)->
+                        <!-- <button class="btn btn-secondary" type="button" onclick="new_hide()">测试</button> ->
+                        <button id="btn8" class="btn plant-btn" type="button"  onclick="change(8)">
+                            <!-- <img class="btn-img" src="../img2/菊.png" style="width: 50px; height: 50px; border-radius: 64%;">->
+                            <!-- 竹 ->
                         </button>
                         <button id="btn6" class="btn plant-btn" type="button"  onclick="change(6)">
-                            <!-- <img class="btn-img" src="../img2/桃.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
-                            松
+                            <!-- <img class="btn-img" src="../img2/桃.png" style="width: 50px; height: 50px; border-radius: 64%;">->
+                            <!-- 松 ->
+                        </button>
+                        <button id="btn4" class="btn plant-btn" type="button"  onclick="change(4)">
+                            <!-- <img class="btn-img" src="../img2/柳.png" style="width: 50px; height: 50px; border-radius: 64%;">->
+                            <!-- 柳 ->
+                        </button>
+                        <button id="btn3" class="btn plant-btn" type="button" onclick="change(3)">
+                            <!-- <img class="btn-img" src="../img2/梅.png" style="width: 50px; height: 50px; border-radius: 64%;"> ->
+                            <!-- 莲 ->
+                        </button>
+                        <button id="btn2" class="btn plant-btn" type="button" onclick="change(2)">
+                            <!-- <img class="btn-img" src="../img2/竹.png" style="width: 50px; height: 50px; border-radius: 64%;"> ->
+                            <!-- 兰 ->
                         </button>
                         <button id="btn7" class="btn plant-btn" type="button"  onclick="change(7)">
-                            <!-- <img class="btn-img" src="../img2/兰.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
-                            桃
+                            <!-- <img class="btn-img" src="../img2/兰.png" style="width: 50px; height: 50px; border-radius: 64%;"> ->
+                            <!-- 桃 ->
                         </button>
-                        <button id="btn8" class="btn plant-btn" type="button"  onclick="change(8)">
-                            <!-- <img class="btn-img" src="../img2/菊.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
-                            竹
+                        <button id="btn5" class="btn plant-btn" type="button"  onclick="change(5)">
+                            <!-- <img class="btn-img" src="../img2/荷花.png" style="width: 50px; height: 50px; border-radius: 64%;"> ->
+                            <!-- 梅 ->
+                        </button>
+                        <button id="btn1" class="btn plant-btn" type="button" onclick="change(1)">
+                            <!-- <img class="btn-img" src="../img2/松.png" style="width: 50px; height: 50px; border-radius: 64%;"> ->
+                            <!-- 菊 ->
                         </button>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="card-div">
-                    <div id="content1" class="need-hide1 show">
+                    <div id="content1" class="need-hide1 show" style = "display: none;">
                         <div id="player1">
                             <div class="card-page1" style="display: flex; flex-direction: row;">
                                 <div class="img-div">
@@ -351,7 +351,7 @@
                         </div>
                     </div>
                     
-                    <div id="content8" class="need-hide1 show" style="display: none;">
+                    <div id="content8" class="need-hide1 show">
                         <div id="player8">
                             <div class="card-page1" style="display: flex; flex-direction: row;">
                                 <div class="img-div">

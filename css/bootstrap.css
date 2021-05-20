@@ -2967,6 +2967,9 @@ fieldset:disabled a.btn {
 .btn-outline-info {
   color: #17a2b8;
   border-color: transparent;
+  background:none;
+  border:none;
+  outline:none;
 }
 
 .btn-outline-info:hover {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
 
-<head>
+<head style="height: 100%;">
     <title>草木有灵</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,12 +25,14 @@
         }
     </style>
 </head>
+<!-- <img src="./img/bg2.jpg"> -->
 
-<body style="background: url('./img/bgcolor3.jpg'); background-repeat: no-repeat; background-size: 100%; background-position: bottom;">
-    <div id='main'>
-        <div class="nav-btn btn-group" role="group" aria-label="Basic example">
+
+<body style="height: 100%; display: flex; flex-direction: row; background: url('./img/bg2.jpg'); background-repeat: no-repeat; background-size: 100%;">
+    <div id='main' style = "">
+        <!--         <div class="nav-btn btn-group" role="group" aria-label="Basic example">
             <button class="btn btn-outline-info" style="font-size: 18px;" onclick="javascrtpt:window.location.href='index.html'">
-                <!-- <img src="./img/btn.png"> -->
+                 <img src="./img/btn.png">
                 主页
             </button>
             <button class="btn btn-outline-info"  onclick="javascrtpt:window.location.href='1.html'">
@@ -42,12 +44,29 @@
             <button class="btn btn-outline-info" disabled onclick="javascrtpt:window.location.href='3.html'">
                 <img src="./img/树1.png" />
             </button>
-        </div>
+        </div> -->
+
+        
+
         <div class='title3'>
             <p>植物意象与情感对应</p>
         </div>
         <div class='main3' id = 'chart'></div>
         <script src = "js/bars.js"></script>
+    </div>
+    <div class="btn-group" role="group" aria-label="Basic example" style = "display:flex;margin-left:1600px;margin-bottom:-150px;margin-top:-48px;">
+        <button class="new_btn" style="font-size: 18px;" onclick="javascrtpt:window.location.href='index.html'">
+            <img src="./img/t1.png">
+        </button>
+        <button class="new_btn" disabled   onclick="javascrtpt:window.location.href='1.html'">
+            <img src="./img/t2.png" />
+        </button>
+        <button class="new_btn" onclick="javascrtpt:window.location.href='2.html'">
+            <img    src="./img/t3.png" />
+        </button>
+        <button class="new_btn"  onclick="javascrtpt:window.location.href='3.html'">
+            <img src="./img/t4.png" />
+        </button>
     </div>
 </body>
 

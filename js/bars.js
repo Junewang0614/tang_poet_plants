@@ -40,11 +40,11 @@ option = {
         bottom: '3%',
         containLabel: true
     },
-    xAxis: {
+    yAxis: {
         type: 'value'
     },
     /*改成植物数据*/
-    yAxis: {
+    xAxis: {
         type: 'category',
         data: ['芦苇', '大麻', '稷', '菊花', '枫', '稻', '藜', '桐花', '梧桐', '白茅', '香蒲', '地钱', '梅', '竹', '桑树', '肉桂', '木樨', '泽兰', '梁', '飞蓬', '莲', '茶', '杨树', '李', '柳树'],
         axisLine: {

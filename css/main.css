@@ -7,7 +7,7 @@
 
 .btn-div{
     height: 40px;
-    /* width: 150px; */
+    width: 150px;
     margin-top: 10px;
     margin-bottom: 10px;
     display:flex; 
@@ -16,10 +16,5 @@
 
 #page{
     background-size: cover;
-    background-image: url('../img/bgcolor1.jpg');
-}
-
-.btn{
-    width: 160px;
-    font-family: inherit;
+    background-image: url('../img/bg1.jpg');
 }

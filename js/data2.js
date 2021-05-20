@@ -897,6 +897,7 @@ function sun_card(p_name) {
         var echartdom = document.getElementById("map");
         piant_lbars(echartdom, p_name);
         $("#info-div").html(lbar_txts(p_name));
+        $(".return").show();
         $('.main').fadeOut(350);
         // $('.info').css({"display":"flex", "flex-direction": "row"});
         $('.info').fadeIn(350);

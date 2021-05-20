@@ -21,68 +21,80 @@
     </style>
 </head>
 
-<img src="./img/bgcolor2.jpg" alt="" style="position: fixed; width: 100%; height: 100%; z-index: -5;">
+<img src="./img/bg2.jpg" alt="" style="position: fixed; width: 100%; height: 100%; z-index: -5;">
 
 <body style="height: 100%;">
     <div class="page2">
-        <div style="display: flex; flex-direction: column; width: 1000px; height: 100%; margin: 0 auto;">
-            <div class="nav-btn btn-group" role="group" aria-label="Basic example">
-                <button class="btn btn-outline-info" style="font-size: 18px;" onclick="javascrtpt:window.location.href='index.html'">
-                    <!-- <img src="./img/btn.png"> -->
-                    主页
+        <div style="display: flex; flex-direction: column; width: 1200px; height: 100%; margin: 0 auto;">
+            <div class="btn-group" role="group" aria-label="Basic example" style = "display:flex;margin-left:700px;margin-bottom:-150px;margin-top:0px;">
+                <button class="new_btn"onclick="javascrtpt:window.location.href='index.html'">
+                    <img src="./img/1-1.png">
                 </button>
-                <button class="btn btn-outline-info" disabled   onclick="javascrtpt:window.location.href='1.html'">
-                    <img src="./img/菊花.png" />
+                <button class="new_btn" onclick="javascrtpt:window.location.href='1.html'">
+                    <img src="./img/2-1.png" />
                 </button>
-                <button class="btn btn-outline-info" onclick="javascrtpt:window.location.href='2.html'">
-                    <img src="./img/植物1.png" />
+                <button class="new_btn" onclick="javascrtpt:window.location.href='2.html'">
+                    <img src="./img/3-1.png" />
                 </button>
-                <button class="btn btn-outline-info"  onclick="javascrtpt:window.location.href='3.html'">
-                    <img src="./img/树1.png" />
+                <button class="new_btn" onclick="javascrtpt:window.location.href='3.html'">
+                    <img src="./img/4-1.png" />
                 </button>
             </div>
-            
+
             <div class="main" style="display: flex; flex-direction: row;padding-top:50px;">
-                <div id="sun-map" style="display: flex; flex-direction: column; margin-top: -20px;"> 
+                <div id="sun-map" style="display: flex; flex-direction: column; margin-top: -20px;">
                     <div id="sun" style="width:600px; height: 600px;">
                     </div>
-                    <div class="map-title" style="height: 20px; text-align: center; margin-top: -10px; font-family: 'myfont2'; font-size: 20px;">
+                    <div class="map-title"
+                        style="height: 20px; text-align: center; margin-top: 5px; font-family: 'myfont2'; font-size: 20px;">
                         《全唐诗》中出现频次最高的前20科植物
                     </div>
                 </div>
-                <div id="txt-div" style="width: 400px; height: 600px; text-align: center;font-family: fangsong;">
-                    <span id = 'all_num'>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    作品分析《全唐诗》文本数据<br/>共计近<strong>5万</strong>余首古诗，<br/>
-                    诗中涉及植物科目共<strong>110</strong>科<br/>包含植物约<strong>283</strong>种。<br/>
-                    其中出现次数最多植物科为<strong>禾本科</strong><br/>出现最多植物是<strong>草类植物</strong><br/>
-                    出现次数排名前10的其他植物有：<br/>垂柳、木樨、油松、茶、菊、梅、荷、柏木、柑橘<br/>
+                <div id="txt-div"
+                    style="width: 600px; height: 600px; text-align: left;margin-top:-10px;margin-left: 120px;font-size: medium;">
+                    <span id='all_num'>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        作品分析《全唐诗》文本数据<br />共计近<strong>5万</strong>余首古诗，<br />
+                        诗中涉及植物科目共<strong>110</strong>科<br />包含植物约<strong>283</strong>种。<br />
+                        其中出现次数最多植物科为<strong>禾本科</strong><br />出现最多植物是<strong>草类植物</strong><br />
+                        出现次数排名前10的其他植物有：<br />垂柳、木樨、油松、茶、菊、梅、荷、柏木、柑橘<br />
                     </span>
                 </div>
 
             </div>
-            
-            <div class="info" style="display: none;width:1000px; height: 700px;">
+
+            <div class="info" style="display: none;width:1000px; height: 700px;margin:70px auto">
                 <div style="display: flex; flex-direction: column;">
-                    <div style="height:30px; width: 30px; margin-left: 960px;">
-                        <button type="button" class="close btn btn-light" aria-label="关闭" style="margin-top: 10px;" onclick="hide()">
-                            <span aria-hidden="true">&times;</span>
-                            <!-- <span aria-hidden="true">&larr;</span> -->
-                        </button>
-                    </div>
+
                     <!-- flex-direction: row; -->
                     <div style="display: flex;flex-direction: column;">
-                        <div id="info-div" style="width: 1000px; height: 150px; margin-right: 40px; margin-left: 89px;">
-                        
+                        <div id="info-div">
+
                         </div>
                         <div id="map" style="width: 1000px; height: 500px; margin-left: 50px;">
-        
+
                         </div>
+                    </div>
+
+                    <div class="return"
+                        style="height:30px; width: 30px; margin-left: 944px;margin-top:-55px;position: relative;">
+                        <!-- <button type="button" class="close btn btn-light" aria-label="关闭" style="margin-top: 10px;" onclick="hide()">
+                            <span aria-hidden="true">&times;</span>
+                            <span aria-hidden="true">&larr;</span>
+                        </button> -->
+                        <button style="background:none;border: none;outline: none;" onclick="hide()"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-reply" viewBox="0 0 16 16">
+                                <path
+                                    d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z" />
+                            </svg></button>
                     </div>
                 </div>
             </div>
@@ -92,7 +104,7 @@
 </body>
 
 
-<script src = "./js/dataset.js"></script>
+<script src="./js/dataset.js"></script>
 <script src="./js/data2.js"></script>
 <script src="./js/vue.js"></script>
 <script src="./js/jquery.min.js"></script>

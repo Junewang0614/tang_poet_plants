@@ -642,7 +642,7 @@ function drawWC(x, y) {
             height: '100%',
             right: null,
             bottom: null,
-            sizeRange: [15, 40],
+            sizeRange: [30, 50],
             rotationRange: [0, 0],
             rotationStep: 25,
             gridSize: 4,
@@ -1014,7 +1014,7 @@ function change(n) {
     //         break;
     // }
     // init(n);
-    $('.poet-div').html("");
+    $('.poet-div').html("<br/><br/>[点击词云中深色诗人名]");
     for (var i = 1; i <= 8; i++) {
         if ($('#content' + i).hasClass("show")) {
             // alert(1);

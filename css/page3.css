@@ -7,19 +7,28 @@ body {
   position: relative;
 }
 #main {
+  position: absolute;
+  margin: 0px 80px;
+  width: 1500px;
+  height: 1200px;
+  /* border:solid; */
+  /*     margin-top:-400px;*/
+  margin-left: -750px;
+  left: 50%;
 }
-
-.nav-btn{
-  position: relative;
-  margin-left: 900px;
+#main .nav {
   width: 400px;
-  height: 40px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  right: 0px;
 }
 #main .title3 {
   width: 800px;
   height: 80px;
   /* background-color: yellow; */
-  margin: 0 auto;
+  position: absolute;
+  margin: 20px 350px;
   margin-bottom: 0px;
   text-align: center;
   /* 调整文字位置 */
@@ -36,26 +45,18 @@ body {
   width: 1300px;
   /* border: solid; */
   height: 1000px;
-  margin: 0 auto;
+  position: absolute;
+  top: 140px;
+  left: 100px;
 }
-
-.nav-btn{
-  position: fixed !important;
-  width: 60px;
-  height: 300px;
-  flex-direction: column;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto 0;
-  white-space: nowrap;
+.new_btn {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
-
-.btn{
-  border-radius:0 !important;
-}
-
-.btn > img{
-  width: 35px;
+.new_btn > img {
+  width: 200px;
 }
