@@ -10,7 +10,7 @@ body {
   position: absolute;
   margin: 0px 80px;
   width: 1500px;
-  height: 1200px;
+  height: 800px;
   /* border:solid; */
   /*     margin-top:-400px;*/
   margin-left: -750px;
@@ -38,13 +38,13 @@ body {
   position: absolute;
   top: 10px;
   width: 800px;
-  font-size: xx-large;
+  font-size: medium;
   font-family: myfont2;
 }
 #main .main3 {
-  width: 1300px;
+  width: 975px;
   /* border: solid; */
-  height: 1000px;
+  height: 700px;
   position: absolute;
   top: 140px;
   left: 100px;
@@ -53,10 +53,11 @@ body {
   background: none;
   border: none;
   outline: none;
-  width: 100px;
-  padding-left: 60px;
+  width: 120px;
+  padding-left: 80px;
   padding-right: 60px;
 }
 .new_btn > img {
-  width: 200px;
+  width: 150px;
+  margin-left: -50px;
 }

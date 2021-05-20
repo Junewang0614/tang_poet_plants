@@ -14,6 +14,12 @@ option = {
     },
     /*图例，颜色*/
     legend: {
+        textStyle: {
+            fontStyle: "normal",
+            fontWeight: "normal",
+            fontSize: 10,
+          },
+          itemWidth: 18,
         data: ['爱情','赞美','友情','励志','闲适','抒怀','思乡','思念','送别','孤寂','愁苦','忧国忧民','咏史怀古','壮志难酬','讽刺'],
         /*selected: {
             '爱情':false,
@@ -236,7 +242,7 @@ option = {
                 focus: 'series'
             },
             data: [2, 1, 2, 0, 0, 2, 2, 1, 1, 0, 2, 2, 0, 2, 8, 1, 1, 3, 0, 6, 7, 6, 5, 5, 7],
-            barMaxWidth:20,
+            barMaxWidth:15,
             barCateGoryGap:10
         }
     ]
