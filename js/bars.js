@@ -56,7 +56,7 @@ option = {
     /*改成植物数据*/
     xAxis: {
         type: 'category',
-        data: ['柳树', '李', '杨树', '茶', '莲', '飞蓬', '梁', '泽兰', '木樨', '肉桂', '桑树', '竹', '梅', '地钱', '香蒲', '白茅', '梧桐', '桐花', '藜', '稻', '枫', '菊花', '稷', '大麻', '芦苇'],
+        data: ['芦苇', '大麻', '稷', '菊花', '枫', '稻', '藜', '桐花', '梧桐', '白茅', '香蒲', '地钱', '梅', '竹', '桑树', '肉桂', '木樨', '泽兰', '梁', '飞蓬', '莲', '茶', '杨树', '李', '柳树'],
         axisLine: {
             show: false
         },
@@ -67,187 +67,187 @@ option = {
     /*一个情感对应一个{}*/
     series: [
         {
-            name: '爱情',
+            name:'爱情',
             type: 'bar',
             stack: 'total',
             label: {
-                show: false
+            show: false
             },
             emphasis: {
-                focus: 'series'
+            focus: 'series'
             },
-            data: [9, 5, 8, 3, 18, 6, 5, 5, 4, 4, 0, 3, 2, 1, 1, 0, 2, 1, 1, 0, 1, 0, 0, 0, 1]
-        },
-        {
-            name: '赞美',
+            data:[1, 0, 0, 0, 1, 0, 1, 1, 2, 0, 1, 1, 2, 3, 0, 4, 4, 5, 5, 6, 18, 3, 8, 5, 9]
+            },
+            {
+            name:'赞美',
             type: 'bar',
             stack: 'total',
             label: {
-                show: false
+            show: false
             },
             emphasis: {
-                focus: 'series'
+            focus: 'series'
             },
-            data: [10, 9, 6, 7, 5, 3, 5, 9, 2, 2, 3, 5, 4, 0, 4, 1, 2, 1, 3, 1, 0, 1, 1, 1, 0]
-        },
-        {
-            name: '友情',
+            data:[0, 1, 1, 1, 0, 1, 3, 1, 2, 1, 4, 0, 4, 5, 3, 2, 2, 9, 5, 3, 5, 7, 6, 9, 10]
+            },
+            {
+            name:'友情',
             type: 'bar',
             stack: 'total',
             label: {
-                show: false
+            show: false
             },
             emphasis: {
-                focus: 'series'
+            focus: 'series'
             },
-            data: [13, 22, 8, 8, 5, 6, 10, 4, 7, 7, 5, 0, 2, 3, 1, 6, 3, 4, 1, 3, 1, 3, 1, 2, 0]
-        },
-        {
-            name: '励志',
+            data:[0, 2, 1, 3, 1, 3, 1, 4, 3, 6, 1, 3, 2, 0, 5, 7, 7, 4, 10, 6, 5, 8, 8, 22, 13]
+            },
+            {
+            name:'励志',
             type: 'bar',
             stack: 'total',
             label: {
-                show: false
+            show: false
             },
             emphasis: {
-                focus: 'series'
+            focus: 'series'
             },
-            data: [3, 9, 3, 4, 3, 6, 1, 3, 1, 1, 1, 3, 2, 3, 2, 1, 1, 1, 0, 1, 1, 2, 3, 1, 0]
-        },
-        {
-            name: '闲适',
+            data:[0, 1, 3, 2, 1, 1, 0, 1, 1, 1, 2, 3, 2, 3, 1, 1, 1, 3, 1, 6, 3, 4, 3, 9, 3]
+            },
+            {
+            name:'闲适',
             type: 'bar',
             stack: 'total',
             label: {
-                show: false
+            show: false
             },
             emphasis: {
-                focus: 'series'
+            focus: 'series'
             },
-            data: [3, 3, 1, 6, 6, 0, 1, 2, 0, 0, 0, 3, 1, 1, 5, 4, 1, 1, 0, 1, 1, 0, 1, 0, 1]
-        },
-        {
-            name: '抒怀',
+            data:[1, 0, 1, 0, 1, 1, 0, 1, 1, 4, 5, 1, 1, 3, 0, 0, 0, 2, 1, 0, 6, 6, 1, 3, 3]
+            },
+            {
+            name:'抒怀',
             type: 'bar',
             stack: 'total',
             label: {
-                show: false
+            show: false
             },
             emphasis: {
-                focus: 'series'
+            focus: 'series'
             },
-            data: [19, 7, 5, 7, 6, 5, 5, 2, 4, 4, 4, 7, 5, 5, 3, 1, 2, 3, 6, 3, 1, 6, 2, 2, 1]
-        },
-        {
-            name: '思乡',
+            data:[1, 2, 2, 6, 1, 3, 6, 3, 2, 1, 3, 5, 5, 7, 4, 4, 4, 2, 5, 5, 6, 7, 5, 7, 19]
+            },
+            {
+            name:'思乡',
             type: 'bar',
             stack: 'total',
             label: {
-                show: false
+            show: false
             },
             emphasis: {
-                focus: 'series'
+            focus: 'series'
             },
-            data: [18, 1, 5, 6, 3, 4, 1, 3, 3, 3, 4, 0, 5, 2, 2, 2, 1, 0, 0, 0, 2, 3, 0, 2, 2]
-        },
-        {
-            name: '思念',
+            data:[2, 2, 0, 3, 2, 0, 0, 0, 1, 2, 2, 2, 5, 0, 4, 3, 3, 3, 1, 4, 3, 6, 5, 1, 18]
+            },
+            {
+            name:'思念',
             type: 'bar',
             stack: 'total',
             label: {
-                show: false
+            show: false
             },
             emphasis: {
-                focus: 'series'
+            focus: 'series'
             },
-            data: [12, 3, 6, 4, 3, 3, 3, 4, 4, 4, 2, 2, 5, 5, 0, 0, 3, 5, 0, 1, 3, 2, 0, 0, 2]
-        },
-        {
-            name: '送别',
+            data:[2, 0, 0, 2, 3, 1, 0, 5, 3, 0, 0, 5, 5, 2, 2, 4, 4, 4, 3, 3, 3, 4, 6, 3, 12]
+            },
+            {
+            name:'送别',
             type: 'bar',
             stack: 'total',
             label: {
-                show: false
+            show: false
             },
             emphasis: {
-                focus: 'series'
+            focus: 'series'
             },
-            data: [52, 31, 25, 17, 15, 17, 10, 7, 11, 11, 5, 4, 4, 0, 2, 3, 2, 1, 7, 3, 4, 1, 2, 3, 3]
-        },
-        {
-            name: '孤寂',
+            data:[3, 3, 2, 1, 4, 3, 7, 1, 2, 3, 2, 0, 4, 4, 5, 11, 11, 7, 10, 17, 15, 17, 25, 31, 52]
+            },
+            {
+            name:'孤寂',
             type: 'bar',
             stack: 'total',
             label: {
-                show: false
+            show: false
             },
             emphasis: {
-                focus: 'series'
+            focus: 'series'
             },
-            data: [10, 2, 5, 1, 4, 1, 3, 0, 5, 5, 0, 3, 2, 5, 4, 2, 4, 5, 1, 2, 2, 2, 2, 0, 0]
-        },
-        {
-            name: '愁苦',
+            data:[0, 0, 2, 2, 2, 2, 1, 5, 4, 2, 4, 5, 2, 3, 0, 5, 5, 0, 3, 1, 4, 1, 5, 2, 10]
+            },
+            {
+            name:'愁苦',
             type: 'bar',
             stack: 'total',
             label: {
-                show: false
+            show: false
             },
             emphasis: {
-                focus: 'series'
+            focus: 'series'
             },
-            data: [17, 10, 8, 7, 6, 4, 6, 3, 2, 2, 2, 2, 4, 4, 1, 2, 3, 5, 1, 0, 1, 2, 0, 0, 1]
-        },
-        {
-            name: '忧国忧民',
+            data:[1, 0, 0, 2, 1, 0, 1, 5, 3, 2, 1, 4, 4, 2, 2, 2, 2, 3, 6, 4, 6, 7, 8, 10, 17]
+            },
+            {
+            name:'忧国忧民',
             type: 'bar',
             stack: 'total',
             label: {
-                show: false
+            show: false
             },
             emphasis: {
-                focus: 'series'
+            focus: 'series'
             },
-            data: [7, 6, 4, 7, 2, 8, 7, 2, 0, 0, 11, 3, 1, 1, 2, 6, 3, 0, 4, 7, 4, 3, 3, 5, 1]
-        },
-        {
-            name: '咏史怀古',
+            data:[1, 5, 3, 3, 4, 7, 4, 0, 3, 6, 2, 1, 1, 3, 11, 0, 0, 2, 7, 8, 2, 7, 4, 6, 7]
+            },
+            {
+            name:'咏史怀古',
             type: 'bar',
             stack: 'total',
             label: {
-                show: false
+            show: false
             },
             emphasis: {
-                focus: 'series'
+            focus: 'series'
             },
-            data: [10, 4, 6, 8, 3, 5, 12, 9, 5, 5, 2, 2, 3, 2, 1, 1, 2, 1, 0, 2, 5, 0, 6, 3, 2]
-        },
-        {
-            name: '壮志难酬',
+            data:[2, 3, 6, 0, 5, 2, 0, 1, 2, 1, 1, 2, 3, 2, 2, 5, 5, 9, 12, 5, 3, 8, 6, 4, 10]
+            },
+            {
+            name:'壮志难酬',
             type: 'bar',
             stack: 'total',
             label: {
-                show: false
+            show: false
             },
             emphasis: {
-                focus: 'series'
+            focus: 'series'
             },
-            data: [6, 3, 3, 4, 4, 4, 4, 2, 4, 4, 4, 4, 0, 3, 2, 2, 1, 1, 3, 2, 0, 0, 1, 2, 1]
-        },
-        {
-            name: '讽刺',
+            data:[1, 2, 1, 0, 0, 2, 3, 1, 1, 2, 2, 3, 0, 4, 4, 4, 4, 2, 4, 4, 4, 4, 3, 3, 6]
+            },
+            {
+            name:'讽刺',
             type: 'bar',
             stack: 'total',
             label: {
-                show: false
+            show: false
             },
             emphasis: {
-                focus: 'series'
+            focus: 'series'
             },
-            data: [7, 5, 5, 6, 7, 6, 0, 3, 1, 1, 8, 2, 0, 2, 2, 0, 1, 1, 2, 2, 0, 0, 2, 1, 2],
+            data:[2, 1, 2, 0, 0, 2, 2, 1, 1, 0, 2, 2, 0, 2, 8, 1, 1, 3, 0, 6, 7, 6, 5, 5, 7],
             barMaxWidth: 15,
             barCateGoryGap: 10
-        }
+            }
     ]
 };
 mychart.setOption(option);

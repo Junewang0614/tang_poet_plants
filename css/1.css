@@ -74,10 +74,10 @@
 }
 
 .info-div{
-    width:500px;
+    width:600px;
     height:500px;
     text-align: center;
-
+    padding-left:100px;
     /* border: solid; */
 }
 

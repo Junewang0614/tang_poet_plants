@@ -45,7 +45,7 @@ body {
   height: 80%;
   position: absolute;
   top: 20%;
-  left: 16%;
+  left: 13.5%;
 }
 .new_btn {
   background: none;
@@ -58,4 +58,10 @@ body {
 .new_btn > img {
   width: 150px; 
   /* margin-left: -50px; */
+}
+.txt_all{
+  width: 35%;
+  font-size: smaller;
+  margin-top: -7%;
+  margin-left: 16%;
 }

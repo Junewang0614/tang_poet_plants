@@ -637,7 +637,7 @@ function drawWC(x, y) {
             height: '100%',
             right: null,
             bottom: null,
-            sizeRange: [30, 50],
+            sizeRange: [27, 50],
             rotationRange: [0, 0],
             rotationStep: 25,
             gridSize: 4,
