@@ -1,0 +1,111 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: url('../img/bg2.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: 100%;
+}
+.new_btn {
+    background: none;
+    border: none;
+    outline: none;
+    width: 140px;
+}
+.new_btn > img {
+    width: 150px;
+}
+.page1{
+    width: 100%;
+    height: 100%;
+}
+#main_2{
+    display: flex; 
+    flex-direction: column; 
+    position: relative;
+    /* border: solid; */
+    width: 100%;
+    height: 99%;
+}
+.img{
+    width:400px; 
+    border-radius: 64%;
+    top: 25%;
+    left: 32%;
+    position: absolute;
+}
+
+.card-page1{
+    display: flex;
+    width: 80%;
+    /* margin: 6% auto 0 auto; */
+    position: relative;
+    height:97%;
+}
+.card-page2{
+    display: flex;
+    width: 80%;
+    /* margin: 6% auto 0 auto; */
+    /* border:solid pink 5px; */
+    position: relative;
+    height:97%;
+}
+
+.img-div{
+    position: relative;
+    width: 50%;
+    /* border: solid; */
+    height: 100%;
+    margin-top: 3%;
+    margin-left: 8%;
+    margin-right: 4%;
+}
+
+.info-div{
+    width: 40%;
+    height: 40%;
+    margin: auto 0;
+    text-align: center;
+}
+.era_chart{
+    height: 110%;
+    /* border: solid; */
+    width: 80%;
+}
+.info-div h2{
+    font-family: myfont2;
+    width: 80%;
+}
+.info-div p{
+    line-height: 150%;
+    width: 80%;
+}
+.info-div p span{
+    color:rgb(202,122,85);
+}
+
+.wc-div{
+    width: 90%;
+    height:95%;
+    /* border: yellow; */
+    margin:6% auto 0 auto;
+}
+.map-title{
+    font-family: myfont2;
+    text-align: center;
+    height: 5%;
+    margin-top: -10%;
+}
+.poet-div{
+    font-family: myfont2;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    margin: 15% auto;
+    font-size: large;
+    /* padding-top:5%; */
+    padding-right: 12%;
+}

@@ -524,39 +524,6 @@ function drawSun() {
         children: [{
             name: '锦葵科',
             itemStyle: {
-                color: 'rgba(196,200,183,1)'
-            },
-            label: {
-                rotate: 'radial',
-                fontSize: 14,
-            },
-            nodeClick: "false",
-            children: [{
-                name: '标题频率:31',
-                value: 2,
-                nodeClick: "false",
-                itemStyle: {
-                    color: 'rgba(196,200,183,1)'
-                }
-            }, {
-                name: '诗句中频率:318',
-                value: 2,
-                nodeClick: "false",
-                itemStyle: {
-                    color: 'rgba(196,200,183,1)'
-                }
-            }]
-        }]
-    },
-    {
-        name: '',
-        itemStyle: {
-            color: '#da0d68'
-        },
-        nodeClick: "false",
-        children: [{
-            name: '锦葵科',
-            itemStyle: {
                 color: 'rgba(196,200,183,0.9)'
             },
             label: {
@@ -610,39 +577,6 @@ function drawSun() {
                 nodeClick: "false",
                 itemStyle: {
                     color: 'rgba(196,200,183,0.8)'
-                }
-            }]
-        }]
-    },
-    {
-        name: '',
-        itemStyle: {
-            color: '#da0d68'
-        },
-        nodeClick: "false",
-        children: [{
-            name: '地钱科',
-            itemStyle: {
-                color: 'rgba(196,200,183,0.7)'
-            },
-            label: {
-                rotate: 'radial',
-                fontSize: 14,
-            },
-            nodeClick: "false",
-            children: [{
-                name: '标题频率:16',
-                value: 2,
-                nodeClick: "false",
-                itemStyle: {
-                    color: 'rgba(196,200,183,0.7)'
-                }
-            }, {
-                name: '诗句中频率:306',
-                value: 2,
-                nodeClick: "false",
-                itemStyle: {
-                    color: 'rgba(196,200,183,0.7)'
                 }
             }]
         }]
@@ -721,40 +655,6 @@ function drawSun() {
         nodeClick: "false",
         children: [
             {
-                name: '土马鬓科',
-                itemStyle: {
-                    color: 'rgba(196,200,183,0.5)'
-                },
-                label: {
-                    rotate: 'radial',
-                    fontSize: 14,
-                },
-                nodeClick: "false",
-                children: [{
-                    name: '标题频率:3',
-                    value: 2,
-                    nodeClick: "false",
-                    itemStyle: {
-                        color: 'rgba(196,200,183,0.5)'
-                    }
-                }, {
-                    name: '诗句中频率:300',
-                    value: 2,
-                    nodeClick: "false",
-                    itemStyle: {
-                        color: 'rgba(196,200,183,0.5)'
-                    }
-                }]
-            }]
-    },
-    {
-        name: '',
-        itemStyle: {
-            color: '#da0d68'
-        },
-        nodeClick: "false",
-        children: [
-            {
                 name: '蘋科',
                 itemStyle: {
                     color: 'rgba(182,182,184,1)'
@@ -787,11 +687,44 @@ function drawSun() {
             color: '#da0d68'
         },
         nodeClick: "false",
+        children: [{
+            name: '百合科',
+            itemStyle: {
+                color: 'rgba(182,182,184,0.9)'
+            },
+            label: {
+                rotate: 'radial',
+                fontSize: 14,
+            },
+            nodeClick: "false",
+            children: [{
+                name: '标题频率:10',
+                value: 2,
+                nodeClick: "false",
+                itemStyle: {
+                    color: 'rgba(182,182,184,0.9)'
+                }
+            }, {
+                name: '诗句中频率:134',
+                value: 2,
+                nodeClick: "false",
+                itemStyle: {
+                    color: 'rgba(182,182,184,0.9)'
+                }
+            }]
+        }]
+    },
+    {
+        name: '',
+        itemStyle: {
+            color: '#da0d68'
+        },
+        nodeClick: "false",
         children: [
             {
-                name: '报春花科',
+                name: '十字花科',
                 itemStyle: {
-                    color: 'rgba(182,182,184,0.5)'
+                    color: 'rgba(182,182,184,0.8)'
                 },
                 label: {
                     rotate: 'radial',
@@ -799,22 +732,55 @@ function drawSun() {
                 },
                 nodeClick: "false",
                 children: [{
-                    name: '标题频率:2',
+                    name: '标题频率:3',
                     value: 2,
                     nodeClick: "false",
                     itemStyle: {
-                        color: 'rgba(182,182,184,0.5)'
+                        color: 'rgba(182,182,184,0.8)'
                     }
                 }, {
-                    name: '诗句中频率:225',
+                    name: '诗句中频率:134',
                     value: 2,
                     nodeClick: "false",
                     itemStyle: {
-                        color: 'rgba(182,182,184,0.5)'
+                        color: 'rgba(182,182,184,0.8)'
                     }
                 }]
             }]
-    }
+    },
+    {
+        name: '',
+        itemStyle: {
+            color: '#da0d68'
+        },
+        nodeClick: "false",
+        children: [{
+            name: '棕榈科',
+            itemStyle: {
+                color: 'rgba(182,182,184,0.7)'
+            },
+            label: {
+                rotate: 'radial',
+                fontSize: 14,
+            },
+            nodeClick: "false",
+            children: [{
+                name: '标题频率:6',
+                value: 2,
+                nodeClick: "false",
+                itemStyle: {
+                    color: 'rgba(182,182,184,0.7)'
+                }
+            }, {
+                name: '诗句中频率:100',
+                value: 2,
+                nodeClick: "false",
+                itemStyle: {
+                    color: 'rgba(182,182,184,0.7)'
+                }
+            }]
+        }]
+    },
     ];
 
     option = {
@@ -822,7 +788,8 @@ function drawSun() {
             type: 'continuous',
             min: 227,
             max: 8207,
-            right: 0,
+            right:"8%",
+            bottom:"5%",
             // hoverLink:'true',
             inRange: {
                 color: ['#B6B6B8', '#C4C8B7', '#C2A182', '#CB7755', '#9E684E']
@@ -873,7 +840,7 @@ function drawSun() {
 
     option && myChart.setOption(option);
     myChart.on('click', params => {
-        // console.log('params::', params.name);
+        console.log('params::', params.name);
         sun_card(params.name);
         // $('.main').fadeOut(350);
         // $('.info').css({"display":"flex", "flex-direction": "row"});
@@ -894,19 +861,25 @@ function sun_card(p_name) {
         }
     }
     if (tag) {
-        var echartdom = document.getElementById("map");
-        piant_lbars(echartdom, p_name);
-        $("#info-div").html(lbar_txts(p_name));
-        $(".return").show();
-        $('.main').fadeOut(350);
+        $('#main_2').hide();
+        
+        /* $('#main_2').fadeOut(350); */
         // $('.info').css({"display":"flex", "flex-direction": "row"});
         $('.info').fadeIn(350);
+        $("#info-div").html(lbar_txts(p_name));
+        $("#map").height($("#map").height());
+        $("#map").width($("#map").width());
+        console.log($("#map").height());
+        console.log($("#map").width());
+        var echartdom = document.getElementById("map");
+        piant_lbars(echartdom, p_name);
+        $(".return").show();
     }
 };
 
 function lbar_txts(p_name) {
     title = "<h2>" + p_name + ":</h2>";
-    str1 = "<p class = 'info'>全唐诗中共提到该科" + lplants_txt[p_name][0] + "种植物。";
+    str1 = "<p class = 'info-txt'>全唐诗中共提到该科" + lplants_txt[p_name][0] + "种植物。";
     str2 = "其中出现次数最多的是" + lplants_txt[p_name][1] + "，";
     str3 = "具体出现的次数为" + lplants_txt[p_name][2] + "次。<br/>";
     str4 = p_name+"中包含的植物有："+import_text(p_name);
@@ -1018,8 +991,11 @@ function piant_lbars(dom, p_name) {
 
 
 function hide() {
-    $('.info').fadeOut(1000);
-    $('.main').fadeIn(1000);
+    $('.info').hide();
+    /* $('.info').fadeOut(500); */
+    $('#main_2').fadeIn(1000);
+    /* $('.info').hide();
+    $('#main_2').show(); */
 }
 
 function import_text(p_name){

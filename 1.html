@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="height: 100%;">
+<html>
 
 <head>
     <title>草木欣荣</title>
@@ -21,37 +21,37 @@
     </style>
 </head>
 
-<img src="./img/bg2.jpg" alt="" style="position: fixed; width: 100%; height: 100%; z-index: -5;">
+<!-- <img src="./img/bg2.jpg" alt="" style="position: fixed; width: 100%; height: 100%; z-index: -5;"> -->
 
-<body style="height: 100%;">
-    <div class="page2">
-        <div style="display: flex; flex-direction: column; width: 1200px; height: 100%; margin: 0 auto;">
-            <div class="btn-group" role="group" aria-label="Basic example" style = "display:flex;margin-left:700px;margin-bottom:-150px;margin-top:0px;">
-                <button class="new_btn"onclick="javascrtpt:window.location.href='index.html'" style="outline: none;">
-                    <img src="./img/1-1.png">
-                </button>
-                <button class="new_btn" onclick="javascrtpt:window.location.href='1.html'" style="outline: none;">
-                    <img src="./img/2-1.png" />
+<body>
+    <div class="page2" style="width: 100%; height: 100%; margin: 0 auto;">
+        <!-- <div style="display: flex; flex-direction: column; width: 100%; height: 100%; margin: 0 auto;"> -->
+            <div class="btn-group" role="group" aria-label="Basic example" style = "display:flex;width:60%;height:22%;margin-left:35%;flex-direction:row-reverse;margin-bottom: -10%;z-index: 999;">
+                <button class="new_btn"onclick="javascrtpt:window.location.href='3.html'" style="outline: none;">
+                    <img src="./img/4-1.png">
                 </button>
                 <button class="new_btn" onclick="javascrtpt:window.location.href='2.html'" style="outline: none;">
                     <img src="./img/3-1.png" />
                 </button>
-                <button class="new_btn" onclick="javascrtpt:window.location.href='3.html'" style="outline: none;">
-                    <img src="./img/4-1.png" />
+                <button class="new_btn" onclick="javascrtpt:window.location.href='1.html'" style="outline: none;">
+                    <img src="./img/2-1.png" />
+                </button>
+                <button class="new_btn" onclick="javascrtpt:window.location.href='index.html'" style="outline: none;">
+                    <img src="./img/1-1.png" />
                 </button>
             </div>
 
-            <div class="main" style="display: flex; flex-direction: row;padding-top:50px;padding-left:150px;">
-                <div id="sun-map" style="display: flex; flex-direction: column; margin-top: -20px;">
-                    <div id="sun" style="width:600px; height: 600px;">
+            <div id="main_2" style="display: flex; flex-direction: row;">
+                <!-- <div style = "flex:1;"></div> -->
+                <div id="sun-map" style="width:60%;display: flex;flex-direction: column;">
+                    <div id="sun" style="height:93%;margin-top: 4%; margin-left: -50px;">
                     </div>
                     <div class="map-title"
-                        style="height: 20px; text-align: center; margin-top: 5px; font-family: 'myfont2'; font-size: 20px;">
+                        style="margin-left: -50px;text-align: center;font-family: 'myfont2'; font-size: 20px;">
                         《全唐诗》中出现频次最高的前20科植物
                     </div>
                 </div>
-                <div id="txt-div"
-                    style="width: 600px; height: 600px; text-align: left;margin-top:-10px;margin-left: 130px;font-size: medium;">
+                <div id="txt-div">
                     <span id='all_num'>
                         <br>
                         <br>
@@ -70,36 +70,34 @@
 
             </div>
 
-            <div class="info" style="display: none;width:1000px; height: 700px;margin:70px auto">
-                <div style="display: flex; flex-direction: column;">
+            <div class="info">
+                <div  style="display: flex; flex-direction: column;width:100%;height:100%;">
 
                     <!-- flex-direction: row; -->
-                    <div style="display: flex;flex-direction: column;">
-                        <div id="info-div" style="margin-top: 60px; margin-left: 60px;">
+                    <div style="display: flex;flex-direction: column;width: 100%;height: 100%;">
+                        <div id="info-div">
 
                         </div>
-                        <div id="map" style="width: 1000px; height: 500px; margin-left: 50px; margin-top: -60px;">
+                        <div id="map" style="width: 80%; height: 90%;margin-left:15%;">
 
                         </div>
                     </div>
 
-                    <div class="return"
-                        style="height:30px; width: 30px; margin-left: 944px;margin-top:-55px;position: relative;">
+                    <!-- <div class="return"
+                        style="height:30px; width: 30px; margin-left: 944px;margin-top:-55px;position: relative;"> -->
                         <!-- <button type="button" class="close btn btn-light" aria-label="关闭" style="margin-top: 10px;" onclick="hide()">
                             <span aria-hidden="true">&times;</span>
                             <span aria-hidden="true">&larr;</span>
                         </button> -->
-                        <button style="background:none;border: none;outline: none;" onclick="hide()"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                class="bi bi-reply" viewBox="0 0 16 16">
-                                <path
-                                    d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z" />
-                            </svg></button>
+                    <div class = "return">
+                        <button style="background:none;border: none;outline: none;" onclick="hide()">
+                            <img src = "./img/btn-img/return.png">
+                        </button>
                     </div>
                 </div>
             </div>
 
-        </div>
+        <!-- </div> -->
     </div>
 </body>
 

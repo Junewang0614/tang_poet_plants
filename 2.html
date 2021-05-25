@@ -1,382 +1,641 @@
 <html>
-    <head>
-        <title>一草一木</title>
-        <link rel="stylesheet" type="text/css" href="./css/slick.css">
-        <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
-        <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="./css/1.css">
-        <style>
-            /* 字体配置 */
-            @font-face {
-                font-family:'myfont1';
-                src: url('./font/FZShenYMXSJW.TTF');
-            }
-            @font-face {
-                font-family:'myfont2';
-                src: url('./font/FZQinKeBYSJT.TTF');
-            }
-        </style>
-        <script src="./js/echarts.js"></script>
-        <script src="./js/echarts-wordcloud.js"></script>
-        <script src = "./js/dataset.js"></script>
-        <!-- <script src = "./js/eras_bar.js>"></script> -->
-        <script src="./js/data.js"></script>
-        <script src="./js/vue.js"></script>
-        <script src="./js/jquery.min.js"></script>
-        <script src="./js/slick.js"></script>
-        <script type="text/javascript"> 
-            $(document).ready(function(){
-                $('#player1').slick({
-                    // autoplay: true,
-                    // autoplaySpeed:3000,
-                    pauseOnHover: true,  //鼠标悬停暂停自动播放
-                    dots: true,
-                    arrows:false,
-                    // slickPlay:true
-                }); 
-                $('#player2').slick({
-                    // autoplay: true,
-                    // autoplaySpeed:3000,
-                    pauseOnHover: true,  //鼠标悬停暂停自动播放
-                    dots: true,
-                    arrows:false,
-                    // slickPlay:true
-                }); 
-                $('#player3').slick({
-                    // autoplay: true,
-                    // autoplaySpeed:3000,
-                    pauseOnHover: true,  //鼠标悬停暂停自动播放
-                    dots: true,
-                    arrows:false,
-                    // slickPlay:true
-                }); 
-                $('#player4').slick({
-                    // autoplay: true,
-                    // autoplaySpeed:3000,
-                    pauseOnHover: true,  //鼠标悬停暂停自动播放
-                    dots: true,
-                    arrows:false,
-                    // slickPlay:true
-                }); 
-                $('#player5').slick({
-                    // autoplay: true,
-                    // autoplaySpeed:3000,
-                    pauseOnHover: true,  //鼠标悬停暂停自动播放
-                    dots: true,
-                    arrows:false,
-                    // slickPlay:true
-                }); 
-                $('#player6').slick({
-                    // autoplay: true,
-                    // autoplaySpeed:3000,
-                    pauseOnHover: true,  //鼠标悬停暂停自动播放
-                    dots: true,
-                    arrows:false,
-                    // slickPlay:true
-                }); 
-                $('#player7').slick({
-                    // autoplay: true,
-                    // autoplaySpeed:3000,
-                    pauseOnHover: true,  //鼠标悬停暂停自动播放
-                    dots: true,
-                    arrows:false,
-                    // slickPlay:true
-                }); 
-                $('#player8').slick({
-                    // autoplay: true,
-                    // autoplaySpeed:3000,
-                    pauseOnHover: true,  //鼠标悬停暂停自动播放
-                    dots: true,
-                    arrows:false,
-                    // slickPlay:true
-                }); 
-                change(8);
-                drawWC(1, 'wc1');
-                drawWC(2, 'wc2');
-                drawWC(3, 'wc3');
-                drawWC(4, 'wc4');
-                drawWC(5, 'wc5');
-                drawWC(6, 'wc6');
-                drawWC(7, 'wc7');
-                drawWC(8, 'wc8');
-                // $(".card-page1").css("display", "flex");
-                // $(".card-page2").css("display", "flex");
 
+<head>
+    <title>一草一木</title>
+    <link rel="stylesheet" type="text/css" href="./css/slick.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/page1.css">
+    <style>
+        /* 字体配置 */
+        @font-face {
+            font-family: 'myfont1';
+            src: url('./font/FZShenYMXSJW.TTF');
+        }
+
+        @font-face {
+            font-family: 'myfont2';
+            src: url('./font/FZQinKeBYSJT.TTF');
+        }
+    </style>
+    <script src="./js/echarts.js"></script>
+    <script src="./js/echarts-wordcloud.js"></script>
+    <script src="./js/dataset.js"></script>
+    <!-- <script src = "./js/eras_bar.js>"></script> -->
+    <script src="./js/data.js"></script>
+    <script src="./js/vue.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#player1').slick({
+                // autoplay: true,
+                // autoplaySpeed:3000,
+                pauseOnHover: true,  //鼠标悬停暂停自动播放
+                dots: true,
+                arrows: false,
+                // slickPlay:true
             });
-        </script>
-        <script src="./js/bootstrap.min.js"></script>
-    </head>
-    
-    <img src="./img/bg2.jpg" alt="" style="position: fixed; width: 100%; height: 100%; z-index: -5;">
-    <body>
-        
-        <div class="page1" style="">
-            
-            <div class="btn-group" role="group" aria-label="Basic example" style = "display:flex;margin-left:865px;margin-bottom:-200px;margin-top:0px;">
-                <button class="new_btn" style = "outline:none"onclick="javascrtpt:window.location.href='index.html'">
-                    <img src="./img/1-1.png">
-                </button>
-                <button class="new_btn" style = "outline:none;"onclick="javascrtpt:window.location.href='1.html'">
-                    <img src="./img/2-1.png" />
-                </button>
-                <button class="new_btn" style = "outline:none;"onclick="javascrtpt:window.location.href='2.html'">
-                    <img src="./img/3-1.png" />
-                </button>
-                <button class="new_btn"  style = "outline:none;"onclick="javascrtpt:window.location.href='3.html'">
-                    <img src="./img/4-1.png" />
-                </button>
-            </div>
-            
-            
-            <div style="display: flex; flex-direction: column; margin: 0 auto; height:570px; min-width: 1400px; max-width: 1400px; padding-top: 150px;">
-                <div class="card-div">
-                    <div id="content1" class="need-hide1 show" style = "display: none;">
-                        <div id="player1">
-                            <div class="card-page1" style="display: flex; flex-direction: row; margin-left: 240px; margin-top: 59px;">
-                                <div class="img-div">
-                                    <img class="img" src = "./img/菊.png">
-                                </div>
-                                <div class="info-div" id = 'info1'>
-                                    
-                                </div>
-                                
-                            </div>
-                            <div class="card-page2" style="margin-top: 60px;">
-                                <div style="display: flex; flex-direction: column;">                           
-                                    <div class="wc-div" id="wc1"style="margin-left: 240px; margin-top: 60px;">  
-                                    </div>
-                                    <div class="map-title" style="height: 20px; text-align: center; margin-top: 0px; font-family: 'myfont2'; font-size: 20px; margin-left: 240px;">
-                                        偏爱菊的诗人
-                                    </div>
-                                </div>
-                                
-                                <!-- <div class="wc-div" id="wc1">  
-                                </div> -->
-                                <div class="poet-div" style="margin-top: 200px;">
-                                    诗人对应的诗
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            $('#player2').slick({
+                // autoplay: true,
+                // autoplaySpeed:3000,
+                pauseOnHover: true,  //鼠标悬停暂停自动播放
+                dots: true,
+                arrows: false,
+                // slickPlay:true
+            });
+            $('#player3').slick({
+                // autoplay: true,
+                // autoplaySpeed:3000,
+                pauseOnHover: true,  //鼠标悬停暂停自动播放
+                dots: true,
+                arrows: false,
+                // slickPlay:true
+            });
+            $('#player4').slick({
+                // autoplay: true,
+                // autoplaySpeed:3000,
+                pauseOnHover: true,  //鼠标悬停暂停自动播放
+                dots: true,
+                arrows: false,
+                // slickPlay:true
+            });
+            $('#player5').slick({
+                // autoplay: true,
+                // autoplaySpeed:3000,
+                pauseOnHover: true,  //鼠标悬停暂停自动播放
+                dots: true,
+                arrows: false,
+                // slickPlay:true
+            });
+            $('#player6').slick({
+                // autoplay: true,
+                // autoplaySpeed:3000,
+                pauseOnHover: true,  //鼠标悬停暂停自动播放
+                dots: true,
+                arrows: false,
+                // slickPlay:true
+            });
+            $('#player7').slick({
+                // autoplay: true,
+                // autoplaySpeed:3000,
+                pauseOnHover: true,  //鼠标悬停暂停自动播放
+                dots: true,
+                arrows: false,
+                // slickPlay:true
+            });
+            $('#player8').slick({
+                // autoplay: true,
+                // autoplaySpeed:3000,
+                pauseOnHover: true,  //鼠标悬停暂停自动播放
+                dots: true,
+                arrows: false,
+                // slickPlay:true
+            });
+            change(8);
+            // $(".card-page1").css("display", "flex");
+            // $(".card-page2").css("display", "flex");
 
-                    <div id="content2" class="need-hide1 show" style="display: none;">
-                        <div id="player2">
-                            <div class="card-page1" style="display: flex; flex-direction: row; margin-left: 240px; margin-top: 59px;">
-                                <div class="img-div">
-                                    <img class="img" src = "./img/兰.png">
-                                </div>
-                                <div class="info-div" id = 'infor2'>
-                                    <h2>植物简介</h2>
-                                </div>
-                            </div>
-                            <div class="card-page2" style="margin-top: 60px;">
-                                <div style="display: flex; flex-direction: column;">
-                                    <div class="wc-div" id="wc2"style="margin-left: 240px; margin-top: 60px;">  
-                                    </div>
-                                    <div class="map-title" style="height: 20px; text-align: center; margin-top: 0px; font-family: 'myfont2'; font-size: 20px; margin-left: 240px;">
-                                        偏爱兰的诗人
-                                    </div>
-                                </div>
+        });
+    </script>
+    <script src="./js/bootstrap.min.js"></script>
+</head>
 
-                                <div class="poet-div" style="margin-top: 200px;">
-                                    诗人对应的诗
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<body>
 
-                    <div id="content3" class="need-hide1 show" style="display: none;">
-                        <div id="player3">
-                            <div class="card-page1" style="display: flex; flex-direction: row; margin-left: 240px; margin-top: 59px;">
-                                <div class="img-div">
-                                    <img class="img" src = "./img/莲.png">
-                                </div>
-                                <div class="info-div" id = 'infor3'>
-                                    <h2>植物简介</h2>
-                                </div>
-                            </div>
-                            <div class="card-page2" style="margin-top: 60px;">
-                                <div style="display: flex; flex-direction: column;">
-                                    <div class="wc-div" id="wc3"style="margin-left: 240px; margin-top: 60px;">  
-                                    </div>
-                                    <div class="map-title" style="height: 20px; text-align: center; margin-top: 0px; font-family: 'myfont2'; font-size: 20px; margin-left: 240px;">
-                                        偏爱莲的诗人
-                                    </div>
-                                </div>
+    <div class="page1">
 
-                                <div class="poet-div" style="margin-top: 200px;">
-                                    诗人对应的诗
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="content4" class="need-hide1 show" style="display: none;">
-                        <div id="player4">
-                            <div class="card-page1" style="display: flex; flex-direction: row; margin-left: 240px; margin-top: 59px;">
-                                <div class="img-div">
-                                    <img class="img" src = "./img/柳.png">
-                                </div>
-                                <div class="info-div" id = 'infor4'>
-                                    <h2>植物简介</h2>
-                                </div>
-                            </div>
-                            <div class="card-page2" style="margin-top: 60px;">
-                                <div style="display: flex; flex-direction: column;">
-                                    <div class="wc-div" id="wc4"style="margin-left: 240px; margin-top: 60px;">  
-                                    </div>
-                                    <div class="map-title" style="height: 20px; text-align: center; margin-top: 0px; font-family: 'myfont2'; font-size: 20px; margin-left: 240px;">
-                                        偏爱柳的诗人
-                                    </div>
-                                </div>
-                                <div class="poet-div" style="margin-top: 200px;">
-                                    诗人对应的诗
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="content5" class="need-hide1 show" style="display: none;">
-                        <div id="player5">
-                            <div class="card-page1" style="display: flex; flex-direction: row; margin-left: 240px; margin-top: 59px;">
-                                <div class="img-div">
-                                    <img class="img" src = "./img/梅.png">
-                                </div>
-                                <div class="info-div" id = 'infor5'>
-                                    <h2>植物简介</h2>
-                                </div>
-                            </div>
-                            <div class="card-page2" style="margin-top: 60px;">
-                                <div style="display: flex; flex-direction: column;">
-                                    <div class="wc-div" id="wc5"style="margin-left: 240px; margin-top: 60px;">  
-                                    </div>
-                                    <div class="map-title" style="height: 20px; text-align: center; margin-top: 0px; font-family: 'myfont2'; font-size: 20px; margin-left: 240px;">
-                                        偏爱梅的诗人
-                                    </div>
-                                </div>
-                                <div class="poet-div" style="margin-top: 200px;">
-                                    诗人对应的诗
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="content6" class="need-hide1 show" style="display: none;">
-                        <div id="player6">
-                            <div class="card-page1" style="display: flex; flex-direction: row; margin-left: 240px; margin-top: 59px;">
-                                <div class="img-div">
-                                    <img class="img" src = "./img/松.png">
-                                </div>
-                                <div class="info-div" id = 'infor6'>
-                                    <h2>植物简介</h2>
-                                </div>
-                            </div>
-                            <div class="card-page2" style="margin-top: 60px;">
-                                <div style="display: flex; flex-direction: column;">
-                                    <div class="wc-div" id="wc6"style="margin-left: 240px; margin-top: 60px;">  
-                                    </div>
-                                    <div class="map-title" style="height: 20px; text-align: center; margin-top: 0px; font-family: 'myfont2'; font-size: 20px; margin-left: 240px;">
-                                        偏爱松的诗人
-                                    </div>
-                                </div>
-                                <div class="poet-div" style="margin-top: 200px;">
-                                    诗人对应的诗
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="content7" class="need-hide1 show" style="display:none;">
-                        <div id="player7">
-                            <div class="card-page1" style="display: flex; flex-direction: row; margin-left: 240px; margin-top: 59px;">
-                                <div class="img-div">
-                                    <img class="img" src = "./img/桃.png">
-                                </div>
-                                <div class="info-div" id = 'infor7'>
-                                    <h2>植物简介</h2>
-                                </div>
-                            </div>
-                            <div class="card-page2">
-                                <div style="display: flex; flex-direction: column;">
-                                    <div class="wc-div" id="wc7" style="margin-left: 240px; margin-top: 60px;">  
-                                    </div>
-                                    <div class="map-title" style="height: 20px; text-align: center; margin-top: 0px; font-family: 'myfont2'; font-size: 20px; margin-left: 240px;">
-                                        偏爱桃的诗人
-                                    </div>
-                                </div>
-                                <div class="poet-div" style="margin-top: 150px;">
-                                    诗人对应的诗
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div id="content8" class="need-hide1 show" sytle="display:none">
-                        <div id="player8">
-                            <div class="card-page1" style="display: flex; flex-direction: row; margin-left: 240px; margin-top: 59px;">
-                                <div class="img-div">
-                                    <img class="img" src = "./img/竹.png" style="z-index: -1;">
-                                </div>
-                                <div class="info-div" id = 'infor8'>
-                                    <h2>植物简介</h2>
-                                </div>
-                            </div>
-                            <div class="card-page2">
-                                <div style="display: flex; flex-direction: column;">
-                                    <div class="wc-div" id="wc8" style="margin-left: 240px; margin-top: 60px;">  
-                                    </div>
-                                    <div class="map-title" style="height: 20px; text-align: center; margin-top: 0px; font-family: 'myfont2'; font-size: 20px; margin-left: 240px;">
-                                        偏爱竹的诗人
-                                    </div>
-                                </div>
-                                <div class="poet-div"  style="margin-top: 200px;">
-                                    诗人对应的诗
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="main" >
-                    <div style="margin: 0 auto; height: 50px; z-index:;">
-                        <!-- 菊、兰、莲、柳、梅、松、桃、竹 -->
-
-                        <!-- (215, 204, 182), rgba(194,161,130,0.5) -->
-                        <!-- <button class="btn btn-secondary" type="button" onclick="new_hide()">测试</button> -->
-                        <button id="btn8" class="btn plant-btn" type="button"  onclick="change(8)" style="position: absolute; top: 380px; left: 240px;">
-                            <!-- <img class="btn-img" src="../img2/菊.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
-                            <img src="./img/btn-img/竹.png" style="width: 50px; height: 50px;">
-                        </button>
-                        <button id="btn6" class="btn plant-btn" type="button"  onclick="change(6)" style="position: absolute; top: 280px; left: 260px;">
-                            <!-- <img class="btn-img" src="../img2/桃.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
-                            <img src="./img/btn-img/松.png" style="width: 50px; height: 50px;">
-                        </button>
-                        <button id="btn4" class="btn plant-btn" type="button"  onclick="change(4)" style="position: absolute; top: 180px; left: 320px;">
-                            <!-- <img class="btn-img" src="../img2/柳.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
-                            <img src="./img/btn-img/柳.png" style="width: 50px; height: 50px;">
-                        </button>
-                        <button id="btn3" class="btn plant-btn" type="button" onclick="change(3)" style="position: absolute; top: 120px; left: 440px;">
-                            <!-- <img class="btn-img" src="../img2/梅.png" style="width: 50px; height: 50px; border-radius: 64%;"> -> -->
-                            <img src="./img/btn-img/莲.png" style="width: 50px; height: 50px;">
-                        </button>
-                        <button id="btn2" class="btn plant-btn" type="button" onclick="change(2)" style="position: absolute; top: 120px; left: 560px;">
-                            <!-- <img class="btn-img" src="../img2/竹.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
-                            <img src="./img/btn-img/兰.png" style="width: 50px; height: 50px;">
-                        </button>
-                        <button id="btn7" class="btn plant-btn" type="button"  onclick="change(7)" style="position: absolute; top: 180px; left: 680px;">
-                            <!-- <img class="btn-img" src="../img2/兰.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
-                            <img src="./img/btn-img/桃.png" style="width: 50px; height: 50px;">
-                        </button>
-                        <button id="btn5" class="btn plant-btn" type="button"  onclick="change(5)" style="position: absolute; top: 280px; left: 740px;">
-                            <!-- <img class="btn-img" src="../img2/荷花.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
-                            <img src="./img/btn-img/梅.png" style="width:50px;">
-                        </button>
-                        <button id="btn1" class="btn plant-btn" type="button" onclick="change(1)" style="position: absolute; top: 380px; left: 760px;">
-                            <!-- <img class="btn-img" src="../img2/松.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
-                            <img src="./img/btn-img/菊.png" style="width: 50px; height: 50px;">
-                        </button>
-                    </div>
-                </div>
-            </div>
+        <div class="btn-group" role="group" aria-label="Basic example"
+            style="display:flex;width:60%;height:22%;margin-left:35%;flex-direction:row-reverse;margin-bottom: -10%;z-index: 999;">
+            <button class="new_btn" onclick="javascrtpt:window.location.href='3.html'" style="outline: none;">
+                <img src="./img/4-1.png">
+            </button>
+            <button class="new_btn" onclick="javascrtpt:window.location.href='2.html'" style="outline: none;">
+                <img src="./img/3-1.png" />
+            </button>
+            <button class="new_btn" onclick="javascrtpt:window.location.href='1.html'" style="outline: none;">
+                <img src="./img/2-1.png" />
+            </button>
+            <button class="new_btn" onclick="javascrtpt:window.location.href='index.html'" style="outline: none;">
+                <img src="./img/1-1.png" />
+            </button>
         </div>
-    </body>
+
+
+        <div id="main_2">
+            <!-- <div class="card-div"> -->
+            <div id="content1" class="need-hide1 show" style="display: none;height:90%;">
+                <div id="player1">
+                    <div class="card-page1">
+                        <div class="img-div">
+                            <img class="img" src="./img/菊.png" style="z-index: -1;">
+                            <div id="button_main" style="margin: 0 auto; height: 50px; z-index:999;">
+                                <!-- 菊、兰、莲、柳、梅、松、桃、竹 -->
+
+                                <!-- (215, 204, 182), rgba(194,161,130,0.5) -->
+                                <!-- <button class="btn btn-secondary" type="button" onclick="new_hide()">测试</button> -->
+                                <button id="btn8" class="btn plant-btn" type="button"style = "position: absolute;top: 56%;left: 18%;" onclick="change(8)">
+                                    <!-- <img class="btn-img" src="../img2/菊.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/竹.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn6" class="btn plant-btn" type="button"style = "position: absolute;top: 40%;left: 20%;" onclick="change(6)">
+                                    <!-- <img class="btn-img" src="../img2/桃.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/松.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn4" class="btn plant-btn" type="button" style = "position: absolute;top: 24%;left: 27%;"onclick="change(4)">
+                                    <!-- <img class="btn-img" src="../img2/柳.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/柳.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn3" class="btn plant-btn" type="button"style = "position: absolute;top: 13%;left: 43%;" onclick="change(3)">
+                                    <!-- <img class="btn-img" src="../img2/梅.png" style="width: 50px; height: 50px; border-radius: 64%;"> -> -->
+                                    <img src="./img/btn-img/莲.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn2" class="btn plant-btn" type="button" style = "position: absolute;top: 13%;left: 62%;"onclick="change(2)">
+                                    <!-- <img class="btn-img" src="../img2/竹.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/兰.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn7" class="btn plant-btn" type="button" style = "position: absolute;top: 24%;left: 78%;"onclick="change(7)">
+                                    <!-- <img class="btn-img" src="../img2/兰.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/桃.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn5" class="btn plant-btn" type="button" style = "position: absolute;top: 40%;left: 85%;" onclick="change(5)">
+                                    <!-- <img class="btn-img" src="../img2/荷花.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/梅.png" style="width:50px;">
+                                </button>
+                                <button id="btn1" class="btn plant-btn" type="button" style = "position: absolute;top: 56%;left: 88%;" onclick="change(1)">
+                                    <!-- <img class="btn-img" src="../img2/松.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/菊.png" style="width: 50px; height: 50px;">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="info-div" id='infor8'>
+                            <h2>植物简介</h2>
+                        </div>
+                    </div>
+                    <div class="card-page2">
+                        <div style="display: flex; flex-direction: column;width: 50%;height: 100%;margin-left:10%;">
+                            <div class="wc-div" id="wc1">
+                            </div>
+                            <div class="map-title">
+                                偏爱菊的诗人
+                            </div>
+                        </div>
+
+                        <!-- <div class="wc-div" id="wc1">  
+                                </div> -->
+                        <div class="poet-div">
+                            诗人对应的诗
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content2" class="need-hide1 show" style="display: none;height:90%;">
+                <div id="player2">
+                    <div class="card-page1">
+                        <div class="img-div">
+                            <img class="img" src="./img/兰.png" style="z-index: -1;">
+                            <div id="button_main" style="margin: 0 auto; height: 50px; z-index:999;">
+                                <!-- 菊、兰、莲、柳、梅、松、桃、竹 -->
+
+                                <!-- (215, 204, 182), rgba(194,161,130,0.5) -->
+                                <!-- <button class="btn btn-secondary" type="button" onclick="new_hide()">测试</button> -->
+                                <button id="btn8" class="btn plant-btn" type="button"style = "position: absolute;top: 56%;left: 18%;" onclick="change(8)">
+                                    <!-- <img class="btn-img" src="../img2/菊.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/竹.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn6" class="btn plant-btn" type="button"style = "position: absolute;top: 40%;left: 20%;" onclick="change(6)">
+                                    <!-- <img class="btn-img" src="../img2/桃.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/松.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn4" class="btn plant-btn" type="button" style = "position: absolute;top: 24%;left: 27%;"onclick="change(4)">
+                                    <!-- <img class="btn-img" src="../img2/柳.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/柳.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn3" class="btn plant-btn" type="button"style = "position: absolute;top: 13%;left: 43%;" onclick="change(3)">
+                                    <!-- <img class="btn-img" src="../img2/梅.png" style="width: 50px; height: 50px; border-radius: 64%;"> -> -->
+                                    <img src="./img/btn-img/莲.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn2" class="btn plant-btn" type="button" style = "position: absolute;top: 13%;left: 62%;"onclick="change(2)">
+                                    <!-- <img class="btn-img" src="../img2/竹.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/兰.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn7" class="btn plant-btn" type="button" style = "position: absolute;top: 24%;left: 78%;"onclick="change(7)">
+                                    <!-- <img class="btn-img" src="../img2/兰.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/桃.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn5" class="btn plant-btn" type="button" style = "position: absolute;top: 40%;left: 85%;" onclick="change(5)">
+                                    <!-- <img class="btn-img" src="../img2/荷花.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/梅.png" style="width:50px;">
+                                </button>
+                                <button id="btn1" class="btn plant-btn" type="button" style = "position: absolute;top: 56%;left: 88%;" onclick="change(1)">
+                                    <!-- <img class="btn-img" src="../img2/松.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/菊.png" style="width: 50px; height: 50px;">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="info-div" id='infor8'>
+                            <h2>植物简介</h2>
+                        </div>
+                    </div>
+                    <div class="card-page2">
+                        <div style="display: flex; flex-direction: column;width: 50%;height: 100%;margin-left:10%;">
+                            <div class="wc-div" id="wc2">
+                            </div>
+                            <div class="map-title">
+                                偏爱兰的诗人
+                            </div>
+                        </div>
+
+                        <div class="poet-div">
+                            诗人对应的诗
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content3" class="need-hide1 show" style="display: none;height:90%;">
+                <div id="player3">
+                    <div class="card-page1">
+                        <div class="img-div">
+                            <img class="img" src="./img/莲.png" style="z-index: -1;">
+                            <div id="button_main" style="margin: 0 auto; height: 50px; z-index:999;">
+                                <!-- 菊、兰、莲、柳、梅、松、桃、竹 -->
+
+                                <!-- (215, 204, 182), rgba(194,161,130,0.5) -->
+                                <!-- <button class="btn btn-secondary" type="button" onclick="new_hide()">测试</button> -->
+                                <button id="btn8" class="btn plant-btn" type="button"style = "position: absolute;top: 56%;left: 18%;" onclick="change(8)">
+                                    <!-- <img class="btn-img" src="../img2/菊.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/竹.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn6" class="btn plant-btn" type="button"style = "position: absolute;top: 40%;left: 20%;" onclick="change(6)">
+                                    <!-- <img class="btn-img" src="../img2/桃.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/松.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn4" class="btn plant-btn" type="button" style = "position: absolute;top: 24%;left: 27%;"onclick="change(4)">
+                                    <!-- <img class="btn-img" src="../img2/柳.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/柳.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn3" class="btn plant-btn" type="button"style = "position: absolute;top: 13%;left: 43%;" onclick="change(3)">
+                                    <!-- <img class="btn-img" src="../img2/梅.png" style="width: 50px; height: 50px; border-radius: 64%;"> -> -->
+                                    <img src="./img/btn-img/莲.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn2" class="btn plant-btn" type="button" style = "position: absolute;top: 13%;left: 62%;"onclick="change(2)">
+                                    <!-- <img class="btn-img" src="../img2/竹.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/兰.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn7" class="btn plant-btn" type="button" style = "position: absolute;top: 24%;left: 78%;"onclick="change(7)">
+                                    <!-- <img class="btn-img" src="../img2/兰.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/桃.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn5" class="btn plant-btn" type="button" style = "position: absolute;top: 40%;left: 85%;" onclick="change(5)">
+                                    <!-- <img class="btn-img" src="../img2/荷花.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/梅.png" style="width:50px;">
+                                </button>
+                                <button id="btn1" class="btn plant-btn" type="button" style = "position: absolute;top: 56%;left: 88%;" onclick="change(1)">
+                                    <!-- <img class="btn-img" src="../img2/松.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/菊.png" style="width: 50px; height: 50px;">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="info-div" id='infor8'>
+                            <h2>植物简介</h2>
+                        </div>
+                    </div>
+                    <div class="card-page2">
+                        <div style="display: flex; flex-direction: column;width: 50%;height: 100%;margin-left:10%;">
+                            <div class="wc-div" id="wc3">
+                            </div>
+                            <div class="map-title">
+                                偏爱莲的诗人
+                            </div>
+                        </div>
+
+                        <div class="poet-div">
+                            诗人对应的诗
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content4" class="need-hide1 show" style="display: none;height:90%;">
+                <div id="player4">
+                    <div class="card-page1">
+                        <div class="img-div">
+                            <img class="img" src="./img/柳.png" style="z-index: -1;">
+                            <div id="button_main" style="margin: 0 auto; height: 50px; z-index:999;">
+                                <!-- 菊、兰、莲、柳、梅、松、桃、竹 -->
+
+                                <!-- (215, 204, 182), rgba(194,161,130,0.5) -->
+                                <!-- <button class="btn btn-secondary" type="button" onclick="new_hide()">测试</button> -->
+                                <button id="btn8" class="btn plant-btn" type="button"style = "position: absolute;top: 56%;left: 18%;" onclick="change(8)">
+                                    <!-- <img class="btn-img" src="../img2/菊.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/竹.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn6" class="btn plant-btn" type="button"style = "position: absolute;top: 40%;left: 20%;" onclick="change(6)">
+                                    <!-- <img class="btn-img" src="../img2/桃.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/松.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn4" class="btn plant-btn" type="button" style = "position: absolute;top: 24%;left: 27%;"onclick="change(4)">
+                                    <!-- <img class="btn-img" src="../img2/柳.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/柳.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn3" class="btn plant-btn" type="button"style = "position: absolute;top: 13%;left: 43%;" onclick="change(3)">
+                                    <!-- <img class="btn-img" src="../img2/梅.png" style="width: 50px; height: 50px; border-radius: 64%;"> -> -->
+                                    <img src="./img/btn-img/莲.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn2" class="btn plant-btn" type="button" style = "position: absolute;top: 13%;left: 62%;"onclick="change(2)">
+                                    <!-- <img class="btn-img" src="../img2/竹.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/兰.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn7" class="btn plant-btn" type="button" style = "position: absolute;top: 24%;left: 78%;"onclick="change(7)">
+                                    <!-- <img class="btn-img" src="../img2/兰.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/桃.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn5" class="btn plant-btn" type="button" style = "position: absolute;top: 40%;left: 85%;" onclick="change(5)">
+                                    <!-- <img class="btn-img" src="../img2/荷花.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/梅.png" style="width:50px;">
+                                </button>
+                                <button id="btn1" class="btn plant-btn" type="button" style = "position: absolute;top: 56%;left: 88%;" onclick="change(1)">
+                                    <!-- <img class="btn-img" src="../img2/松.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/菊.png" style="width: 50px; height: 50px;">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="info-div" id='infor8'>
+                            <h2>植物简介</h2>
+                        </div>
+                    </div>
+                    <div class="card-page2">
+                        <div style="display: flex; flex-direction: column;width: 50%;height: 100%;margin-left:10%;">
+                            <div class="wc-div" id="wc4">
+                            </div>
+                            <div class="map-title">
+                                偏爱柳的诗人
+                            </div>
+                        </div>
+                        <div class="poet-div">
+                            诗人对应的诗
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content5" class="need-hide1 show" style="display: none;height:90%;">
+                <div id="player5">
+                    <div class="card-page1">
+                        <div class="img-div">
+                            <img class="img" src="./img/梅.png" style="z-index: -1;">
+                            <div id="button_main" style="margin: 0 auto; height: 50px; z-index:999;">
+                                <!-- 菊、兰、莲、柳、梅、松、桃、竹 -->
+
+                                <!-- (215, 204, 182), rgba(194,161,130,0.5) -->
+                                <!-- <button class="btn btn-secondary" type="button" onclick="new_hide()">测试</button> -->
+                                <button id="btn8" class="btn plant-btn" type="button"style = "position: absolute;top: 56%;left: 18%;" onclick="change(8)">
+                                    <!-- <img class="btn-img" src="../img2/菊.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/竹.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn6" class="btn plant-btn" type="button"style = "position: absolute;top: 40%;left: 20%;" onclick="change(6)">
+                                    <!-- <img class="btn-img" src="../img2/桃.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/松.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn4" class="btn plant-btn" type="button" style = "position: absolute;top: 24%;left: 27%;"onclick="change(4)">
+                                    <!-- <img class="btn-img" src="../img2/柳.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/柳.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn3" class="btn plant-btn" type="button"style = "position: absolute;top: 13%;left: 43%;" onclick="change(3)">
+                                    <!-- <img class="btn-img" src="../img2/梅.png" style="width: 50px; height: 50px; border-radius: 64%;"> -> -->
+                                    <img src="./img/btn-img/莲.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn2" class="btn plant-btn" type="button" style = "position: absolute;top: 13%;left: 62%;"onclick="change(2)">
+                                    <!-- <img class="btn-img" src="../img2/竹.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/兰.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn7" class="btn plant-btn" type="button" style = "position: absolute;top: 24%;left: 78%;"onclick="change(7)">
+                                    <!-- <img class="btn-img" src="../img2/兰.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/桃.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn5" class="btn plant-btn" type="button" style = "position: absolute;top: 40%;left: 85%;" onclick="change(5)">
+                                    <!-- <img class="btn-img" src="../img2/荷花.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/梅.png" style="width:50px;">
+                                </button>
+                                <button id="btn1" class="btn plant-btn" type="button" style = "position: absolute;top: 56%;left: 88%;" onclick="change(1)">
+                                    <!-- <img class="btn-img" src="../img2/松.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/菊.png" style="width: 50px; height: 50px;">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="info-div" id='infor8'>
+                            <h2>植物简介</h2>
+                        </div>
+                    </div>
+                    <div class="card-page2">
+                        <div style="display: flex; flex-direction: column;width: 50%;height: 100%;margin-left:10%;">
+                            <div class="wc-div" id="wc5">
+                            </div>
+                            <div class="map-title">
+                                偏爱梅的诗人
+                            </div>
+                        </div>
+                        <div class="poet-div">
+                            诗人对应的诗
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content6" class="need-hide1 show" style="display: none;height:90%;">
+                <div id="player6">
+                    <div class="card-page1">
+                        <div class="img-div">
+                            <img class="img" src="./img/松.png" style="z-index: -1;">
+                            <div id="button_main" style="margin: 0 auto; height: 50px; z-index:999;">
+                                <!-- 菊、兰、莲、柳、梅、松、桃、竹 -->
+
+                                <!-- (215, 204, 182), rgba(194,161,130,0.5) -->
+                                <!-- <button class="btn btn-secondary" type="button" onclick="new_hide()">测试</button> -->
+                                <button id="btn8" class="btn plant-btn" type="button"style = "position: absolute;top: 56%;left: 18%;" onclick="change(8)">
+                                    <!-- <img class="btn-img" src="../img2/菊.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/竹.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn6" class="btn plant-btn" type="button"style = "position: absolute;top: 40%;left: 20%;" onclick="change(6)">
+                                    <!-- <img class="btn-img" src="../img2/桃.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/松.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn4" class="btn plant-btn" type="button" style = "position: absolute;top: 24%;left: 27%;"onclick="change(4)">
+                                    <!-- <img class="btn-img" src="../img2/柳.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/柳.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn3" class="btn plant-btn" type="button"style = "position: absolute;top: 13%;left: 43%;" onclick="change(3)">
+                                    <!-- <img class="btn-img" src="../img2/梅.png" style="width: 50px; height: 50px; border-radius: 64%;"> -> -->
+                                    <img src="./img/btn-img/莲.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn2" class="btn plant-btn" type="button" style = "position: absolute;top: 13%;left: 62%;"onclick="change(2)">
+                                    <!-- <img class="btn-img" src="../img2/竹.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/兰.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn7" class="btn plant-btn" type="button" style = "position: absolute;top: 24%;left: 78%;"onclick="change(7)">
+                                    <!-- <img class="btn-img" src="../img2/兰.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/桃.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn5" class="btn plant-btn" type="button" style = "position: absolute;top: 40%;left: 85%;" onclick="change(5)">
+                                    <!-- <img class="btn-img" src="../img2/荷花.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/梅.png" style="width:50px;">
+                                </button>
+                                <button id="btn1" class="btn plant-btn" type="button" style = "position: absolute;top: 56%;left: 88%;" onclick="change(1)">
+                                    <!-- <img class="btn-img" src="../img2/松.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/菊.png" style="width: 50px; height: 50px;">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="info-div" id='infor8'>
+                            <h2>植物简介</h2>
+                        </div>
+                    </div>
+                    <div class="card-page2">
+                        <div style="display: flex; flex-direction: column;width: 50%;height: 100%;margin-left:10%;">
+                            <div class="wc-div" id="wc6">
+                            </div>
+                            <div class="map-title">
+                                偏爱松的诗人
+                            </div>
+                        </div>
+                        <div class="poet-div">
+                            诗人对应的诗
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content7" class="need-hide1 show" style="display:none;height:90%;">
+                <div id="player7">
+                    <div class="card-page1">
+                        <div class="img-div">
+                            <img class="img" src="./img/桃.png" style="z-index: -1;">
+                            <div id="button_main" style="margin: 0 auto; height: 50px; z-index:999;">
+                                <!-- 菊、兰、莲、柳、梅、松、桃、竹 -->
+
+                                <!-- (215, 204, 182), rgba(194,161,130,0.5) -->
+                                <!-- <button class="btn btn-secondary" type="button" onclick="new_hide()">测试</button> -->
+                                <button id="btn8" class="btn plant-btn" type="button"style = "position: absolute;top: 56%;left: 18%;" onclick="change(8)">
+                                    <!-- <img class="btn-img" src="../img2/菊.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/竹.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn6" class="btn plant-btn" type="button"style = "position: absolute;top: 40%;left: 20%;" onclick="change(6)">
+                                    <!-- <img class="btn-img" src="../img2/桃.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/松.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn4" class="btn plant-btn" type="button" style = "position: absolute;top: 24%;left: 27%;"onclick="change(4)">
+                                    <!-- <img class="btn-img" src="../img2/柳.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/柳.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn3" class="btn plant-btn" type="button"style = "position: absolute;top: 13%;left: 43%;" onclick="change(3)">
+                                    <!-- <img class="btn-img" src="../img2/梅.png" style="width: 50px; height: 50px; border-radius: 64%;"> -> -->
+                                    <img src="./img/btn-img/莲.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn2" class="btn plant-btn" type="button" style = "position: absolute;top: 13%;left: 62%;"onclick="change(2)">
+                                    <!-- <img class="btn-img" src="../img2/竹.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/兰.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn7" class="btn plant-btn" type="button" style = "position: absolute;top: 24%;left: 78%;"onclick="change(7)">
+                                    <!-- <img class="btn-img" src="../img2/兰.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/桃.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn5" class="btn plant-btn" type="button" style = "position: absolute;top: 40%;left: 85%;" onclick="change(5)">
+                                    <!-- <img class="btn-img" src="../img2/荷花.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/梅.png" style="width:50px;">
+                                </button>
+                                <button id="btn1" class="btn plant-btn" type="button" style = "position: absolute;top: 56%;left: 88%;" onclick="change(1)">
+                                    <!-- <img class="btn-img" src="../img2/松.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/菊.png" style="width: 50px; height: 50px;">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="info-div" id='infor8'>
+                            <h2>植物简介</h2>
+                        </div>
+                    </div>
+                    <div class="card-page2">
+                        <div style="display: flex; flex-direction: column;width: 50%;height: 100%;margin-left:10%;">
+                            <div class="wc-div" id="wc7">
+                            </div>
+                            <div class="map-title">
+                                偏爱桃的诗人
+                            </div>
+                        </div>
+                        <div class="poet-div">
+                            诗人对应的诗
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content8" class="need-hide1 show" sytle="display:none;height:90%;">
+                <div id="player8">
+                    <div class="card-page1">
+                        <div class="img-div">
+                            <img class="img" src="./img/竹.png" style="z-index: -1;">
+                            <div id="button_main" style="margin: 0 auto; height: 50px; z-index:999;">
+                                <!-- 菊、兰、莲、柳、梅、松、桃、竹 -->
+
+                                <!-- (215, 204, 182), rgba(194,161,130,0.5) -->
+                                <!-- <button class="btn btn-secondary" type="button" onclick="new_hide()">测试</button> -->
+                                <button id="btn8" class="btn plant-btn" type="button"style = "position: absolute;top: 56%;left: 18%;" onclick="change(8)">
+                                    <!-- <img class="btn-img" src="../img2/菊.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/竹.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn6" class="btn plant-btn" type="button"style = "position: absolute;top: 40%;left: 20%;" onclick="change(6)">
+                                    <!-- <img class="btn-img" src="../img2/桃.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/松.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn4" class="btn plant-btn" type="button" style = "position: absolute;top: 24%;left: 27%;"onclick="change(4)">
+                                    <!-- <img class="btn-img" src="../img2/柳.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/柳.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn3" class="btn plant-btn" type="button"style = "position: absolute;top: 13%;left: 43%;" onclick="change(3)">
+                                    <!-- <img class="btn-img" src="../img2/梅.png" style="width: 50px; height: 50px; border-radius: 64%;"> -> -->
+                                    <img src="./img/btn-img/莲.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn2" class="btn plant-btn" type="button" style = "position: absolute;top: 13%;left: 62%;"onclick="change(2)">
+                                    <!-- <img class="btn-img" src="../img2/竹.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/兰.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn7" class="btn plant-btn" type="button" style = "position: absolute;top: 24%;left: 78%;"onclick="change(7)">
+                                    <!-- <img class="btn-img" src="../img2/兰.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/桃.png" style="width: 50px; height: 50px;">
+                                </button>
+                                <button id="btn5" class="btn plant-btn" type="button" style = "position: absolute;top: 40%;left: 85%;" onclick="change(5)">
+                                    <!-- <img class="btn-img" src="../img2/荷花.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/梅.png" style="width:50px;">
+                                </button>
+                                <button id="btn1" class="btn plant-btn" type="button" style = "position: absolute;top: 56%;left: 88%;" onclick="change(1)">
+                                    <!-- <img class="btn-img" src="../img2/松.png" style="width: 50px; height: 50px; border-radius: 64%;"> -->
+                                    <img src="./img/btn-img/菊.png" style="width: 50px; height: 50px;">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="info-div" id='infor8'>
+                            <h2>植物简介</h2>
+                        </div>
+                    </div>
+                    <div class="card-page2">
+                        <div style="display: flex; flex-direction: column;width: 50%;height: 100%;margin-left:10%;">
+                            <div class="wc-div" id="wc8">
+                            </div>
+                            <div class="map-title">
+                                偏爱竹的诗人
+                            </div>
+                        </div>
+                        <div class="poet-div">
+                            诗人对应的诗
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- </div>-->
+        </div>
+    </div>
+    </div>
+</body>
+
 </html>

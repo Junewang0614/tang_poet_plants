@@ -116,23 +116,19 @@
 /* Dots */
 .slick-dotted.slick-slider
 {
-    margin-bottom: 30px;
+    margin-bottom: 8%;
 }
 
 .slick-dots
 {
     position: absolute;
-    bottom: -25px;
-
     display: block;
-
     width: 100%;
     padding: 0;
     margin: 0;
-
     list-style: none;
-
     text-align: center;
+    height: 3%;
 }
 .slick-dots li
 {

@@ -1,18 +1,60 @@
+html{
+  width: 100%;
+  height: 100%;
+}
 body {
-  position: relative;
+  /* position: relative; */
+  width: 100%;
+  height: 100%;
 }
 .new_btn {
   background: none;
   border: none;
   outline: none;
-  width: 120px;
-  padding-left: 80px;
-  padding-right: 60px;
+  width: 140px;
 }
 .new_btn > img {
   width: 150px;
-  margin-left: -50px;
 }
+.page2{
+    background-size: cover;
+    background-image: url('../img/bg2.jpg');
+}
+#txt-div{
+  flex-grow: 1;
+}
+#main_2{
+  width: 83%;
+  height: 95%;
+  /* border: solid; */
+  margin-left: 15%;
+}
+#all_num{
+  display: block;
+  padding-left: 14%;
+  width: 80%;
+  height: 40%;
+  margin-top: 10%;
+}
+.info{
+  width: 83%;
+  height: 96%;
+  margin:0 auto;
+  display: none;
+}
+#info-div{
+  margin:10% 0 -4% 15%;
+}
+.return{
+  height: 10%;
+  margin-top: -4%;
+  margin-left:79%;
+  z-index:999;
+}
+.info-txt{
+  font-size: small;
+}
+
 .main2 {
   min-width: 80%;
   max-width: 80%;
@@ -89,9 +131,4 @@ body {
   width: 400px;
   /* border:solid; */
   text-align: center;
-}
-.main2 .page2 #map {
-  height: 300px;
-  width: 400px;
-  /* border: solid;*/
 }

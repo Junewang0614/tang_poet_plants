@@ -910,7 +910,7 @@ function piant_eras(dom, index) {
         },
         grid: {
             bottom: "10%",
-            left: "15%",
+            left: "12%",
             right: "15%"
         },
         legend: {
@@ -1014,9 +1014,9 @@ function change(n) {
     // init(n);
     $('.poet-div').html("<br/><br/>[点击词云中深色诗人名]");
     for (var i = 1; i <= 8; i++) {
-        $('.card-page1').css({"margin-left":"240px", "margin-top": "59px"})
+        /* $('.card-page1').css({"margin-left":"240px", "margin-top": "59px"})
         $('.wc-div').css({"margin-left":"240px"})
-        $('.map-title').css({"margin-left":"240px", "margin-top": "0px"})
+        $('.map-title').css({"margin-left":"240px", "margin-top": "0px"}) */
         if ($('#content' + i).hasClass("show")) {
             // alert(1);
             if (i != n) {
@@ -1036,10 +1036,12 @@ function change(n) {
 
         }
     }
+    $("#content"+n).css("height",'90%');
     //写文字
     $('#content' + n).find(".info-div").html("<h2>" + main_data[n - 1][0] + "</h2><p>在《全唐诗》中，出现" + main_data[n - 1][0] + "的诗共有<span>" + main_data[n - 1][1] + "</span>首<br/>共<span>" + main_data[n - 1][2] + "</span>位诗人的诗中提到" + main_data[n - 1][0] + "<br/>诗中出现" + main_data[n - 1][0] + "最多的时期是：<span>" + main_data[n - 1][3] + "</span><br/></p>"
         + "<div class = \"era_chart\"></div>")
     //画图
     var era_dom = $('#content' + n).find(".era_chart")[0]
-    piant_eras(era_dom, n - 1)
+    piant_eras(era_dom, n - 1);
+    drawWC(n, 'wc'+n);
 }
